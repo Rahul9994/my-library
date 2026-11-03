@@ -1,42 +1,117 @@
 <!doctype html>
-<html lang="en" class="is-loading">
+<html lang="en" class="is-loading" data-theme="light" data-view="flow">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Library</title>
-<meta name="description" content="A browsable shelf of cheat sheets, code notes, guides and books.">
+<meta name="description" content="A browsable 3D bookshelf of cheat sheets, code notes and guides, with a bookcase view, a slide reader, search and five themes.">
+<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ecebe5">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3bd1'/%3E%3Crect x='7' y='6' width='5' height='20' rx='1' fill='%23f1ecdf'/%3E%3Crect x='14' y='6' width='5' height='20' rx='1' fill='%23f1ecdf' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='18' rx='1' fill='%23f1ecdf' transform='rotate(12 23 17)'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="_site/css/style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Library">
+<meta property="og:description" content="A browsable 3D bookshelf of cheat sheets, code notes and guides. Five themes, a bookcase view and a slide reader.">
+<meta property="og:image" content="https://rahul9994.github.io/my-library/_site/preview/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3bd1'/%3E%3Crect x='7' y='6' width='5' height='20' rx='1' fill='%23f1ecdf'/%3E%3Crect x='14' y='6' width='5' height='20' rx='1' fill='%23f1ecdf' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='18' rx='1' fill='%23f1ecdf' transform='rotate(12 23 17)'/%3E%3C/svg%3E">
+
+<!-- apply the saved theme / view before first paint (no flash) -->
+<script>
+(function () {
+  try {
+    var ok = { light: 1, dark: 1, amber: 1, hacker: 1, cyber: 1 }, root = document.documentElement, t = null, v = null;
+    var q = location.search.match(/[?&]theme=(\w+)/), w = location.search.match(/[?&]view=(\w+)/);
+    try { t = localStorage.getItem('library.theme'); v = localStorage.getItem('library.view'); } catch (e) {}
+    if (q && ok[q[1]]) t = q[1];
+    if (w && (w[1] === 'case' || w[1] === 'flow')) v = w[1];
+    if (!t || !ok[t]) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', t);
+    root.setAttribute('data-view', v === 'case' ? 'case' : 'flow');
+    var m = { light: '#ecebe5', dark: '#0d0d10', amber: '#1a0f07', hacker: '#020503', cyber: '#0a0518' }[t];
+    document.querySelector('meta[name=theme-color]').setAttribute('content', m);
+  } catch (e) {}
+})();
+</script>
+
+<link rel="stylesheet" href="_site/css/style.css?v=3">
+<link rel="stylesheet" href="_site/css/shelf.css?v=3">
+<link rel="stylesheet" href="_site/css/themes.css?v=3">
+<noscript><style>.loader{display:none!important}html.is-loading .top,html.is-loading .filters,html.is-loading .foot,html.is-loading .now-wrap{opacity:1!important}</style></noscript>
 </head>
 <body>
 
-<div class="grain" aria-hidden="true"></div>
+<!-- ───────────── atmosphere (behind everything) ───────────── -->
+<div class="wall" aria-hidden="true">
+  <i class="w-spot"></i>
+  <i class="w-dots"></i>
+  <i class="w-floor"><b></b></i>
+</div>
+<canvas class="fx fx-back" id="fxBack" aria-hidden="true"></canvas>
+
+<!-- ───────────── loader ───────────── -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="ld-in">
+    <div class="ld-mark">The Library</div>
+    <div class="ld-sub">Preparing the shelves</div>
+    <div class="ld-bar"><i id="ldBar"></i></div>
+  </div>
+</div>
 
 <!-- ───────────── header ───────────── -->
 <header class="top">
-  <button class="round" id="roundBtn" aria-label="Search the library" data-cursor="btn">
-    <svg class="ico ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2 20 20"/></svg>
-    <svg class="ico ico-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5.5M11 6.2 5.2 12l5.8 5.8"/></svg>
-  </button>
+  <div class="top-l">
+    <button class="round" id="roundBtn" aria-label="Search the library" data-cursor="btn">
+      <svg class="ico ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2 20 20"/></svg>
+      <svg class="ico ico-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5.5M11 6.2 5.2 12l5.8 5.8"/></svg>
+    </button>
+  </div>
   <div class="brand">
     <div class="brand-name">The Library</div>
     <div class="brand-sub">A personal collection</div>
   </div>
-  <div class="top-meta"><span id="metaCount">215</span> books <i>/</i> <span class="yrs">2025—2026</span></div>
+  <div class="top-r">
+    <div class="top-meta"><span id="metaCount">215</span> books <i>/</i> <span class="yrs">2025—2026</span></div>
+    <button class="ctl" id="viewBtn" aria-label="Switch to bookcase view" data-tip="Bookcase" data-key="B" data-cursor="btn">
+      <svg class="ico ico-case" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3" width="17" height="18" rx="1.2"/><path d="M3.5 12h17"/><path d="M7.5 12V7.2M10.5 12V6M13.5 12V8M16.5 12V6.6"/><path d="M7.5 21v-5M10.5 21v-6.2M13.5 21v-4.4"/></svg>
+      <svg class="ico ico-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="4" y="9.5" width="3.6" height="10.5" rx=".6"/><rect x="16.4" y="9.5" width="3.6" height="10.5" rx=".6"/><rect x="9.2" y="4.5" width="5.6" height="15.5" rx=".6"/></svg>
+    </button>
+    <div class="theme" id="theme">
+      <button class="ctl" id="themeBtn" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="themePanel" data-tip="Theme" data-key="T" data-cursor="btn">
+        <svg class="ico ico-theme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none"/></svg>
+      </button>
+      <div class="tpanel" id="themePanel" role="radiogroup" aria-label="Theme"></div>
+    </div>
+  </div>
 </header>
 
 <!-- ───────────── shelf ───────────── -->
 <main>
 <section class="shelf" id="shelf" aria-label="Library shelf">
+
+  <!-- bookcase view (all books on shelves) -->
+  <div class="case" id="case" aria-label="Bookcase" aria-hidden="true">
+    <div class="case-scroll" id="caseScroll">
+      <div class="bc" id="bc">
+        <div class="bc-crown">
+          <span class="bc-title">The Library</span>
+          <span class="bc-count" id="bcCount"></span>
+        </div>
+        <div class="bc-body" id="bcBody" role="list"></div>
+        <div class="bc-base"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="filters" id="filters" role="toolbar" aria-label="Filter the shelf">
     <div class="seg" id="segType"></div>
     <div class="chips" id="segTopic"></div>
   </div>
 
   <div class="stage" id="stage">
+    <div class="back" aria-hidden="true"></div>
+    <div class="plank" aria-hidden="true"><i class="pk-top"></i><i class="pk-front"></i><i class="pk-shadow"></i></div>
     <div class="rail" id="rail"></div>
   </div>
+  <i class="vig" aria-hidden="true"></i>
 
   <div class="now-wrap" id="nowWrap">
     <div class="now" id="now" aria-live="polite">
@@ -50,9 +125,9 @@
 </section>
 
 <!-- ───────────── detail ───────────── -->
-<section class="detail" id="detail" aria-hidden="true">
+<section class="detail" id="detail" aria-hidden="true" aria-label="Book details" tabindex="-1">
   <div class="d-sheet" id="dSheet"></div>
-  <div class="d-grid">
+  <div class="d-grid" id="dGrid">
     <div class="d-text" id="dText">
       <p class="d-kicker rv"><span id="dNo"></span><i></i><span id="dTopic"></span></p>
       <h1 class="d-title" id="dTitle"></h1>
@@ -90,31 +165,44 @@
 </section>
 </main>
 
+<!-- ───────────── bookcase hover card ───────────── -->
+<div class="tip" id="bcTip" aria-hidden="true">
+  <span class="tip-th" id="tipTh"></span>
+  <span class="tip-tx"><b id="tipTt"></b><i id="tipMm"></i></span>
+</div>
+
 <!-- ───────────── search ───────────── -->
 <div class="search" id="search" aria-hidden="true">
   <div class="s-veil" id="sVeil"></div>
-  <div class="s-box">
+  <div class="s-box" role="dialog" aria-label="Search the library">
     <div class="s-field">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2 20 20"/></svg>
       <input id="sInput" type="text" placeholder="Search the library…" autocomplete="off" spellcheck="false" aria-label="Search the library">
       <kbd>esc</kbd>
     </div>
     <ul class="s-list" id="sList"></ul>
-    <div class="s-foot"><span>↑ ↓ to move</span><span>↵ to open</span><span id="sCount"></span></div>
+    <div class="s-foot"><span>↑ ↓ to move</span><span>↵ to find</span><span id="sCount"></span></div>
   </div>
 </div>
 
 <footer class="foot">
-  <div class="foot-l">A personal reading library — each book credited to its author &nbsp;/&nbsp; <a class="foot-credit" href="https://github.com/Rahul9994/my-library#credits-and-takedowns" target="_blank" rel="noopener" data-cursor="btn">Credits ↗</a></div>
-  <button class="foot-r" id="footSearch" data-cursor="btn">Search <i>/</i></button>
+  <div class="foot-l"><span class="foot-long">A personal reading library — </span>each book credited to its author &nbsp;/&nbsp; <a class="foot-credit" href="https://github.com/Rahul9994/my-library#credits-and-takedowns" target="_blank" rel="noopener" data-cursor="btn">Credits ↗</a></div>
+  <div class="foot-c" aria-hidden="true"><span><kbd>←</kbd><kbd>→</kbd> browse</span><span><kbd>↵</kbd> open</span><span><kbd>B</kbd> bookcase</span><span><kbd>T</kbd> theme</span></div>
+  <button class="foot-r" id="footSearch" data-cursor="btn">Search <kbd>/</kbd></button>
 </footer>
 
+<canvas class="fx fx-front" id="fxFront" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+<div class="tfade" id="tfade" aria-hidden="true"></div>
 <div class="cursor" id="cursor" aria-hidden="true"><i class="c-ring"></i><i class="c-dot"></i><span class="c-label">Open</span></div>
 
-<noscript><p style="position:fixed;inset:0;display:grid;place-items:center;font:16px system-ui">The Library needs JavaScript to run.</p></noscript>
+<noscript><p style="position:fixed;inset:0;display:grid;place-items:center;font:16px system-ui;z-index:400;background:#ecebe5;color:#131313">The Library needs JavaScript to run.</p></noscript>
 
 <script src="_site/vendor/gsap.min.js"></script>
 <script src="_site/js/data.js"></script>
-<script src="_site/js/app.js"></script>
+<script src="_site/js/theme.js?v=3"></script>
+<script src="_site/js/fx.js?v=3"></script>
+<script src="_site/js/app.js?v=3"></script>
 </body>
 </html>
