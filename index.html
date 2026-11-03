@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Library — Tajamul's collected sheets</title>
+<meta name="description" content="A browsable shelf of 215 cheat sheets, code notes and guides collected from tajamul.codes.">
+<meta name="theme-color" content="#ecebe5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3bd1'/%3E%3Crect x='7' y='6' width='5' height='20' rx='1' fill='%23f1ecdf'/%3E%3Crect x='14' y='6' width='5' height='20' rx='1' fill='%23f1ecdf' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='18' rx='1' fill='%23f1ecdf' transform='rotate(12 23 17)'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="_site/css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ───────────── header ───────────── -->
+<header class="top">
+  <button class="round" id="roundBtn" aria-label="Search the library" data-cursor="btn">
+    <svg class="ico ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2 20 20"/></svg>
+    <svg class="ico ico-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5.5M11 6.2 5.2 12l5.8 5.8"/></svg>
+  </button>
+  <div class="brand">
+    <div class="brand-name">The Library</div>
+    <div class="brand-sub">Tajamul · Collected sheets</div>
+  </div>
+  <div class="top-meta"><span id="metaCount">215</span> books <i>/</i> <span class="yrs">2025—2026</span></div>
+</header>
+
+<!-- ───────────── shelf ───────────── -->
+<main>
+<section class="shelf" id="shelf" aria-label="Library shelf">
+  <div class="filters" id="filters" role="toolbar" aria-label="Filter the shelf">
+    <div class="seg" id="segType"></div>
+    <div class="chips" id="segTopic"></div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="rail" id="rail"></div>
+  </div>
+
+  <div class="now-wrap" id="nowWrap">
+    <div class="now" id="now" aria-live="polite">
+      <h2 class="now-title"><span id="nowTitle"></span></h2>
+      <p class="now-kicker"><span id="nowKicker"></span></p>
+      <p class="now-date"><span id="nowDate"></span></p>
+    </div>
+    <button class="arrow arrow-l" id="prevBtn" aria-label="Previous book" data-cursor="btn"><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M28 6H1.5M6 1 1 6l5 5"/></svg></button>
+    <button class="arrow arrow-r" id="nextBtn" aria-label="Next book" data-cursor="btn"><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h26.5M22 1l5 5-5 5"/></svg></button>
+  </div>
+</section>
+
+<!-- ───────────── detail ───────────── -->
+<section class="detail" id="detail" aria-hidden="true">
+  <div class="d-sheet" id="dSheet"></div>
+  <div class="d-grid">
+    <div class="d-text" id="dText">
+      <p class="d-kicker rv"><span id="dNo"></span><i></i><span id="dTopic"></span></p>
+      <h1 class="d-title" id="dTitle"></h1>
+      <p class="d-meta rv" id="dMeta"></p>
+      <p class="d-desc rv" id="dDesc"></p>
+      <p class="d-by rv">Written &amp; designed by <em>Tajamul Khan</em> &nbsp;/&nbsp; @tajamul.codes</p>
+      <div class="d-actions rv">
+        <button class="btn" id="dRead" data-cursor="btn"><span>Read the book</span><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h26.5M22 1l5 5-5 5"/></svg></button>
+        <a class="btn ghost" id="dIg" target="_blank" rel="noopener" data-cursor="btn"><span>View on Instagram</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6"/></svg></a>
+      </div>
+      <div class="d-inside rv" id="dInside"></div>
+    </div>
+    <div class="d-art" id="dArt">
+      <div class="d-cover" id="dCover"><img alt="" draggable="false"><i class="hinge"></i></div>
+    </div>
+  </div>
+  <button class="d-step d-prev" id="dPrev" data-cursor="btn"><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M28 6H1.5M6 1 1 6l5 5"/></svg><span>Previous</span></button>
+  <button class="d-step d-next" id="dNext" data-cursor="btn"><span>Next book</span><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h26.5M22 1l5 5-5 5"/></svg></button>
+</section>
+
+<!-- ───────────── reader ───────────── -->
+<section class="reader" id="reader" aria-hidden="true" aria-label="Book reader">
+  <div class="r-bar">
+    <div class="r-title"><span id="rTitle"></span></div>
+    <div class="r-count"><b id="rCur">01</b> / <span id="rTot">10</span></div>
+    <button class="r-close" id="rClose" data-cursor="btn"><span>Close</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></button>
+  </div>
+  <div class="r-stage" id="rStage">
+    <div class="r-page" id="rPage"><img id="rImgA" alt="" draggable="false"><img id="rImgB" alt="" draggable="false"></div>
+  </div>
+  <button class="r-nav r-prev" id="rPrev" aria-label="Previous slide" data-cursor="btn"><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M28 6H1.5M6 1 1 6l5 5"/></svg></button>
+  <button class="r-nav r-next" id="rNext" aria-label="Next slide" data-cursor="btn"><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h26.5M22 1l5 5-5 5"/></svg></button>
+  <div class="r-thumbs" id="rThumbs"></div>
+  <div class="r-hint">Click to zoom &nbsp;·&nbsp; ← → to turn the page &nbsp;·&nbsp; Esc to close</div>
+</section>
+</main>
+
+<!-- ───────────── search ───────────── -->
+<div class="search" id="search" aria-hidden="true">
+  <div class="s-veil" id="sVeil"></div>
+  <div class="s-box">
+    <div class="s-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2 20 20"/></svg>
+      <input id="sInput" type="text" placeholder="Search the library…" autocomplete="off" spellcheck="false" aria-label="Search the library">
+      <kbd>esc</kbd>
+    </div>
+    <ul class="s-list" id="sList"></ul>
+    <div class="s-foot"><span>↑ ↓ to move</span><span>↵ to open</span><span id="sCount"></span></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="foot-l">All sheets © Tajamul Khan · @tajamul.codes — a personal reading library</div>
+  <a class="foot-r" href="https://www.instagram.com/tajamul.codes/" target="_blank" rel="noopener" data-cursor="btn">IG <i>/</i> ↗</a>
+</footer>
+
+<div class="cursor" id="cursor" aria-hidden="true"><i class="c-ring"></i><i class="c-dot"></i><span class="c-label">Open</span></div>
+
+<noscript><p style="position:fixed;inset:0;display:grid;place-items:center;font:16px system-ui">The Library needs JavaScript to run.</p></noscript>
+
+<script src="_site/vendor/gsap.min.js"></script>
+<script src="_site/js/data.js"></script>
+<script src="_site/js/app.js"></script>
+</body>
+</html>

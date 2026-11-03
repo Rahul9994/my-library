@@ -1,0 +1,273 @@
+﻿=== 2026-11-02_RAG-in-One-Shot_DfQwnqbE5LB  [14 slides]
+https://www.instagram.com/p/DfQwnqbE5LB/
+RAG in One Shot
+
+Understand Retrieval-Augmented Generation from basics to real-world implementation.
+
+Follow @tajamul.codes and comment “AI” to get the complete notes.
+
+#rag #generativeai #llm #agenticai #artificialintelligence
+
+=== 2026-09-28_Top-10-Data-Analyst-Projects_Dd5NlO7k0o3  [9 slides]
+https://www.instagram.com/p/Dd5NlO7k0o3/
+Top 10 Data Analyst Projects
+
+Follow me on GitHub: https://github.com/tajamulkhann
+
+Follow @tajamul.codes and comment “DATA” to get the projects
+
+#dataanalytics #dataanalyst #projects #portfolio #datascience
+
+=== 2026-09-20_How-to-Explain-a-Project_Ddko7gOk5M6  [10 slides]
+https://www.instagram.com/p/Ddko7gOk5M6/
+How to Explain a Project
+
+Follow @tajamul.codes and comment “DATA” to get the notes
+
+#interviewprep #datascience #projects #jobinterview #careergrowth - 1,471 likes, 145 comments - @tajamul.codes on September 20, 2026
+
+=== 2026-08-27_Production-Ready-ML-Project_Dciq7mFBmaz  [1 slides]
+https://www.instagram.com/p/Dciq7mFBmaz/
+Production-Ready ML Project
+
+A strong ML project is more than a notebook. Clean structure, pipelines, testing, configs and deployment files are what make it production-ready.
+
+Follow @tajamul.codes for more on Data Science and AI
+
+#machinelearning #mlops #datascience #python #artificialintelligence
+
+=== 2026-08-23_Power-BI-Notes_DcZ_jG3k1dL  [16 slides]
+https://www.instagram.com/p/DcZ_jG3k1dL/
+Power BI Notes
+
+Power BI gets much easier once you understand how data, DAX, visuals and dashboards actually connect.
+
+Follow @tajamul.codes and comment “BI” to get the notes in your DM.
+
+#powerbi #dataanalytics #dataanalyst #businessintelligence #datascience
+
+=== 2026-08-21_50-Machine-Learning-Projects_DcTObOLgcUx  [8 slides]
+https://www.instagram.com/p/DcTObOLgcUx/
+50+ Machine Learning Projects
+
+Follow @tajamul.codes and comment “Link” to get the all the projects
+
+#machinelearning #datascience #mlprojects #ai #python
+
+=== 2026-07-20_200-Power-BI-MCQs_DbCa44ckvTi  [10 slides]
+https://www.instagram.com/p/DbCa44ckvTi/
+200+ Power BI MCQs
+
+Follow @tajamul.codes and comment “BI” to get the notes
+
+#powerbi #dataanalytics #datascience #businessintelligence #dax
+
+=== 2026-07-06_How-to-Explain-Projects_DaeZfNLgeDM  [10 slides]
+https://www.instagram.com/p/DaeZfNLgeDM/
+How to Explain Projects
+
+Follow @tajamul.codes and comment “PROJECT” to get the notes
+
+#interviewprep #datascience #projects #careergrowth #jobinterview
+
+=== 2026-06-27_Most-Data-Scientists-structure-their-projects-the-wrong_DaFhqfuBkpb  [1 slides]
+https://www.instagram.com/p/DaFhqfuBkpb/
+Most Data Scientists structure their projects the wrong way.
+
+Use this clean, production-ready layout 👇
+
+1️⃣ config/ – Configuration files
+Separate parameters from code.
+Example: local.yaml, prod.yaml
+
+2️⃣ data/ – Full data lifecycle
+raw → preprocessed → features → predictions
+
+3️⃣ entrypoint/ – Main scripts
+train.py for training pipelines
+inference.py for batch or real-time inference
+
+4️⃣ notebooks/ – Exploration only
+Use notebooks for EDA and analysis — never for production logic.
+
+5️⃣ src/ – Core ML code
+Feature engineering, training, and inference logic — modular and testable.
+
+6️⃣ tests/ – Automated checks
+Prevent silent failures before they reach production.
+
+7️⃣ Docker + environment files – Reproducibility
+Keep the same setup across machines and CI/CD.
+
+8️⃣ Pinned dependencies – Stability
+Exact package versions = consistent results
+
+Follow @tajamul.codes for more!
+
+=== 2026-05-12_50-Data-Scientist-Project-Ideas_DYQ1puCAcoJ  [10 slides]
+https://www.instagram.com/p/DYQ1puCAcoJ/
+50 Data Scientist Project Ideas
+
+Follow & Comment “50” to get the notes
+
+#datascientist #datascience #projects #portfolio #learning
+
+=== 2026-05-10_50-Data-Analyst-Project-Ideas_DYLktrQE69Z  [10 slides]
+https://www.instagram.com/p/DYLktrQE69Z/
+50 Data Analyst Project Ideas
+
+Follow & Comment “PROJECT” to get the notes
+
+#dataanalytics #datascience #projects #portfolio #learning
+
+=== 2026-05-09_Crack-Power-BI-Interviews_DYJGz3AE4Wm  [10 slides]
+https://www.instagram.com/p/DYJGz3AE4Wm/
+Crack Power BI Interviews 🚀
+
+Follow and Comment “230” to get the notes in your DMs
+
+#powerbi #datascience #dataanalytics #businessintelligence #dax
+
+=== 2026-03-25_Most-RAG-projects-fail-due-to-bad-structure_DWVXrBgAbjt  [1 slides]
+https://www.instagram.com/p/DWVXrBgAbjt/
+Most RAG projects fail due to bad structure ⚠️
+
+Focus on system design, not just prompts & embeddings
+
+#rag #ai #datascience #machinelearning #llm aiengineering
+
+=== 2026-01-20_Most-people-fail-in-Power-BI-because-they-learn-from-th_DTunRAbgTK-  [4 slides]
+https://www.instagram.com/p/DTunRAbgTK-/
+Most people fail in Power BI because they learn from the wrong sources.
+
+Here are the best YouTube channels I personally recommend for:
+• Strong fundamentals
+• DAX & modeling depth
+• Corporate-level dashboards
+
+If you’re serious about a career in Data Analytics / Power BI, this list is gold 🧠✨
+
+📌 Save
+🔁 Repost
+👤 Follow @tajamul.datascientist for practical data content
+
+#PowerBIDeveloper #DataScienceJourney #AnalyticsLife #BIConsultant #MicrosoftPowerBI
+
+=== 2026-01-15_Zero-Hero-in-RAG-by-2026_DTmMWo2AeY4  [1 slides]
+https://www.instagram.com/p/DTmMWo2AeY4/
+🚀 Zero → Hero in RAG by 2026
+
+Not hype. Not theory.
+A real roadmap to build production-grade RAG systems 🧠⚙️
+
+📌 From intuition → research → repos → production
+📌 Retrieval • Reasoning • Control • Evaluation
+
+If you’re serious about GenAI & LLM engineering,
+save this — your future self will thank you. 🔥
+
+Follow @tajamul.datascientist for more
+
+#RAG #GenAI #LLM #AIEngineer #AI2026
+
+=== 2026-01-05_RAG-Explained-Visually-One-Diagram-That-Clears-Everythi_DTKJXUcgW6t  [1 slides]
+https://www.instagram.com/p/DTKJXUcgW6t/
+📘 RAG Explained Visually — One Diagram That Clears Everything
+
+Most people use RAG.
+Very few actually understand it.
+
+This single diagram breaks down the entire Retrieval-Augmented Generation (RAG) pipeline step by step 👇
+
+🔹 Indexing → chunking, embeddings, vector storage
+🔹 Retrieval → finding the most relevant context
+🔹 Augmentation → combining query + context
+🔹 Generation → accurate, grounded AI responses
+
+💡 If you’re working with LLMs, GenAI, or AI applications, this flow is not optional — it’s foundational.
+
+Save this 📌
+Share it 🔁
+Use it to explain RAG confidently in interviews & projects.
+
+#DataScience #GenerativeAI #RAG #LLM #AIEngineering MachineLearning DeepLearning VectorDatabase Embeddings AIProjects TechExplained LearnAI AIArchitecture
+
+=== 2025-12-30_Chunking-can-make-or-break-your-RAG-system_DS44eJtAcWh  [1 slides]
+https://www.instagram.com/p/DS44eJtAcWh/
+Chunking can make or break your RAG system 🚀
+
+If retrieval feels off, the problem is often how you split the data — not the model.
+From fixed-size to semantic, hierarchical, and metadata-aware chunking, each strategy impacts context retention, recall, and answer quality.
+
+👉 Pick the chunking method based on document type + query pattern, not randomly.
+Smart chunking = better retrieval = smarter GenAI.
+
+#RAG #GenAI #LLM #AIEngineering #VectorDatabase Embeddings Chunking AIArchitecture DataScience MLOps AzureAI RetrievalAugmentedGeneration
+
+=== 2025-12-04_Most-Data-Scientists-structure-their-projects-wrong_DR335gogSMn  [1 slides]
+https://www.instagram.com/p/DR335gogSMn/
+Most Data Scientists structure their projects wrong.
+Use this clean, production-ready layout👇
+
+1️⃣ config/ – config files
+Separate params from code (local.yaml, prod.yaml)
+
+2️⃣ data/ – full data lifecycle
+raw → preprocessed → features → predictions
+
+3️⃣ entrypoint/ – main scripts
+train.py (pipeline)
+inference.py (batch/real-time)
+
+4️⃣ notebooks/ – exploration only
+EDA, analysis — never production logic
+
+5️⃣ src/ – core ML code
+feature engineering, training, inference (modular + testable)
+
+6️⃣ tests/ – automated checks
+prevent silent failures
+
+7️⃣ docker + env files – reproducibility
+same setup on any machine/CI
+
+8️⃣ pinned dependencies – stability
+exact versions → consistent results
+
+Picture Credits : Timur Bikmukhametov
+
+Follow @tajamul.datascientist for more !
+
+=== 2025-12-01_RAG-was-supposed-to-make-LLMs-smarter_DRvvwgcgbvb  [1 slides]
+https://www.instagram.com/p/DRvvwgcgbvb/
+RAG was supposed to make LLMs smarter.
+Ground them in facts. Give them memory.
+
+But the truth?
+
+Most RAG systems today are just fancy search engines—fetching chunks and hoping the model figures it out.
+
+That’s not intelligence.
+
+The real upgrade is Agentic RAG.
+
+Tools like Glean, Perplexity, and Harvey don’t just retrieve… they reason.
+They decide what to fetch, when to fetch, or whether they should fetch anything at all.
+
+This changes everything:
+
+• No blind embeddings
+• No random chunk dumps
+• Real, layered memory
+• APIs, search, and tools inside the reasoning loop
+
+The LLM stops guessing and starts thinking.
+
+Follow for more.
+
+=== 2025-10-28_Boost-your-JavaScript-skills-with-30-fun-student-projec_DQYacQKiV13  [10 slides]
+https://www.instagram.com/p/DQYacQKiV13/
+Boost your JavaScript skills with 30 fun student projects. Start coding today and build impressive projects for practice and your portfolio. 💻🎯
+
+Collab with @tajamul.datascientist
+

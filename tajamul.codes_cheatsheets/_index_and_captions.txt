@@ -1,0 +1,2056 @@
+﻿=== DWIe0miAdPL_DWIe0miAdPL  [1 slides]
+https://www.instagram.com/p/DWIe0miAdPL/
+Most people “know” Python… But struggle to recall basics under pressure.
+
+This one-page cheat sheet fixes that.
+
+♻️ Repost to save it
+
+Follow @tajamul.datascientist for more
+
+#Python #DataScience #Coding #InterviewPrep #Programming - 521 likes, 3 comments - @tajamul.codes on March 20, 2026
+
+=== 2026-10-29_MS-Excel-Shortcuts-Cheat-Sheet_DfFu5hWhDzu  [1 slides]
+https://www.instagram.com/p/DfFu5hWhDzu/
+MS Excel Shortcuts Cheat Sheet
+
+Work smarter in Excel with these time-saving shortcuts for everyday tasks.
+
+Follow @tajamul.codes for more on Data Science and AI 
+
+#excel #excelshortcuts #exceltips #dataanalytics #productivity
+
+=== 2026-10-26_SQL-Window-Functions-Cheat-Sheet_De-ycXiASYl  [10 slides]
+https://www.instagram.com/p/De-ycXiASYl/
+SQL Window Functions Cheat Sheet
+
+Follow @tajamul.codes and comment “DATA” to get the cheat sheet
+
+#sql #sqlwindowfunctions #dataanalytics #datascience #sqlinterview
+
+=== 2026-10-25_17-ML-algorithms-One-cheatsheet_De8SPdjoGut  [1 slides]
+https://www.instagram.com/p/De8SPdjoGut/
+17 ML algorithms. One cheatsheet. 🔥
+
+One of the best Machine Learning cheatsheets I’ve come across, covering use cases, assumptions, pros, cons, and real-world examples.
+
+Knowing an algorithm is useful. Knowing when to use it is the real skill.
+
+🔖 Save for your next project or interview.
+📤 Share with someone learning ML.
+
+Follow @tajamul.codes for more Data & AI resources.
+
+#MachineLearning #DataScience #ArtificialIntelligence #Python #DeepLearning
+
+=== 2026-10-21_Agentic-AI-Cheat-Sheet_Dex8wJygf_w  [10 slides]
+https://www.instagram.com/p/Dex8wJygf_w/
+Agentic AI Cheat Sheet
+
+Follow @tajamul.codes and comment “AI” to get the cheat sheet
+
+#agenticai #aiagents #generativeai #artificialintelligence #llm
+
+=== 2026-10-03_PySpark-Cheat-Sheet_DeQV6e5AWhq  [10 slides]
+https://www.instagram.com/p/DeQV6e5AWhq/
+PySpark Cheat Sheet
+
+Follow @tajamul.codes and comment “DATA” to get the notes
+
+#pyspark #dataengineering #apacheSpark #bigdata #databricks
+
+=== 2026-09-26_Data-Analyst-Cheat-Sheets_DdxmDm9ATWO  [9 slides]
+https://www.instagram.com/p/DdxmDm9ATWO/
+Data Analyst Cheat Sheets
+
+Follow @tajamul.codes and comment “Data” to get the notes and Resources
+
+#dataanalyst #dataanalytics #sql #powerbi #datascience
+
+=== 2026-09-20_Python-Cheat-Sheet_DdgltgRBzOy  [1 slides]
+https://www.instagram.com/p/DdgltgRBzOy/
+Python Cheat Sheet
+
+Follow @tajamul.codes for more on Data Science
+
+#python #datascience #programming #coding #pythonnotes
+
+=== 2026-09-06_Python-Basics-Cheat-Sheet_Dc-KfsPgfjo  [10 slides]
+https://www.instagram.com/p/Dc-KfsPgfjo/
+Python Basics Cheat Sheet
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes
+
+#python #pythonbasics #coding #programming #datascience
+
+=== 2026-08-18_RAG-Cheat-Sheet_DcNHnWOErIb  [10 slides]
+https://www.instagram.com/p/DcNHnWOErIb/
+RAG Cheat Sheet
+
+Follow @tajamul.codes and comment “RAG” to get the notes
+
+#rag #generativeai #llm #ai #datascience
+
+=== 2026-08-10_Statistics-Cheat-Sheet_Db4gYeTAeJM  [9 slides]
+https://www.instagram.com/p/Db4gYeTAeJM/
+Statistics Cheat Sheet
+
+Follow @tajamul.codes and comment “Data” to get the notes in DM
+
+#statistics #datascience #machinelearning #dataanalytics #python
+
+=== 2026-08-06_PySpark-Cheat-Sheet_DbuawmaAak3  [10 slides]
+https://www.instagram.com/p/DbuawmaAak3/
+PySpark Cheat Sheet
+
+Follow @tajamul.codes and drop any comment to get the notes
+
+#pyspark #spark #dataengineering #bigdata #datascience
+
+=== 2026-08-04_MLOps-Cheat-Sheet_DbpFfRXge3o  [10 slides]
+https://www.instagram.com/p/DbpFfRXge3o/
+MLOps Cheat Sheet
+
+Follow @tajamul.codes and comment “ML” to get the notes
+
+#mlops #machinelearning #datascience #devops #ai
+
+=== 2026-08-03_TensorFlow-Cheat-Sheet_DbmhUuQAWpi  [10 slides]
+https://www.instagram.com/p/DbmhUuQAWpi/
+TensorFlow Cheat Sheet
+
+Follow @tajamul.codes and comment “TF” to get the notes
+
+#tensorflow #machinelearning #deeplearning #python #ai
+
+=== 2026-08-02_PyTorch-Cheat-Sheet_Dbj7Gy1gTcE  [10 slides]
+https://www.instagram.com/p/Dbj7Gy1gTcE/
+PyTorch Cheat Sheet
+
+Follow @tajamul.codes and comment “Data” to get the notes
+
+#pytorch #deeplearning #machinelearning #python #ai
+
+=== 2026-08-01_Data-Analysis-Cheat-Sheet_DbhaHy0gXWJ  [10 slides]
+https://www.instagram.com/p/DbhaHy0gXWJ/
+Data Analysis Cheat Sheet
+
+Follow @tajamul.codes and comment “DATA” to get the notes
+
+#featureengineering #machinelearning #datascience #python #dataanalysis
+
+=== 2026-07-31_Deep-Learning-Cheat-Sheet_DbezaEVgX_T  [10 slides]
+https://www.instagram.com/p/DbezaEVgX_T/
+Deep Learning Cheat Sheet
+
+Follow @tajamul.codes and comment “DL” to get the notes
+
+#deeplearning #machinelearning #ai #datascience #neuralnetworks
+
+=== 2026-07-28_Python-for-Data-Science-Cheat-Sheet_DbVTqb3gcLq  [10 slides]
+https://www.instagram.com/p/DbVTqb3gcLq/
+Python for Data Science Cheat Sheet
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes
+
+#python #datascience #pandas #machinelearning #dataanalysis
+
+=== 2026-07-28_Machine-Learning-Cheat-Sheet_DbXEhipAXBA  [10 slides]
+https://www.instagram.com/p/DbXEhipAXBA/
+Machine Learning Cheat Sheet
+
+Follow @tajamul.codes and comment “ML” to get the notes
+
+#machinelearning #datascience #ai #python #deeplearning
+
+=== 2026-07-26_Pandas-Cheat-Sheet_DbR3qe2gbXg  [10 slides]
+https://www.instagram.com/p/DbR3qe2gbXg/
+Pandas Cheat Sheet
+
+Follow @tajamul.codes and comment “PANDAS” to get the notes
+
+#pandas #python #datascience #dataanalysis #machinelearning
+
+=== 2026-07-16_Stop-guessing-how-to-handle-missing-data_Da2KbydhD8Z  [1 slides]
+https://www.instagram.com/p/Da2KbydhD8Z/
+Stop guessing how to handle missing data.
+
+This one cheat sheet covers 9 essential techniques every Data Scientist, Data Analyst, and ML Engineer should know.
+
+✔ Drop Rows & Columns
+✔ Mean, Median & Mode Imputation
+✔ KNN & MICE Imputation
+✔ Forward Fill (LOCF)
+✔ Interpolation
+
+Save this post—you’ll come back to it whenever you’re cleaning data.
+
+Follow @tajamul.codes for more on Data Science
+
+#datascience #machinelearning #python #artificialintelligence #dataanalysis deeplearning ml ai pandas coding
+
+=== 2026-06-29_SQL-Mindmap-Cheat-Sheet_DaLuvRyzmrt  [1 slides]
+https://www.instagram.com/p/DaLuvRyzmrt/
+SQL Mindmap Cheat Sheet
+
+Follow @tajamul.codes and comment “SQL” to get the complete SQL notes
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql
+
+=== 2026-06-28_Agentic-AI-Cheat-Sheet_DaKQ40JAUJh  [10 slides]
+https://www.instagram.com/p/DaKQ40JAUJh/
+Agentic AI Cheat Sheet
+
+Follow @tajamul.codes and comment “AI” to get the notes
+
+#agenticai #generativeai #ai #llm #datascience
+
+=== 2026-06-24_Tableau-Cheat-Sheet_DZ_qvtWgYA2  [9 slides]
+https://www.instagram.com/p/DZ_qvtWgYA2/
+Tableau Cheat Sheet
+
+Follow @tajamul.codes and comment “Data” to get the notes
+
+#tableau #dataanalytics #datascience #datavisualization #businessintelligence
+
+=== 2026-06-23_OOP-Concepts-Cheat-Sheet_DZ9G4KtATWJ  [10 slides]
+https://www.instagram.com/p/DZ9G4KtATWJ/
+OOP Concepts Cheat Sheet
+
+Follow @tajamul.codes and comment “OOP” to get the notes
+
+#oops #programming #python #coding #datascience
+
+=== 2026-06-22_SQL-Cheat-Sheet_DZ6up2KgQUV  [1 slides]
+https://www.instagram.com/p/DZ6up2KgQUV/
+SQL Cheat Sheet
+
+Follow @tajamul.codes for more on SQL
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql
+
+=== 2026-06-18_Python-for-Data-Science-starts-here_DZwgcMzAYYZ  [1 slides]
+https://www.instagram.com/p/DZwgcMzAYYZ/
+Python for Data Science starts here 🐍📊
+
+Most beginners don’t struggle because Python is hard.
+
+They struggle because they don’t know what to use and when.
+
+So I made this simple one-page cheat sheet covering:
+
+NumPy → arrays, stats, algebra, random values
+
+Pandas → dataframes, cleaning, grouping, merging, datetime
+
+Save this before your next data science project.
+
+Follow @tajamul.codes for more Data Science, AI & Python cheat sheets.
+
+Comment “PYTHON” for complete Python Roadmap
+
+#python #datascience #pandas #numpy #machinelearning #ai #dataanalytics #pythonprogramming #coding #learnpython #datascientist #dataengineer #artificialintelligence #programming #techreels
+
+=== 2026-06-11_FastAPI-Cheat-Sheet_DZeDFnagUwv  [8 slides]
+https://www.instagram.com/p/DZeDFnagUwv/
+FastAPI Cheat Sheet
+
+Follow @tajamul.codes and comment “API” to get the notes
+
+#fastapi #python #backenddevelopment #api #datascience
+
+=== 2026-06-03_Complete-SQL-Cheat-Sheet_DZMABm7gTLl  [9 slides]
+https://www.instagram.com/p/DZMABm7gTLl/
+Complete SQL Cheat Sheet
+
+Comment “SQL” to get the complete cheat sheet
+
+#sql #datascience #dataanalytics #learnsql #sqltutorial
+
+=== 2026-05-30_Best-Machine-Learning-Cheat-Sheet-Ever_DY_PTNZAY3I  [10 slides]
+https://www.instagram.com/p/DY_PTNZAY3I/
+Best Machine Learning Cheat Sheet Ever
+
+Comment “ML” to get the notes
+
+#machinelearning #datascience #ai #python #deeplearning
+
+=== 2026-05-06_The-Only-Machine-Learning-Cheat-Sheet-You-ll-Ever-Need_DYACQwQgYbr  [10 slides]
+https://www.instagram.com/p/DYACQwQgYbr/
+🚀 The Only Machine Learning Cheat Sheet You’ll Ever Need!
+
+Machine Learning powers the future of Data & AI 🌍
+Whether you’re a beginner or already in tech — this cheat sheet will help you learn ML faster & smarter 💡
+
+When I started learning ML, the concepts felt confusing and overwhelming 😵‍💫
+So I created this cheat sheet to simplify everything into one structured guide 📘
+
+Inside this cheat sheet 👇
+✅ ML Fundamentals
+✅ Supervised vs Unsupervised Learning
+✅ Reinforcement Learning simplified
+✅ Model Training & Evaluation
+✅ Hyperparameter Tuning Tips
+✅ Clustering & Neural Networks
+✅ Deep Learning basics
+
+💡 Pro Tip:
+The fastest way to learn Machine Learning is by building projects & experimenting with real datasets 📊
+
+🚨 Remember:
+“Machine Learning is one of the most valuable skills in the Data & AI era.”
+
+👇 Follow @tajamul.codes & comment “ML” to get the complete cheat sheet delivered to you 📩
+
+❤️ Save this post
+♻️ Share with friends
+👇 Tag someone learning ML
+
+#machinelearning #datascience #artificialintelligence #python #deeplearning ai coding programming ml tech
+
+=== 2026-05-04_Excel-vs-SQL-Cheat-Sheet_DX6llQcge_f  [1 slides]
+https://www.instagram.com/p/DX6llQcge_f/
+Excel vs SQL Cheat Sheet
+
+Follow @tajamul.codes for more!
+
+#excel #sql #dataanalytics #datascience
+
+=== 2026-04-28_Statistics-Cheat-Sheet-Guide_DXsyP6NAWCp  [9 slides]
+https://www.instagram.com/p/DXsyP6NAWCp/
+Statistics Cheat Sheet Guide
+
+Comment “STATS” to get the notes ￼
+
+#statistics #datascience #dataanalytics #machinelearning #analytics
+
+=== 2026-04-25_DAX-Commands-Cheat-Sheet-Power-BI_DXjMwtZgZz8  [6 slides]
+https://www.instagram.com/p/DXjMwtZgZz8/
+DAX Commands Cheat Sheet (Power BI)
+
+Comment “DAX” to get the notes ￼
+
+#dax #powerbi #datascience #dataanalytics #businessintelligence
+
+=== 2026-04-23_PySpark-Cheat-Sheet-Guide_DXf8RsJgatd  [10 slides]
+https://www.instagram.com/p/DXf8RsJgatd/
+PySpark Cheat Sheet Guide
+
+Comment “PYSPARK” to get the notes
+
+#pyspark #bigdata #datascience #dataengineering #spark
+
+=== 2026-04-20_Power-BI-DAX-Cheat-Sheet_DXYP5KWEaCl  [10 slides]
+https://www.instagram.com/p/DXYP5KWEaCl/
+Power BI DAX Cheat Sheet
+
+Comment “BI” to get the Complete CheatSheet
+
+Follow @tajamul.codes for more
+
+#powerbi #dax #dataanalytics #datascience businessintelligence
+
+=== 2026-04-08_SQL-Golden-Rules-Cheat-Sheet_DW5YEWdAbGz  [10 slides]
+https://www.instagram.com/p/DW5YEWdAbGz/
+SQL Golden Rules Cheat Sheet
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqltips #learnsql
+
+=== 2026-04-06_Python-Basics-Cheat-Sheet_DWz-_GsAUp4  [10 slides]
+https://www.instagram.com/p/DWz-_GsAUp4/
+Python Basics Cheat Sheet
+
+Comment “PYTHON” to get the notes
+
+#python #datascience #programming #learnpython #coding
+
+=== 2026-03-17_Most-people-learn-GenAI-randomly_DWAk2kVgZvu  [10 slides]
+https://www.instagram.com/p/DWAk2kVgZvu/
+Most people learn GenAI randomly.
+Top builders learn the system.
+
+This is the GenAI cheat sheet. ￼
+
+Models. Tools.
+Prompting. Evaluation.
+
+Embeddings. RAG.
+Fine-tuning workflows.
+
+Built for real applications.
+Not surface learning.
+
+For AI and DS aspirants.
+
+Comment GENAI and I’ll send it. ⚡
+
+#GenerativeAI #AIEngineering #GenAI #MachineLearning #AIJobs
+
+=== 2026-03-12_Most-people-learn-Pandas-slowly_DVzoGtGgSpt  [10 slides]
+https://www.instagram.com/p/DVzoGtGgSpt/
+Most people learn Pandas slowly.
+Top candidates revise fast.
+
+This is the Pandas cheat sheet. ￼
+
+Cleaning. Filtering.
+Grouping. Merging.
+
+EDA. Stats.
+Visualization workflows.
+
+Built for real projects.
+Not theory notes.
+
+For Analysts and DS aspirants.
+
+Comment PANDAS and I’ll send it. 📊
+
+#Pandas #DataScience #DataAnalysis #PythonTips #LearnPandas
+
+=== 2026-03-11_Most-people-memorize-SQL_DVvZti6geaZ  [20 slides]
+https://www.instagram.com/p/DVvZti6geaZ/
+Most people memorize SQL.
+Top candidates practice patterns.
+
+This is the SQL cheat sheet. ￼
+
+Joins. Aggregations.
+Window functions.
+
+CTEs. Subqueries.
+Real interview logic.
+
+Built for analysts.
+Not beginners only.
+
+If you want shortlist calls,
+start here.
+
+Comment SQL and I’ll send it. 🔥
+
+#SQL #DataAnalytics #SQLInterview #DataScience #LearnSQL
+
+=== 2026-03-09_Most-people-memorize-SQL_DVr6qZEgTNL  [16 slides]
+https://www.instagram.com/p/DVr6qZEgTNL/
+Most people memorize SQL.
+Top candidates practice patterns.
+
+This is the SQL cheat sheet. ￼
+
+Joins. Aggregations.
+Window functions.
+
+CTEs. Subqueries.
+Real interview logic.
+
+Built for analysts.
+Not beginners only.
+
+If you want shortlist calls,
+start here.
+
+Comment SQL and I’ll send it. 🔥
+
+#SQL #DataAnalytics #SQLInterview #DataScience #LearnSQL
+
+=== 2026-03-09_Most-candidates-forget-Python-basics_DVp_o1JgQxq  [10 slides]
+https://www.instagram.com/p/DVp_o1JgQxq/
+Most candidates forget Python basics.
+Interviewers don’t.
+
+This is the Python DS cheat sheet. ￼
+
+NumPy. Pandas.
+Core functions.
+
+Arrays. Stats.
+Indexing. Aggregations.
+
+Exactly what interviews test.
+Nothing extra.
+
+For Analysts and DS aspirants.
+
+Comment PYTHON and I’ll send it. 🧠
+
+#PythonForDataScience #DataScience #PythonTips #DSAspirants #LearnPython
+
+=== 2026-03-02_Stop-building-chatbots_DVaR-vkAehM  [9 slides]
+https://www.instagram.com/p/DVaR-vkAehM/
+Stop building chatbots.
+Start building RAG systems. ⚡
+
+This is the full LangChain RAG cheat sheet.
+
+From document loading
+to evaluation metrics.
+
+Chunking. Embeddings.
+Vector DB. Retrieval. Generation.
+
+Built for production.
+Not tutorials.
+
+If you’re learning GenAI seriously,
+this is your roadmap.
+
+Comment LLM and I’ll DM you the guide. 📩
+
+#RAG #LangChain #GenerativeAI #DataScience #AIEngineering
+
+=== 2026-02-25_28-SQL-Commands-You-Must-Know_DVNFmbtgTJc  [1 slides]
+https://www.instagram.com/p/DVNFmbtgTJc/
+28 SQL Commands You Must Know 
+
+If you master these, you can handle most SQL interviews and real-world tasks.
+
+Retrieval – SELECT, WHERE, JOIN, GROUP BY, ORDER BY 
+Manipulation – INSERT, UPDATE, DELETE 
+Definition – CREATE, ALTER, DROP 
+Aggregations – COUNT, SUM, AVG, MIN, MAX 
+Logic – CASE, AND, OR, IN, LIKE, IS NULL 
+Transactions – COMMIT, ROLLBACK 
+
+Keep this cheat sheet saved. 
+Strong SQL = Strong Data Career.
+
+#SQL #DataScience #DataAnalytics #InterviewPrep #LearnSQL
+
+=== 2026-02-18_Most-people-learn-Machine-Learning_DU7HNIIE8G7  [10 slides]
+https://www.instagram.com/p/DU7HNIIE8G7/
+Most people learn Machine Learning.
+Very few learn how to put models into production.
+
+That’s where MLOps comes in.
+
+I’ve created a FREE MLOps Cheat Sheet covering:
+
+• ML Lifecycle (end-to-end)
+• Experiment Tracking (MLflow, W&B)
+• Data & Model Versioning (DVC, Registry)
+• CI/CD for ML
+• Deployment (Docker, Kubernetes, APIs)
+• Monitoring (Prometheus, Grafana)
+• Feature Stores
+• Complete Production Stack
+
+No theory overload.
+Just what actually runs in real production systems.
+
+If you need this cheat sheet,
+comment “ML” — I’ll share it with you.
+
+Follow @tajamul.datascientist for more real-world ML content 🚀
+
+#MLOps #MachineLearning #DataScience #AIEngineering #ProductionML
+
+=== 2026-02-16_This-Machine-Learning-Cheat-Sheet-Saved-Me-Hours-of-Revision_DU1--4YgY2-  [1 slides]
+https://www.instagram.com/p/DU1--4YgY2-/
+This Machine Learning Cheat Sheet Saved Me Hours of Revision ⏳
+
+It includes:
+ ✅ Supervised & Unsupervised algorithms
+ ✅ Regression, Classification & Clustering techniques
+ ✅ PCA & Dimensionality Reduction
+ ✅ Neural Networks, CNN, RNN & Transformers
+ ✅ Assumptions, Pros/Cons & Real-world use cases
+
+Whether you're:
+ 🔹 Preparing for data science interviews
+ 🔹 Working on ML projects
+ 🔹 Or strengthening your fundamentals
+this one-page guide is a must-save.
+
+♻️ Repost and share with your ML circle.
+
+Follow @tajamul.datascientist for more!
+
+#MachineLearning #DataScience #AI #MLAlgorithms #LearnML
+
+=== 2026-01-28_Your-LLM-isn-t-good-just-because-it-sounds-confident_DUDatZEgcjL  [9 slides]
+https://www.instagram.com/p/DUDatZEgcjL/
+Your LLM isn’t “good” just because it sounds confident 🤖
+
+Fluent answers ≠ correct answers.
+Smart wording ≠ grounded reasoning.
+
+That’s why LLM Evaluation matters.
+
+This carousel breaks down:
+• Why BLEU / ROUGE are not enough
+• How hallucinations silently kill trust
+• What faithfulness & groundedness really mean
+• Why LLM-as-a-Judge is becoming the new standard
+• How RAG systems should actually be evaluated
+
+💡 Reality check:
+LLM evaluation is not one metric —
+it’s a system.
+
+Save this if you’re:
+• Building GenAI / RAG systems
+• Preparing for AI interviews
+• Deploying LLMs in production
+
+👉 Follow & Comment “LLM” if you want a full GenAI evaluation cheat sheet.
+
+#genai #llm #rag #aiengineering #datascience
+
+=== 2026-01-23_Most-people-learn-SQL_DT4Ya_ZAXEX  [9 slides]
+https://www.instagram.com/p/DT4Ya_ZAXEX/
+Most people learn SQL.
+Very few actually remember it.
+
+That’s why I created this Ultimate SQL Cheat Sheet 📘
+– keywords
+– functions
+– operators
+– joins
+– all in one place, visual & printable
+
+Perfect for:
+• interview prep
+• quick revision before work
+• late-night SQL panic moments 😄
+
+Save this.
+You’ll thank yourself later.
+
+#SQL #DataAnalytics #DataScience #SQLTips #CheatSheet
+
+=== 2026-01-21_Pandas-Cheat-Sheet-Instant-Productivity-Boost_DTzSWGWAQ2v  [1 slides]
+https://www.instagram.com/p/DTzSWGWAQ2v/
+🐼 Pandas Cheat Sheet = Instant Productivity Boost
+
+Less Googling.
+More coding.
+Cleaner data. 📊
+
+📌 Save this — your future self will thank you.
+
+#Pandas #Python #DataScience #DataAnalytics #CheatSheet
+
+=== 2026-01-10_This-SQL-Kit-Saved-Me-Months-of-Confusion_DTXNt4YAXpl  [10 slides]
+https://www.instagram.com/p/DTXNt4YAXpl/
+This SQL Kit Saved Me Months of Confusion
+
+Most people don’t fail at SQL — they fail because their learning is unstructured.
+I built this Complete SQL Kit to take you from zero to interview-ready in one clear path.
+
+Inside:
+• Beginner-friendly SQL eBook
+• Real interview questions
+• High-yield theory
+• Cheat sheets & mind maps
+• Practical learning roadmap
+
+💡 SQL isn’t about commands — it’s about thinking in data.
+
+Comment KIT to get it in DMs
+
+#SQL #DataAnalyst #DataScience #LearnSQL #InterviewPrep
+
+=== 2026-01-03_Python-Cheat-Sheet-every-Data-Scientist-needs_DTEvJX0AZzi  [10 slides]
+https://www.instagram.com/p/DTEvJX0AZzi/
+🐍 Python Cheat Sheet every Data Scientist needs
+
+Less Googling ❌
+More building ✅
+
+NumPy • Pandas • Stats • Indexing • Core DS ops
+
+Follow @tajamul.datascientist and Comment Data to get this resource in DMs
+
+📌 Save it
+📤 Share it
+👀 Follow for more
+
+#python #datascience #learnpython #datascientist #pandas numpy ai ml coding tech
+
+=== 2025-12-29_FastAPI-cheat-sheet_DS1wlsyAXHw  [8 slides]
+https://www.instagram.com/p/DS1wlsyAXHw/
+FastAPI cheat sheet ⚡ 
+
+If you’re building ML or AI APIs, FastAPI is a must-know. 
+Async, validation, and speed — all in one place. 
+
+Follow @tajamul.datascientist and Comment PDF to get this in DMs
+
+=== 2025-12-28_SQL-Cheat-Sheet-you-ll-ACTUALLY-use_DSz_-mNAYNr  [1 slides]
+https://www.instagram.com/p/DSz_-mNAYNr/
+🚀 SQL Cheat Sheet you’ll ACTUALLY use
+
+If you’re learning SQL or preparing for interviews,
+this single sheet can save you hours of revision 💡
+
+✅ Joins
+✅ Window Functions
+✅ Subqueries
+✅ Date & String Functions
+✅ Aggregations & CTEs
+
+📌 Save this before your next interview
+🔁 Repost to help your SQL buddies
+💬 Comment “SQL” if you want more cheat sheets like this
+
+#SQL #DataAnalytics #DataScience #SQLInterview #Analytics #LearnSQL #TechCareers
+
+=== 2025-12-15_The-Only-Generative-AI-Cheat-Sheet-You-ll-Ever-Need_DSRyyVZgTUp  [10 slides]
+https://www.instagram.com/p/DSRyyVZgTUp/
+The Only Generative AI Cheat Sheet You’ll Ever Need 🚀
+
+A simple, beginner-friendly guide to Generative AI—covering types (text, image, video, code, audio), core models (Transformers, Diffusion, GANs), prompt engineering, evaluation metrics, fine-tuning, and top tools.
+Built to cut through the noise and help you learn GenAI with clarity.
+
+Need this Cheat Sheet ?
+Follow and Comment Data and get it in DMs
+
+=== 2025-12-12_Master-PySpark-the-Smart-Way_DSKAZO7Ad1H  [1 slides]
+https://www.instagram.com/p/DSKAZO7Ad1H/
+🔥 Master PySpark the Smart Way!
+Big Data doesn’t have to feel overwhelming — sometimes all you need is the right cheat sheet.
+
+I created this simple, beginner-friendly PySpark guide to help you:
+✔️ Load data easily
+✔️ Apply powerful transformations
+✔️ Run aggregations
+✔️ Build ML pipelines
+✔️ Work faster with UDFs & dates
+
+Whether you're preparing for interviews, working on real-world data pipelines, or just leveling up your big-data skills — this cheat sheet keeps the essentials at your fingertips.
+
+=== 2025-12-09_A-complete-Generative-AI-Cheat-Sheet_DSEi5P1gczX  [10 slides]
+https://www.instagram.com/p/DSEi5P1gczX/
+✨ A complete Generative AI Cheat Sheet
+Structured. Simple. Clear. Practical.
+
+Here’s what’s inside 👇
+✔️ Types of GenAI — text, image, video, audio, code
+✔️ Leading models — GPT-4, Claude, Gemini, DALL·E, Midjourney, Sora
+✔️ Data preprocessing for text, images & audio
+✔️ Prompt engineering essentials
+✔️ Transformers, Diffusion, GANs, Multimodal models
+✔️ Evaluation metrics — BLEU, ROUGE, FID, human scoring
+✔️ Embeddings for search & classification
+✔️ Fine-tuning & RAG-style workflows
+✔️ Hyperparameter tuning essentials
+✔️ Top GenAI tools to master — Copilot, Synthesia, Veo, Galileo, Vertex AI
+
+💡 Pro Tip:
+You don’t need to know every model.
+You need to understand how to control, evaluate, and apply them to real business problems.
+
+🚀 Master prompting.
+🚀 Understand behaviour.
+🚀 Build intuition.
+That’s how you grow fast in the GenAI era.
+
+If you want the full cheat sheet, comment “Data” 👇
+I’ll share it with you!
+
+=== 2025-12-03_Your-Pandas-Cheat-Sheet-Is-Here_DR1GgXjAdqE  [1 slides]
+https://www.instagram.com/p/DR1GgXjAdqE/
+🐼 Your Pandas Cheat Sheet Is Here!
+
+If you’re learning Data Science or working with data daily, this one’s a lifesaver.
+I’ve put together the most essential Pandas commands you’ll use for:
+✔ Cleaning data
+✔ Filtering rows
+✔ Merging tables
+✔ Aggregations
+✔ Window functions
+…and much more.
+
+Save this. Share this. Use this.
+Because mastering Pandas = mastering data.
+
+Level up your data game, one cheat sheet at a time. 🚀📊
+
+Follow @tajamul.datascientist for more powerful cheat sheets & interview-winning content.
+
+=== 2025-12-03_Learning-Python-doesn-t-have-to-feel-overwhelming_DRzhjcogYEW  [1 slides]
+https://www.instagram.com/p/DRzhjcogYEW/
+Learning Python doesn’t have to feel overwhelming.
+When I started, I kept jumping between tutorials, videos, random notes… and nothing really stuck.
+
+So I began creating one–page cheat sheets like this — simple, clean, and focused on what actually matters.
+And honestly, it changed everything for me.
+
+If you’re trying to break into Data Science, Analytics, AI, or even just want to get better with Python… this page will save you hours.
+Keep it saved. Revisit it whenever you get stuck.
+Small steps like this compound into big career growth.
+
+If this helps you, share it with someone who’s learning too ❤️
+And follow for more cheat sheets, resources, and career guidance.
+
+#python #pythontips #pythondeveloper #pythonlearning #datascience #dataanalytics #datatips #dataanalyst #machinelearning #mlengineer #codinglife #codercommunity #programminglife #programmer #learnpython #pythoncode #techcommunity #techcareers #analyticscommunity #dataengineer #softwaredeveloper #codingtips #pythonbeginner #learncoding #educationtech #upskill #careertransition #studygram #itcommunity
+
+=== 2025-11-30_Your-Complete-SQL-Cheat-Sheet-Save-This_DRtT8ubAdJt  [1 slides]
+https://www.instagram.com/p/DRtT8ubAdJt/
+Your Complete SQL Cheat Sheet (Save This!)
+
+If you’re preparing for Data Analyst or Data Scientist roles, SQL isn’t optional — it’s the core skill recruiters expect you to master.
+
+This one-page cheat sheet covers everything you need daily:
+
+✔️ SQL Basics (DDL, DML, TCL)
+✔️ SELECT Queries & Filtering
+✔️ Aggregations & GROUP BY
+✔️ Joins (Inner, Left, Right, Full, Self)
+✔️ Subqueries (Correlated + Uncorrelated)
+✔️ Window Functions
+✔️ NULL handling
+✔️ String & Date Functions
+✔️ Indexing Essentials
+✔️ Performance Tips
+… and more!
+
+Whether you’re preparing for interviews, revising fundamentals, or writing production-grade queries — this sheet keeps your concepts sharp.
+
+💾 Save it. Share it. Use it.
+
+=== 2025-11-28_This-Power-BI-Kit-Saved-Me-From-Months-of-Confusion_DRl9nbOgf_O  [9 slides]
+https://www.instagram.com/p/DRl9nbOgf_O/
+🔥 This Power BI Kit Saved Me From Months of Confusion
+
+Most beginners don’t struggle with Power BI — they struggle with what to learn first.
+
+I used to jump between DAX videos, dashboards, blogs… everything felt scattered. So I built a complete Power BI Kit that takes you from beginner → job-ready with clear structure.
+
+Inside the Kit:
+✔️ Full Power BI ebook (scratch to pro)
+✔️ Real interview questions
+✔️ DAX + Power Query cheat sheets
+✔️ Mind maps for BI concepts
+✔️ Handwritten-style notes
+✔️ Step-by-step learning roadmap
+
+💡 Fix your data model before visuals — a clean star schema solves 80% of problems.
+
+Need this Kit in DM?
+Comment Kit
+
+#powerbi #powerbitutorial #powerbilearning #powerbideveloper
+#dax #daxpowerbi #powerquery #businessintelligence #bianalytics
+#dataanalytics #dataanalysis #datavisualization #dashboarddesign
+#powerbidashboard #powerbitraining #powerbicommunity #powerbiskills
+#analyticstools #microsoftpowerbi #biinsights #dataengineerlife
+#dataanalystlife #dataprofessionals #learnpowerbi #powerbinotes
+#powerbiroadmap #powerbiprojects #datamodeling #star-schema
+#analyticscareer
+
+=== 2025-11-26_Don-t-Walk-Into-a-Python-Interview-Unprepared_DRjDcfbASCf  [10 slides]
+https://www.instagram.com/p/DRjDcfbASCf/
+🚫 Don’t Walk Into a Python Interview Unprepared
+
+If you’re aiming for Data Science, ML, or Python Dev roles, these Python basics are must-know.
+
+🐍 What’s Inside the Cheat Sheet:
+✔️ Most-asked Python questions
+✔️ Key concepts with examples
+✔️ Tips to write clean, fast code
+✔️ Techniques to crack coding rounds
+
+💡 Tip:
+Interviewers test your thinking, not just syntax.
+
+⚠️ “Write Python that’s clean, efficient, and scalable.”
+
+Need this resource in DM?
+
+Follow and Comment Python
+
+=== 2025-11-25_This-AI-ML-Kit-Saved-Me-MONTHS-of-Confusion_DRgnj3GgVAM  [10 slides]
+https://www.instagram.com/p/DRgnj3GgVAM/
+This AI & ML Kit Saved Me MONTHS of Confusion
+
+Most beginners don’t struggle because AI is hard…
+They struggle because they learn it in the wrong order.
+
+I used to jump between tutorials, notes, and videos — learning everything yet understanding nothing. So I built a clean, structured AI-ML kit that finally connected all the dots.
+
+Inside the Kit:
+✔️ ML algorithms, tuning, pipelines
+✔️ Deep Learning (CNN, RNN, LSTM, optimization)
+✔️ Clear AI theory for interviews
+✔️ Most-asked AI/ML interview questions
+✔️ ML cheat sheet (metrics + formulas)
+✔️ Handwritten-style notes
+✔️ Step-by-step learning roadmap
+
+💡 Start with basics: regression → classification → evaluation. Master the core, and everything else becomes easy.
+
+Need this Kit?
+
+Follow and Comment Kit to get it in your DMs
+
+=== 2025-11-24_This-Python-Kit-Saved-Me-From-Getting-Lost-While-Learning-Py_DRd8oCeAbUt  [10 slides]
+https://www.instagram.com/p/DRd8oCeAbUt/
+This Python Kit Saved Me From Getting Lost While Learning Python
+
+When I first started learning, I kept jumping between ebooks, tutorials, and random problems. Nothing connected, and everything felt scattered.
+
+So I created a Complete Python Kit — a clear, structured collection that puts everything in one place.
+
+What’s inside:
+✔️ Ebooks from basics to clean, professional code
+✔️ Most-asked Python coding interview questions
+✔️ High-yield theory Q&A
+✔️ Compact cheat sheets (syntax, functions, DS, OOP)
+✔️ Mind-maps for visual understanding
+✔️ Handwritten-style notes for strong core concepts
+✔️ A practical roadmap to learn Python the right way
+
+💡 Pro Tip: Focus on the core — loops, functions, OOP, and data structures. It makes everything else easier.
+
+If this helps you, ♻️ Share it forward!
+
+=== 2025-11-19_Only-SQL-cheat-sheet-you-ll-ever-need_DRO194FEpRS  [1 slides]
+https://www.instagram.com/p/DRO194FEpRS/
+Only SQL cheat sheet you'll ever need!
+
+SQL is a non-negotiable skill for anyone in data—whether you're a Data Analyst, Scientist, or Engineer.
+When I first started learning SQL, I struggled to keep up with all the syntax, commands, and concepts. It felt overwhelming, and I know many others feel the same. That’s why I decided to create a one-stop SQL cheat sheet to simplify everything!
+
+From foundational commands to advanced topics like window functions and indexing, this cheat sheet has you covered:
+➡️ Revisiting the basics
+➡️ Prepping for SQL interviews
+➡️ Querying for real-world projects
+➡️ Mastering advanced concepts
+
+Pro Tip: Practice regularly, solve real-world challenges, and dive into advanced concepts like query optimization and complex subqueries.
+
+And remember: "Skip SQL, and you might just get skipped." 😉
+
+♻️ Save this post or share it with someone who needs it!
+
+#SQL #SQLCheatSheet #DataAnalytics #DataScience #DataAnalyst #DataScientist #DataEngineer #LearnSQL #SQLInterview #InterviewPrep #Analytics #BigData #Database #DatabaseManagement #TSQL #MySQL #PostgreSQL #SQLServer #Programming #Coding #TechLearning #BusinessIntelligence #PowerBI #Tableau #Python #MachineLearning #AI #Upskill #TechCareers #CareerGrowth
+
+=== 2025-11-16_This-SQL-Kit-Saved-Me-From-Wasting-Months_DRJLTD8gao7  [10 slides]
+https://www.instagram.com/p/DRJLTD8gao7/
+This SQL Kit Saved Me From Wasting Months
+
+Most people don’t struggle with SQL because it’s difficult — they struggle because their learning is scattered.
+
+When I started out, I spent more time hunting for good resources than actually learning. Tutorials here, blogs there, videos everywhere — and still I couldn’t connect the dots. The concepts made sense, but applying them in interviews? That was a different story.
+
+That’s why I built this Complete SQL Kit — a single, structured system that actually takes you from zero to interview-ready.
+
+Inside the kit:
+✔️ Beginner-friendly SQL ebook that builds your base step by step
+✔️ Real interview questions asked by top companies
+✔️ High-yield SQL theory for fast recall
+✔️ Clean, crisp cheat sheets for revision
+✔️ Visual mind maps for joins, clauses & window functions
+✔️ Handwritten-style notes that build real intuition
+✔️ A practical roadmap so you never waste time again
+
+💡 Pro Tip: Master SQL by solving the same problem with joins, subqueries, and window functions — that’s how real clarity develops.
+
+🚨 SQL isn’t about memorizing commands. It’s about thinking in data.
+
+If this helped, hit ♻️ Repost
+
+#sql #sqldeveloper #sqlquery #sqltutorial #learnsql #databasemanagement #dataanalysis #datascience #analytics #businessanalytics #techskills #dataengineer #dataanalyst #sqlserver #mysql #postgresql #oracle #codinglife #programmingtips #techlearning #interviewprep #careerready #studygram #techcommunity #educationhub #roadmap #learntocode #upskill #bigdata #statementsql
+
+=== 2025-11-12_The-Only-Feature-Engineering-Cheat-Sheet-You-ll-Ever-Need_DQ-0xrFgejm  [9 slides]
+https://www.instagram.com/p/DQ-0xrFgejm/
+The Only Feature Engineering Cheat Sheet You’ll Ever Need
+
+Feature Engineering is the unsung hero of Machine Learning. You can have the best model — but if your features are weak, your results will be too.
+
+When I started building ML models, I spent weeks tuning algorithms…
+ but the real improvement came when I learned how to engineer the right features. That’s why I created this Feature Engineering Cheat Sheet — a no-fluff guide that helps you transform raw data into meaningful insights and higher-performing models.
+
+🔍 What’s Inside?
+✔️ Handling Missing Values – Imputation, KNN, Mean/Median
+ ✔️ Encoding Categorical Data – One-Hot, Label, Target Encoding
+ ✔️ Feature Scaling – Standard, MinMax, Robust, Normalization
+ ✔️ Feature Transformation – Log, Box-Cox, Polynomial, Interactions
+ ✔️ Outlier Treatment – Z-Score, IQR, Winsorization, Isolation Forest
+ ✔️ Feature Selection – Filter, Wrapper, Embedded, PCA
+ ✔️ Real-World Examples – Churn, Sales, Risk, NLP, Time Series
+
+⚙️ Quick Breakdown
+✅ Missing Values
+ • Drop, Fill, or Model-Based Imputation
+ • Use KNN for numeric-heavy datasets
+✅ Encoding
+ • One-Hot for small cardinality
+ • Target Encoding for large categorical sets
+✅ Scaling
+ • StandardScaler for normal data
+ • RobustScaler when outliers exist
+✅ Transformation
+ • Log to fix skewness
+ • Polynomial & Interaction for non-linear patterns
+✅ Outlier Handling
+ • Detect using Z-Score or IQR
+ • Treat smartly before model training
+✅ Feature Selection
+ • Combine statistical + model-based methods
+ • Use PCA for dimensionality reduction
+✅ Real-World Features
+
+💡 Pro Tip
+ Don’t just clean data — engineer it with intention.
+ The best models are built on creativity, not just code.
+
+🚨 Remember:
+ “Machine Learning models are only as smart as the features you give them.”
+
+👍 Found this helpful?
+ 🔁 Repost & Save for later
+
+#featureengineering #machinelearningtips #datasciencelearning #mlengineer #datascientistlife #mlfeatures #mlcheatsheet #featureselection #dataengineering #aiengineer #mlworkflow #datapreprocessing #dataanalysis #bigdataanalytics #analyticscommunity #machinelearningengineer #pythonforanalysis #pythondeveloper #mlalgorithms
+
+=== 2025-11-12_Only-Python-for-Data-Analysis-cheat-sheet-you-ll-ever-need_DQ81edlgdaC  [1 slides]
+https://www.instagram.com/p/DQ81edlgdaC/
+Only Python for Data Analysis cheat sheet you'll ever need!
+
+If you're working in Data Science, mastering Python—especially NumPy and Pandas—is non-negotiable. When I started learning, I often found myself lost in documentation or googling function names every 10 minutes. That’s why I created this one-stop Python Cheat Sheet to simplify your learning and supercharge your projects.
+
+From array operations to DataFrame manipulations, it’s got everything you need:
+➡️ Build a strong foundation with NumPy
+➡️ Slice, reshape, and aggregate data like a pro
+➡️ Handle missing values, group data, and perform joins with Pandas
+➡️ Analyze trends using rolling, expanding, and window functions
+
+💡 Pro Tip: The best way to master Python for data analysis is by doing. Try real-world datasets, replicate case studies, and keep this sheet handy. Whether you're preparing for interviews or building dashboards, this cheat sheet has your back.
+
+🚨 Remember: Python isn’t just a language. It’s your superpower. 🧠⚡
+
+Found it helpful?
+♻️ Repost
+
+#python #pandas #numpy #datascience #dataanalysis #machinelearning #pythonforbeginners #pythontutorial #pythonlearning #pythonprogramming #pythonforDataScience #datascientist #dataanalyst #analytics #dataengineering #sql #powerbi #tableau #datavisualization #statistics #coding #programming #ml #deeplearning #ai #bigdata #datasciencecommunity #learnpython #pythondeveloper #tajamulkhan
+
+=== 2025-11-06_NoSQL-Cheat-Sheet-The-Only-One-You-ll-Ever-Need_DQvyqNGAcHw  [6 slides]
+https://www.instagram.com/p/DQvyqNGAcHw/
+NoSQL Cheat Sheet — The Only One You’ll Ever Need
+
+NoSQL is a game-changer if you’re working with modern, large-scale, unstructured, or real-time data.
+
+Whether you’re a Data Engineer, Data Scientist, Backend Developer, or Aspiring Database Pro, this cheat sheet will help you master NoSQL with clarity and confidence.
+
+⸻
+
+When I started learning NoSQL, I was confused by different databases, syntax styles, and when to use what.
+If that’s you — this cheat sheet is built to simplify everything and make your learning structured and practical.
+
+⸻
+
+💡 What’s Inside the NoSQL Cheat Sheet?
+
+✔️ Core NoSQL Concepts — Document, Key-Value, Column-Family & Graph Databases
+✔️ Practical commands for MongoDB, Cassandra, Redis, and DynamoDB
+✔️ CRUD operations made super simple
+✔️ Aggregation, indexing & performance tips for real-world use
+✔️ Replication, sharding, and scalability concepts explained
+
+⸻
+
+Pro Tips to Master NoSQL:
+
+✅ Use MongoDB Aggregation Pipelines like you use GROUP BY in SQL
+✅ In Redis, master data structures like Sets, Sorted Sets & Hashes
+✅ Practice Cassandra’s partitioning and clustering keys — they define performance
+✅ In DynamoDB, use Global Secondary Indexes (GSI) for query flexibility
+✅ Always think about scalability over joins — NoSQL is built for distributed systems
+
+⸻
+
+⚡ NoSQL = Speed, Scalability, and Flexibility
+
+It’s not a replacement for SQL — it’s a powerful alternative when data becomes big, fast, and unstructured.
+
+⸻
+
+Found it helpful?
+
+↺ Save, Share & Help Others Learn Faster
+
+📥 follow @tajamul.datascientist and dm SQL the full cheat sheet 
+⸻
+
+#NoSQL #MongoDB #Cassandra #Redis #DynamoDB #DatabaseDesign #DataEngineering #BackendDevelopment #BigData #LearnNoSQL #DataScience #StudyWithMe #100DaysOfCode #TechCheatSheet
+
+=== 2025-11-05_Affordable-Ebooks-for-Data-Analysts_DQs52xpgQmb  [8 slides]
+https://www.instagram.com/p/DQs52xpgQmb/
+📚 Affordable Ebooks for Data Analysts!
+
+Tired of scattered YouTube videos and unstructured learning?
+I’ve created a collection of affordable, high-value ebooks to help you build real data skills—step by step.
+
+✨ What’s inside my Ebook Collection?
+✅ Python for Data Analysis
+✅ Excel & Power BI essentials
+✅ SQL from basics to advanced
+✅ Data Cleaning techniques
+✅ Interview questions + cheat sheets
+
+💰 Price?
+Not free—but pocket-friendly and worth every rupee.
+These ebooks are made for students, beginners, and working professionals who want clarity, shortcuts, and practical knowledge.
+
+👇 Want them?
+🔹 Slide to the last page
+🔹 Click the link / DM “EBOOK”
+🔹 Start learning smarter, not harder.
+
+⸻
+
+💾 Save this post | 💬 Share with a friend
+Follow @tajamul.datascientist for more
+
+#DataEbooks #DataAnalytics #AffordableLearning #SQL #PowerBI #PythonForData #DataAnalyst #LearnDataScience #TajamulKhan
+
+=== 2025-11-02_The-Only-Data-Science-Roadmap-Cheat-Sheet-You-ll-Ever-Need_DQlPzlEgWR_  [10 slides]
+https://www.instagram.com/p/DQlPzlEgWR_/
+🎯 The Only Data Science Roadmap Cheat Sheet You’ll Ever Need
+
+Data Science is one of the most impactful careers of this decade — but with so many tools, concepts, and buzzwords, it’s easy to feel lost.
+
+When I started, I was confused between SQL vs Python, ML vs DL, and how everything connects.
+That’s why I created this Data Scientist Roadmap PDF — a no-fluff guide that takes you from beginner to job-ready Data Scientist in 2025.
+
+What’s Inside the Roadmap?
+
+✔️ Python / R – Core programming & data handling
+✔️ SQL – The language of data extraction
+✔️ Statistics & EDA – Understand, clean & analyze data
+✔️ Machine Learning – Supervised, Unsupervised & Model Evaluation
+✔️ Deep Learning – ANN, CNN, RNN, NLP & more
+✔️ Generative AI – Transformers, LLMs, RAG, Fine-tuning
+✔️ MLOps – Deployment, tracking, automation & cloud
+✔️ Storytelling – Power BI, Tableau & Business Impact
+
+⸻
+
+💡 Pro Tip
+
+Don’t just learn — build. Create end-to-end projects, deploy models, write case studies, and share them on GitHub + LinkedIn.
+
+🚨 Remember:
+
+“Data Science isn’t about tools — it’s about solving real problems with data.”
+
+⸻
+
+👍 Found this helpful?
+🔁 Repost & Save for later
+📥 Want the PDF? Comment “ROADMAP” or DM me.
+
+⸻
+
+#DataScience #DataScientistRoadmap #AIEngineering #MachineLearning #DeepLearning #GenerativeAI #ArtificialIntelligence #PythonForDataScience #LearnSQL #StatisticsForDataScience #MLRoadmap #DataScienceCommunity #AICheatSheet #DataScienceCheatSheet #SQLForDataScience #DataAnalytics #EDA #Kaggle #MLProjects #AIProjects #MLOps #NeuralNetworks #BigData #LangChain #VectorDatabase #CareerInDataScience #DataSciencePortfolio #FutureOfWork #Upskill #LearnWithMe
+
+=== 2025-11-02_How-to-Explain-Your-Data-Project-The-Smart-Way_DQi4hJPAetw  [10 slides]
+https://www.instagram.com/p/DQi4hJPAetw/
+🧠 How to Explain Your Data Project — The Smart Way
+
+Most people build amazing projects but fail to explain them right — and that’s why they struggle to stand out in interviews or portfolios.
+
+When I started explaining my projects, I made the same mistake — talking about tech stacks instead of telling the story.
+So I built this Cheat Sheet: “How to Explain a Project” — a structured framework to make your project sound crystal clear, business-driven, and unforgettable.
+
+🔑 Here’s what’s inside:
+✔️ Start with the Problem → Define the business pain (e.g., 25% customer churn)
+✔️ Define Your Role → Show ownership + collaboration impact
+✔️ Describe the Data → Mention source, type, and size — make it sound real
+✔️ Tools & Techniques → Connect each tool to what it achieved
+✔️ Explain the Process → Summarize your workflow in one clean pipeline
+✔️ Key Insights → Highlight the most valuable finding
+✔️ Business Impact → Link your outcome to $ saved, time, or efficiency
+✔️ Challenges & Learnings → Show problem-solving mindset & growth
+
+💡 Pro Tip: A project that tells a story will always impress more than one that just lists tools.
+
+🚨 Remember: “Every great data story starts with a business pain — not a tech stack.”
+
+Found this helpful?
+♻️ Repost and follow Tajamul Khan for more data storytelling gems!
+
+#DataScience #DataAnalytics #DataAnalyst #DataScientist #MachineLearning #AI #BigData #PowerBI #Python #SQL #Pandas #Numpy #DataVisualization #Analytics #StorytellingWithData #BusinessAnalytics #DataDriven #CareerInData #InterviewTips #DataScienceCommunity #LinkedInDataFam #ProjectPresentation #DataProjects #PortfolioBuilding #DataScienceLearning #DataEngineer #BI #DashboardDesign #DataMentor #TajamulKhan
+
+=== 2025-10-29_Only-SQL-Roadmap-You-ll-Ever-Need_DQbEz-QAa6Z  [10 slides]
+https://www.instagram.com/p/DQbEz-QAa6Z/
+🎯 Only SQL Roadmap You’ll Ever Need.
+
+Whether you’re a Data Analyst, Data Engineer, or Data Scientist, SQL is the backbone of every data-driven career.
+When I first started learning SQL, I kept Googling the same commands — SELECT, JOIN, GROUP BY — until I realized the secret:
+👉 SQL isn’t about syntax, it’s about thinking in data.
+
+If you’re preparing for interviews or want to handle complex data like a pro, this roadmap is your complete guide from basics to expert level.
+
+⸻
+
+💡 Here’s what you’ll find inside:
+
+✔️ Master SELECT, WHERE, and JOINS like a pro
+✔️ Learn advanced SQL — Window Functions, CTEs, Set Operations
+✔️ Optimize queries for speed and scalability
+✔️ Handle transactions, concurrency, and indexing
+✔️ Apply SQL in real-world analytics and projects
+
+⸻
+
+⚡ Pro Tip:
+
+SQL is more than writing queries — it’s about data logic, structure, and optimization.
+Interviewers love candidates who can explain why their queries perform better.
+
+⸻
+
+🚨 Remember:
+“SQL is the language of data — don’t just learn it, master it.”
+
+⸻
+
+Found it helpful?
+♻️ Repost to help others learn faster
+💾 Save for your interview prep
+📘 Download the PDF: Link in comments
+
+⸻
+
+#SQL #SQLRoadmap #DataAnalytics #DataEngineer #DataScience #LearnSQL #SQLCheatSheet #DatabaseDesign #DataCareer #TajamulKhan #PowerBI #InterviewPrep #AnalyticsCommunity #DataLearning
+
+=== 2025-10-27_Pandas-vs-PySpark-The-Ultimate-Showdown_DQVtgUaAdyT  [1 slides]
+https://www.instagram.com/p/DQVtgUaAdyT/
+🚀 Pandas vs PySpark — The Ultimate Showdown! 🐼🔥
+
+Whether you’re a Data Analyst or a Data Engineer, this one’s for you!
+Both Pandas and PySpark are data powerhouses — but which one are you mastering?
+
+💡 Pandas → Perfect for small to medium datasets (local processing)
+⚡ PySpark → Scales like a beast for big data (distributed processing)
+
+This cheat sheet shows you how the same operations look in both — side by side 👇
+From filtering and joining to handling nulls and renaming columns, I’ve got you covered!
+
+🧠 Save this post — it’s your instant translator between Pandas and PySpark.
+📈 Share it with your data fam — they’ll thank you later!
+
+👇 Comment below 👇
+Which one do you use more — Pandas 🐼 or PySpark ⚙️?
+
+#DataScience #Python #PySpark #Pandas #BigData #MachineLearning #DataEngineer #DataAnalyst #SQL #Analytics #TajamulKhan #PythonForDataScience #CodingLife #DataCommunity
+
+=== 2025-10-25_The-7-Soft-Skills-Every-Data-Professional-Must-Master_DQQwAt_AYN-  [6 slides]
+https://www.instagram.com/p/DQQwAt_AYN-/
+💡 The 7 Soft Skills Every Data Professional Must Master
+
+Everyone talks about SQL, Python & Power BI…
+But let’s be real — soft skills are what actually get you hired and promoted.
+
+Here’s your Data Soft Skills Cheat Sheet 👇
+✅ Communication — Simplify insights for impact
+✅ Problem Solving — Think beyond numbers
+✅ Attention to Detail — Spot errors before they spread
+✅ Time Management — Automate, prioritize, deliver
+✅ Collaboration — Learn, share, grow together
+✅ Adaptability — Stay flexible, keep learning
+✅ Business Acumen — Align data with decisions
+
+⚡ Technical skills open the door. Soft skills keep it open.
+
+♻️ Save this post for your next interview prep or performance review.
+❤️ Share it with a data friend who needs to see this.
+
+#DataScience #DataAnalyst #MachineLearning #AnalyticsCareer #DataProfessional #SoftSkills #CareerGrowth #DataAspirants #DataDriven #PowerBI #Python #SQL #Excel #CareerDevelopment #TechCareers #DataJourney #DataInsights #AICommunity #DataStorytelling #DataWorld
+
+=== 2025-10-24_The-Only-Computer-Vision-Cheat-Sheet-You-ll-Ever-Need_DQOF8pPAf_5  [10 slides]
+https://www.instagram.com/p/DQOF8pPAf_5/
+💥 The Only Computer Vision Cheat Sheet You’ll Ever Need 👁️
+
+When I started learning Computer Vision, I was completely lost.
+Pixels, filters, YOLO, GANs — everything felt like a maze.
+
+If you’ve ever felt the same…
+This cheat sheet will save you hours of Googling and confusion ⚡
+
+Here’s what’s inside 👇
+📸 Image Manipulation: Grayscale, Resize, Normalize
+🎯 Edge Detection: Canny, Gaussian Blur
+🌀 Data Augmentation: Rotation, Flip, Scale
+🔍 Object Detection: YOLO, Faster R-CNN
+😎 Face Recognition & OCR
+🎨 Image Generation: GANs
+
+💡 Pro Tip:
+Always normalize & augment your images before training — and use pretrained models like YOLO or EfficientNet to boost accuracy 🚀
+
+🧠 Remember:
+
+“Computer Vision is how machines see the world — make every pixel count.”
+
+📂 Need this PDF. Follow and Comment PDF
+
+#ComputerVision #DeepLearning #AICommunity #MachineLearning #DataScience #ArtificialIntelligence #ImageProcessing #YOLOv8 #NeuralNetworks #PythonForAI #DataScienceJourney #AIDevelopment #VisionAI #TechCareer #AIForBeginners #OpenCV #DLforVision #AIEducation #DataAnalyst #MachineLearningEngineer #DataScienceLife #AIRevolution #AITools #LearnAI #AITrends #MLCommunity #PythonLearning #AIProjects #TechLearning #AIinAction
+
+=== 2025-10-21_The-Only-R-Cheat-Sheet-You-ll-Ever-Need_DQGU72WAaxX  [10 slides]
+https://www.instagram.com/p/DQGU72WAaxX/
+📊 The Only R Cheat Sheet You’ll Ever Need 💥
+
+R isn’t just a language — it’s a powerhouse for data analysis, visualization, and statistical computing.
+
+When I started learning R, terms like ggplot2, dplyr, and data wrangling felt overwhelming.
+So I created this ultimate cheat sheet to make your R journey effortless. 🚀
+
+✨ What’s Inside?
+✅ Basic Operations – c(), seq(), rep(), paste(), typeof()
+✅ Data Structures – vector, matrix, list, data.frame, tibble
+✅ Data Manipulation – filter(), mutate(), summarize()
+✅ Visualization – ggplot(), geom_bar(), geom_line(), geom_point()
+✅ Modeling – lm(), glm(), summary(), anova(), predict()
+
+💡 Pro Tip:
+Use ggplot2 for stunning visuals & dplyr for seamless data wrangling.
+R makes data storytelling powerful, precise, and beautiful.
+
+Found it helpful?
+👉 Save it 🔖
+👉 Share it ♻️
+👉 Follow for more data magic 💻
+
+#rprogramming #rstats #datascience #machinelearning #dataanalysis #rstat #rforbeginners #rcheatsheet #datavisualization #ggplot2 #dplyr #tidyverse #programming #coding #analytics #pythonvsr #datatools #learnr #statisticalanalysis #datainsights #rlearning #datascientist #datawrangling #rcommunity #rprojects #dataengineer #rusers #computerscience #datatips #tajamulkhan
+
+=== 2025-10-19_Don-t-Walk-Into-Any-Data-Interview-Without-This_DQBJdT8ARQ8  [9 slides]
+https://www.instagram.com/p/DQBJdT8ARQ8/
+📊 Don’t Walk Into Any Data Interview Without This
+
+Only Statistics Cheat Sheet You’ll Ever Need.
+
+Statistics is the backbone of Data Science — it helps you make sense of data, validate insights, and build models that actually work.
+
+When I started learning, I struggled with formulas, tests, and interpreting results.
+That’s why I created this Statistics Cheat Sheet — everything you need, simplified in one place.
+
+⸻
+
+Inside the Cheat Sheet:
+
+✔️ Descriptive & Inferential Statistics
+✔️ Probability Distributions
+✔️ Hypothesis Testing (Z-Test, T-Test, ANOVA, Chi-Square)
+✔️ Correlation & Regression Analysis
+✔️ Sampling Techniques
+✔️ Visualization & Interpretation
+
+⸻
+
+💡 Pro Tip:
+Don’t just memorize formulas — learn when and why to use them.
+That’s what separates a good analyst from a great one.
+
+⸻
+
+🚨 Remember:
+“Statistics isn’t about numbers — it’s about understanding stories hidden in data.”
+
+Found it helpful?
+♻️ Repost & share with someone preparing for data interviews.
+📥 Save this post — you’ll thank yourself later.
+📈 Follow @tajamul.datascientist for more cheat sheets, projects & data roadmaps.
+
+#Statistics #DataScience #MachineLearning #DataAnalyst #StatisticsCheatSheet #DataScienceCommunity #PythonForDataScience #AnalyticsCareer #MathsForDataScience #InferentialStatistics #DescriptiveStatistics #Probability #HypothesisTesting #ANOVA #ZTest #TTest #Correlation #Regression #SamplingTechniques #DataVisualization #PowerBI #Tableau #DataDriven #CareerInData #LearnDataScience #TajamulKhan #DataScientist #SQL #InterviewPrep
+
+=== 2025-10-16_Only-Deep-Learning-Cheat-Sheet-You-ll-Ever-Need_DP5TP1FAcaJ  [12 slides]
+https://www.instagram.com/p/DP5TP1FAcaJ/
+🚀 Only Deep Learning Cheat Sheet You’ll Ever Need!
+
+When I started with Deep Learning, I was *lost* in neural networks, activation functions & optimizers 🤯 
+If you’ve ever felt the same — this cheat sheet is your ultimate roadmap! 🔥
+
+What’s inside👇 
+✅ Core Deep Learning Concepts — Neural Nets, Activations, Optimizers 
+✅ Training & Evaluation Strategies 
+✅ CNNs, RNNs & Transformers Simplified 
+✅ Pro Tips — Hyperparameter Tuning, Dropout, Regularization 
+
+💡 Pro Tip: Always experiment with architectures & use dropout/regularization to fight overfitting.
+
+📌 Save this post for later 
+👥 Share with your AI friends who are learning Deep Learning! 
+⚡ Mastering DL = unlocking the core of modern AI.
+
+#DeepLearning #MachineLearning #ArtificialIntelligence #DataScience #NeuralNetworks #AICommunity #AIResearch #DeepLearningAI #DL #ML #PythonForAI #AIEducation #AIRevolution #AITrends #AIInnovation #AIModels #TransformersAI #ComputerVision #NaturalLanguageProcessing #AIForGood #DataScienceCommunity #DataScienceLife #LearnAI #BigDataAnalytics #DeepLearningModels #AITech #MLModels #CodingForAI #FutureOfAI
+
+=== 2025-10-15_The-Only-Agentic-AI-Cheat-Sheet-You-ll-Ever-Need_DP2ykonAbDT  [10 slides]
+https://www.instagram.com/p/DP2ykonAbDT/
+🚀 The Only Agentic AI Cheat Sheet You’ll Ever Need
+
+Agentic AI is revolutionizing how we build intelligent systems — from autonomous task execution to multi-agent collaboration.
+Whether you’re an AI Engineer, Data Scientist, or just exploring the future of AI, mastering Agentic AI is becoming essential.
+
+Here’s what you’ll find inside 👇
+⚙️ AI Agent Types — Reactive, Planning & Collaborative
+🧠 Leading Frameworks — LangChain, LlamaIndex, CrewAI, AutoGen, Semantic Kernel
+🏗️ Agent Architecture — Planner, Executor, Memory, Reasoner, Interface
+🔑 Core Components — LLMs (GPT-4o, Claude 3, Gemini 1.5), Vector DBs, Tool integrations
+🌀 Agentic Patterns — ReAct, Plan-Execute, Reflection Loop, Team Agent Workflows
+📊 Evaluation Metrics — Task success, Step efficiency, Tool accuracy, Safety checks
+💼 Real-World Use Cases — Business automation, Data analysis, Code generation, RAG systems
+💻 Tools & Platforms — Complete ecosystem from frameworks to hosting
+💥 Bonus — Ready-to-use LangChain Python Agent snippet
+
+💡 Pro Tip: Don’t just read — build.
+Start with a ReAct loop, add memory, integrate tools, and watch your agent come alive.
+Because the future of AI isn’t static — it’s Agentic.
+
+⚡ Save this post for later & share it with someone who’s building AI agents!
+
+#AgenticAI #AIagents #LangChain #LlamaIndex #CrewAI #AutoGen #SemanticKernel #AIengineering #AItools #AIecosystem #ArtificialIntelligence #MachineLearning #GenerativeAI #AIcommunity #AIforEveryone #PythonAI #LangChainAgents #AutonomousAI #AIautomation #DataScienceCommunity #DeepLearning #AIframeworks #TechInnovation #FutureOfAI #AIresearch #AIengineer #OpenAI
+
+=== 2025-10-14_Only-Tableau-Cheat-Sheet-You-ll-Ever-Need_DP0LUO6gV_n  [14 slides]
+https://www.instagram.com/p/DP0LUO6gV_n/
+🚀 Only Tableau Cheat Sheet You’ll Ever Need! 🎨
+
+Tableau is more than just charts — it’s the art of turning data into stories.
+Whether you’re a Data Analyst, Scientist, or BI Pro, this guide is your shortcut to mastering it.
+
+When I started, Tableau looked overwhelming —
+too many charts, calculations, and options 😅
+So I built this one-stop Tableau Cheat Sheet to make things crystal clear!
+
+🔥 Inside You’ll Find:
+📊 Essential Tableau functions & shortcuts
+⚙️ Table Calcs & LOD Expressions made simple
+💡 Pro dashboard design & storytelling tips
+🎯 Advanced tricks for interactivity
+
+💬 Pro Tip:
+Master Calculated Fields, LODs, and Parameters — that’s where real Tableau magic happens ✨
+
+📍 “Good charts show data. Great charts tell stories.”
+
+If this helped you —
+❤️ Save it for later
+🔁 Share it with your network
+👥 Tag your data buddy who needs this boost!
+
+#Tableau #DataVisualization #DataAnalyst #BusinessIntelligence #DataScience #Analytics #DataStorytelling #DashboardDesign #LearnTableau #DataCommunity #PowerBI #SQL #Excel #Visualization #DataAnalysis #DataDriven #TechContent #DataIsBeautiful #BI #DataViz
+
+=== 2025-10-12_Don-t-Walk-Into-a-Data-Interview-Without-These-Python-Basics_DPu64Q0gaM0  [10 slides]
+https://www.instagram.com/p/DPu64Q0gaM0/
+🚨 Don’t Walk Into a Data Interview Without These Python Basics!
+
+Most aspiring data pros show up with big projects… but stumble on the fundamentals that actually matter.
+
+That’s why I created “The Ultimate Python Basics Cheat Sheet” — your go-to guide for mastering Python for data roles.
+
+Here’s what’s inside 👇
+✅ Essential Python concepts made simple
+✅ Real-world examples for analysts & scientists
+✅ Tips to write cleaner, faster, interview-ready code
+
+💡 Pro Tip:
+Mastering the basics = cleaner logic, sharper analysis & fewer bugs 🧠
+
+🔥 Remember:
+“In interviews, it’s not just what you build — it’s how you think.”
+
+💾 Save it | 🔁 Repost | 👥 Tag a friend prepping for a data role
+
+=== 2025-10-11_Only-Machine-Learning-Cheat-Sheet-You-ll-Ever-Need_DPsbQcqgdbX  [10 slides]
+https://www.instagram.com/p/DPsbQcqgdbX/
+🚀 Only Machine Learning Cheat Sheet You’ll Ever Need!
+
+Machine Learning is the heart of Data & AI. Whether you’re a Data Scientist, ML Engineer, or just starting your journey — this cheat sheet is your shortcut to mastering the concepts that matter most.
+
+When I began learning ML, the algorithms and models felt overwhelming. That’s why I built this — to make Machine Learning simple, structured, and actionable.
+
+Here’s what’s inside 👇
+✅ Core ML fundamentals for beginners
+✅ Supervised, Unsupervised & Reinforcement learning simplified
+✅ Tips for model tuning, validation & optimization
+✅ Advanced topics — Clustering, Neural Nets, Deep Learning, Hyperparameters
+
+💡 Pro Tip:
+Keep experimenting — feature engineering + model evaluation = mastery 💪
+
+🚨 Remember: “Machine Learning is your ticket to a career in Data & AI.”
+
+Found it helpful?
+❤️ Save it | 🔁 Repost | 👇 Tag a friend learning ML
+
+=== 2025-10-10_Only-Excel-Cheat-Sheet-You-ll-Ever-Need_DPp6mNuAXt1  [10 slides]
+https://www.instagram.com/p/DPp6mNuAXt1/
+🔥 Only Excel Cheat Sheet You’ll Ever Need! 🔥
+
+Excel isn’t just a spreadsheet — it’s a superpower for data analysis, reporting, and automation. 💪
+From VLOOKUPs to PivotTables, these skills can 10x your productivity! ⚡
+
+📘 What’s Inside:
+✅ Basic: SUM, AVERAGE, IF
+✅ Lookups: VLOOKUP, XLOOKUP, INDEX-MATCH
+✅ Text: LEFT, RIGHT, TRIM, SUBSTITUTE
+✅ Date-Time: TODAY, NOW, DATEDIF
+✅ Cleaning: CLEAN, PROPER, LOWER
+✅ Logic: AND, OR, IFS
+✅ Pivots: Filters, Slicers, Calculated Fields
+✅ Data Tools: Remove Duplicates, Power Query, VBA
+✅ Visualization: Charts, Conditional Formatting
+
+💡 Pro Tip:
+Use PivotTables + Slicers to summarize big data like a pro!
+
+🚀 Excel = Data Analyst’s best friend.
+Save this cheat sheet for quick reference!
+
+If you found it helpful —
+❤️ Like
+💬 Comment “Excel Master”
+🔁 Repost & Tag a friend
+
+#Excel #DataAnalysis #ExcelTips #ExcelCheatSheet #DataAnalyst #PowerBI #Spreadsheet #DataScience #VLOOKUP #PivotTable #Automation #Analytics #ExcelTraining #ExcelTutorial #DataCleaning #MicrosoftExcel #ExcelDashboard #ExcelLearning #ExcelSkills #ExcelForBeginners #LearnExcel #ExcelExpert #ExcelFormulas #ExcelIndia #DataVisualization #DataAnalytics #ExcelCommunity #ExcelLovers
+
+=== 2025-10-07_Only-PySpark-Cheat-Sheet-You-ll-Ever-Need_DPiLSTvARWb  [10 slides]
+https://www.instagram.com/p/DPiLSTvARWb/
+🔥 Only PySpark Cheat Sheet You’ll Ever Need!
+
+Whether you’re a Data Engineer, Data Analyst, or Data Scientist, mastering PySpark is essential for working with massive datasets.
+
+When I first started with Spark, the syntax felt complex — until I realized it’s basically Pandas for Big Data. That’s when everything clicked.
+
+If you’re preparing for data interviews or want to analyze large-scale data like a pro, this cheat sheet is your ultimate guide!
+
+What’s Inside:
+⚡ Load & process huge datasets efficiently
+🔗 Join, filter & transform data with real-world syntax
+🧹 Clean, aggregate & reshape data at scale
+🧠 Run SQL queries directly on Spark DataFrames
+🚀 Handle nulls, data types & outliers like a pro
+
+💡 Pro Tip:
+PySpark isn’t just about big data — it’s about speed and scalability.
+Interviewers love when you explain how your code improves performance and drives smarter decisions.
+
+⚠️ Remember: “PySpark lets you scale like a boss — don’t just learn it, master it.”
+
+Found it helpful?
+🔁 Repost & tag a data friend!
+
+#PySpark #BigData #DataScience #DataAnalytics #MachineLearning #DataEngineer #DataScientist #Spark #ApacheSpark #Python #SQL #CheatSheet #InterviewPrep #Analytics #DataCommunity #CodeBetter #LearnDataScience
+
+=== 2025-10-06_Only-Python-Optimization-Cheat-Sheet-You-ll-Ever-Need_DPflM33ga_3  [8 slides]
+https://www.instagram.com/p/DPflM33ga_3/
+🚀 Only Python Optimization Cheat Sheet You’ll Ever Need
+
+Writing efficient Python code is essential for faster execution and better memory management—whether you’re a Data Analyst, Data Scientist, or Software Engineer.
+
+When I first started, I didn’t realize how much performance gain simple tweaks could bring.
+If that sounds like you, this cheat sheet is the perfect guide to simplify your Python optimization journey! ⚡
+
+Here’s what you’ll find inside:
+✔️ List Comprehensions – Faster, cleaner loops
+✔️ Built-in Functions – Leverage Python’s internal optimizations
+✔️ Generators – Handle large datasets efficiently
+✔️ Avoid Unnecessary Variables – Save memory smartly
+✔️ Multiprocessing – Run tasks in parallel for massive speedups
+
+💡 Pro Tip:
+Use generators for large-scale data handling and unlock CPU power with multiprocessing for heavy tasks to maximize performance.
+
+🚨 Remember: “Optimized code isn’t just faster—it’s smarter!”
+
+Found it helpful? ♻️ Repost & save this for later!
+
+#Python #PythonProgramming #PythonTips #PythonDeveloper #PythonCode #PythonLearning #PythonCommunity #LearnPython #CodeOptimization #DataScience #MachineLearning #DeepLearning #DataScientist #DataAnalytics #AI #BigData #CodingLife #Programmer #SoftwareEngineer #CodeSmarter #CleanCode #PythonTricks #PythonForDataScience #TechCommunity #100DaysOfCode #CodeNewbie #DataEngineer #PythonProjects #DeveloperLife #TajamulKhan
+
+=== 2025-10-04_Don-t-Walk-Into-Any-Interview-Without-Knowing-These-SQL-Quer_DPaZr1AE3Gl  [10 slides]
+https://www.instagram.com/p/DPaZr1AE3Gl/
+🎯 Don’t Walk Into Any Interview Without Knowing These SQL Queries!
+
+SQL is the heartbeat of every data role — whether you’re interviewing for a Data Analyst, Data Scientist, Data Engineer, or Database Administrator position.
+
+When I started preparing for interviews, I was overwhelmed by the number of SQL questions and their real-world applications. If that sounds like you — this Complete SQL Q&A Guide is exactly what you need to simplify your prep and ace your interviews! 💪
+
+Here’s what’s inside:
+✅ Most-asked SQL questions from MAANG interviews
+✅ How to explain and apply SQL concepts in real-world scenarios
+✅ Tips to connect your answers with business impact
+✅ Deep dives into joins, window functions, query optimization, indexing, and more
+
+💡 Pro Tip:
+Interviewers care less about how many queries you’ve memorized — and more about how you think.
+Be ready to explain your logic, approach, and how you turn data into insights.
+
+🚨 Remember:
+“It’s not just about writing queries — it’s about showcasing your analytical mindset through SQL!”
+
+♻️ Save & Share
+
+Comment PDF to get the PDF
+
+#SQL #DataAnalyst #DataScience #DataEngineer #DataAnalytics #SQLQueries #SQLInterview #DataInterview #TechInterview #InterviewPreparation #SQLTips #SQLforDataScience #SQLCheatSheet #LearnSQL #DataSkills #BusinessIntelligence #PowerBI #Python #AnalyticsCommunity #TechCareers #DataCareers #MachineLearning #BigData #DataVisualization #Database
+
+=== 2025-10-03_SQL-for-Data-Analysis-The-Ultimate-Data-Cleaning-Cheat-Sheet_DPX08ALAX-G  [10 slides]
+https://www.instagram.com/p/DPX08ALAX-G/
+🚀 SQL for Data Analysis: The Ultimate Data Cleaning Cheat Sheet
+
+Let’s be honest — 80% of data analysis is cleaning messy data.
+Before dashboards, models, or insights can come alive, your data needs to be clean, consistent, and reliable.
+
+That’s why I created this quick SQL Data Cleaning Cheat Sheet — so you can spend less time fixing data and more time uncovering insights 🔍
+
+🧹 1. Handle Missing Values
+COALESCE(col, default) → Replace NULLs
+IFNULL(col, default) → Alternative syntax
+
+🧭 2. Remove Duplicates
+DISTINCT → Quick fix
+ROW_NUMBER() OVER (PARTITION BY …) → Keep the latest/valid record
+
+✍️ 3. Standardize Text
+UPPER() / LOWER() → Uniform casing
+TRIM() → Remove extra spaces
+REPLACE() / REGEXP_REPLACE() → Clean unwanted characters
+
+📅 4. Fix Dates
+TO_DATE(string, format) → Standardize formats
+EXTRACT(YEAR | MONTH | DAY) → Break down components
+
+📊 5. Handle Outliers
+Use AVG() + STDDEV() → Detect unusual values
+Cap or filter values beyond the threshold
+
+🔍 6. Detect Entry Errors
+REGEXP → Spot invalid emails or phone numbers
+
+🏷️ 7. Standardize Categories
+CASE WHEN or mapping tables → Normalize inconsistent entries
+
+💬 8. Remove Special Characters
+REGEXP_REPLACE() / REPLACE() → Clean text columns
+
+💡 Pro Tips:
+✔️ Always clean before joining datasets
+✔️ Profile data (NULL %, distinct values, min/max)
+✔️ Document your cleaning rules — future-you will thank you 🙌
+
+🚀 Remember:
+“Clean data = credible insights.”
+
+If you found this helpful — Save it, Repost it, and tag a friend who’s learning SQL!
+Follow me for more SQL + Data Analysis gems 💎
+
+#SQL #DataCleaning #DataAnalysis #DataAnalytics #SQLCheatSheet #LearnSQL #DataScience #DataEngineer #BusinessIntelligence #ETL #QueryOptimization #DataPreparation #DataWrangling #DataQuality #SQLTips #Analytics #DataCommunity #CleanData #SQLForDataAnalysis #TechCareers #MachineLearning #DataTransformation #BI #DataDriven #Python #PowerBI #Tableau #DataInsights #SQLLearning #Upskill
+
+=== 2025-10-03_Don-t-Walk-Into-a-Data-Interview-Without-Knowing-These-KPIs_DPWQ7fTAYcs  [12 slides]
+https://www.instagram.com/p/DPWQ7fTAYcs/
+🚨 Don’t Walk Into a Data Interview Without Knowing These KPIs!
+
+Whether you’re aiming for Data Analyst, Data Scientist, or BI roles—KPIs are a make-or-break factor in interviews.
+
+When I first started preparing, I was lost in a sea of KPIs 🤯. That’s why I created this cheat sheet to help you focus on the right ones and ace your interviews with confidence!
+
+📊 Inside the Cheat Sheet:
+✔️ Top Data KPIs interviewers always ask
+✔️ How to explain + apply KPIs in real scenarios
+✔️ Tips to tie KPIs back to business impact
+✔️ Advanced financial, marketing & operational KPIs
+
+💡 Pro Tip:
+Interviewers don’t just want the formula. They want to know:
+👉 Why the KPI matters
+👉 How you calculate it
+👉 How it drives decision-making
+
+🔥 Remember: KPIs aren’t just numbers—they’re the story behind the data.
+
+Found this helpful?
+❤️ Save it for later
+♻️ Share with a friend preparing for interviews
+
+#DataAnalytics #DataScience #DataScientist #BusinessIntelligence #DataAnalyst #Analytics #BigData #DataDriven #MachineLearning #AI #ArtificialIntelligence #DataEngineer #SQL #Python #PowerBI #Tableau #Excel #DataVisualization #CareerTips #InterviewTips #JobInterview #TechJobs #CareerGrowth #DataCommunity #KPI #Metrics #BusinessAnalytics #DataStrategy #CareerSuccess #LearnDataScience
+
+=== 2025-10-02_The-Only-NLP-Cheat-Sheet-You-ll-Ever-Need_DPTq9ncgTPY  [12 slides]
+https://www.instagram.com/p/DPTq9ncgTPY/
+🚀 The Only NLP Cheat Sheet You’ll Ever Need
+
+Natural Language Processing (NLP) is a must-have skill for anyone in AI, Machine Learning, or Data Science.
+
+When I began my NLP journey, I was stuck on tokenization, embeddings, and text classification. If that sounds like you — this cheat sheet is your shortcut to mastering NLP faster.
+
+🔑 Here’s what you’ll find inside:
+✔️ Core NLP techniques – Tokenization, Stopword Removal, Stemming, Lemmatization
+✔️ Text representation – Bag-of-Words, TF-IDF, Word Embeddings
+✔️ Key NLP tasks – Sentiment Analysis, Named Entity Recognition (NER), Topic Modeling
+✔️ Advanced NLP – Transformers like GPT & BERT for text generation and classification
+
+💡 Pro Tip:
+Preprocessing is everything. Clean your text first, then use embeddings like Word2Vec or GloVe for richer context.
+
+✨ Remember:
+
+“NLP is the art of making machines understand human language.”
+
+📌 Save this post & share it with someone learning NLP!
+
+⸻
+
+#NaturalLanguageProcessing #NLP #MachineLearningCommunity #DeepLearning #DataScienceLife #AIForBeginners #LearnAI #TextMining #NLPProjects #MLEngineer #ArtificialIntelligence #DataScienceJourney #TechCareers
+
+=== 2025-09-30_Clean-Data-with-SQL-The-Ultimate-Cheat-Sheet_DPP6VJVgfVL  [1 slides]
+https://www.instagram.com/p/DPP6VJVgfVL/
+Clean Data with SQL – The Ultimate Cheat Sheet! 🔥
+
+Great analytics need great data—SQL can clean at source for faster, trustworthy insights.
+
+What this cheat sheet covers:
+
+Handle missing and duplicate data ✅
+
+Inspect and explore tables ✅
+
+Fix column issues (rename, types, trim) ✅
+
+Filter, select, and slice rows ✅
+
+Merge, group, and aggregate ✅
+
+Pro tip 💡: Push cleaning to SQL where possible—less data movement, faster pipelines, and reproducible transformations.
+
+Perfect for interviews, dashboards, and production ETL—save this and keep it handy for reliable, scalable data prep.
+
+🔥 Remember: Good analysts query. Great analysts clean, model, and then query.
+
+#SQL #DataCleaning #DataQuality #DataScience #Analytics #ETL #DataEngineering #BusinessIntelligence #DataPreparation #DataWrangling #DataAnalysis #BigData #SQLServer #PostgreSQL #MySQL #Snowflake #Redshift #DatabricksSQL #DataPipeline #DataGovernance #DataOps #SQLTips #SQLCheatSheet #DataDriven #BusinessAnalytics #DataEngineer #DataScientist #AnalyticsEngineering #DBA #DataPrep
+
+=== 2025-09-29_Data-Cleaning-in-Python-The-Ultimate-Cheat-Sheet_DPMZSI2gRus  [1 slides]
+https://www.instagram.com/p/DPMZSI2gRus/
+🚀 Data Cleaning in Python – The Ultimate Cheat Sheet! 🐍
+
+When it comes to Data Science, your analysis is only as good as your data.
+That’s why mastering data cleaning is non-negotiable.
+
+This Python Cheat Sheet simplifies the most essential Pandas operations:
+✅ Handle missing and duplicate data
+✅ Inspect & understand your dataset
+✅ Rename, convert, and clean columns
+✅ Filter, slice, and select rows
+✅ Merge & group data effortlessly
+
+💡 Pro Tip: Clean data = clean insights. Always spend time exploring and preprocessing your dataset before jumping into modeling or visualization. It will save you hours (and sometimes days) later!
+
+Whether you’re preparing for interviews, building dashboards, or solving real-world business problems, keep this sheet handy—it’s your quick reference for making data usable, reliable, and powerful.
+
+🔥 Remember: Good analysts analyze. Great analysts clean, prepare, and then analyze.
+
+#Python #DataScience #MachineLearning #ArtificialIntelligence #BigData #Analytics #DeepLearning #Coding #Programming #DataCleaning #DataAnalysis #BusinessIntelligence #PythonForDataScience #DataPreparation #Pandas #NumPy #DataWrangling #DataEngineer #SQL #Statistics #DataVisualization #ETL #ML #AI #DataDriven #PythonProgramming #DataScientist #BusinessAnalytics #DataPrep #PythonCheatSheet
+
+=== 2025-09-28_Only-Tableau-Cheat-Sheet-You-ll-Ever-Need_DPI63ItgcM9  [10 slides]
+https://www.instagram.com/p/DPI63ItgcM9/
+Only Tableau Cheat Sheet You’ll Ever Need! 🚀
+
+Struggling with Tableau’s endless charts, functions & LODs?
+I’ve got you covered with this all-in-one cheat sheet.
+
+📌 Inside you’ll learn how to:
+✅ Master essential Tableau functions & shortcuts
+✅ Build dynamic dashboards step by step
+✅ Simplify table calcs & LOD expressions
+✅ Apply pro tricks for interactive storytelling
+
+💡 Pro Tip:
+Unlock Tableau’s full power by mastering Calculated Fields, LODs & Parameter Controls.
+
+⚡ Remember: “Data visualization isn’t about charts—it’s about insights.”
+
+👇 If this helps:
+❤️ Save it
+♻️ Repost to share with your network
+👥 Tag a friend who needs it
+
+#Tableau #DataVisualization #DataAnalyst #BusinessIntelligence 
+#DataScience #Analytics #DataStorytelling #DashboardDesign 
+#DataAnalytics #SQL #PowerBI #Excel #LearnTableau #Visualization
+
+=== 2025-09-25_The-Only-RAG-Cheat-Sheet-You-ll-Ever-Need_DPBfg-UgTEV  [14 slides]
+https://www.instagram.com/p/DPBfg-UgTEV/
+🚀 The Only RAG Cheat Sheet You’ll Ever Need
+
+RAG is the backbone of today’s AI apps — powering chatbots, knowledge assistants & document search.
+If you’re working with LLMs, RAG isn’t optional anymore.
+
+When I started, I struggled with all the moving parts — loaders, embeddings, retrievers, evaluation.
+So I made this RAG Cheat Sheet 📝 — a clean, simple guide to make RAG crystal clear.
+
+✨ What’s Inside:
+✔️ Core Components → Loaders, Splitters, Embeddings, Vector DBs, Retrievers, LLMs
+✔️ Preprocessing → Clean noisy data, headers/footers, formatting
+✔️ Vector Stores → FAISS, Pinecone, Chroma
+✔️ Retrieval → k values, similarity vs. MMR, thresholds
+✔️ Evaluation → Faithfulness, Relevance, Retrieval Quality
+✔️ Best Practices → Chunking, overlap, temperature, caching, monitoring, security
+
+💡 Pro Tip: Good RAG = smart chunking + strong retrieval.
+If those fail, your LLM will hallucinate — no matter how powerful it is.
+
+🚨 RAG isn’t just a technique — it’s the key to making LLMs useful in the real world.
+
+👉 Save this post.
+👉 Share it with your AI friends.
+👉 Follow @tajamulkhan for more Data + AI content.
+
+#RAG #GenerativeAI #LangChain #LLMs #MachineLearning #ArtificialIntelligence #DataScience #MLOps #VectorDatabases #Embeddings #DeepLearning #AIEngineer #AIDevelopment #TechInnovation #FutureOfAI #AICommunity #AITrends #AIForGood #MLengineer #AIRevolution #DataScientist #AIApplications #AIML #BigDataAI #NeuralNetworks #DataScienceCommunity #AIInBusiness #AITools #AITech #AIexplained
+
+=== 2025-09-25_Don-t-Walk-into-a-Power-BI-Interview-Without-THIS-DAX-Cheat_DPDRXegAdwA  [18 slides]
+https://www.instagram.com/p/DPDRXegAdwA/
+🚨 Don’t Walk into a Power BI Interview Without THIS DAX Cheat Sheet! 🚨
+
+DAX is the 💡 brain of Power BI — it transforms raw data into powerful insights that drive decision-making.
+
+When I first started with DAX, the formulas felt endless and overwhelming. That’s why I built this all-in-one DAX Cheat Sheet to make learning simple & practical.
+
+✨ What’s Inside?
+✅ Essential DAX fundamentals
+✅ Smart techniques to solve Power BI challenges
+✅ Strategies to build dynamic dashboards & reports
+✅ Advanced functions like CALCULATE + Time Intelligence
+
+💡 Pro Tip:
+Use calculated columns, measures, and DAX Studio to boost performance & efficiency.
+
+DAX isn’t just formulas — it’s your ticket to mastering Power BI interviews and building dashboards that impress!
+
+🔥 Found this helpful?
+♻️ Save & Share with your network!
+
+#PowerBI #DAX #PowerBIDashboard #DataAnalytics #DataVisualization #DataScience #BusinessIntelligence #BI #Analytics #DashboardDesign #DataAnalyst #SQL #Excel #DataDriven #BigData #DataEngineer #DataStorytelling #InterviewPrep #TechCareers #LearnDAX #DataSkills #PowerBICommunity #MicrosoftPowerBI #DataInsights #BIAnalyst #DataScienceCommunity #CareerGrowth #AnalyticsLife #Dashboard #DataNerd
+
+=== 2025-09-21_Pandas-vs-PySpark-Cheat-Sheet-is-Here_DO-CHACAZDN  [1 slides]
+https://www.instagram.com/p/DO-CHACAZDN/
+⚡ Pandas vs PySpark Cheat Sheet is Here! ⚡
+
+Whether you’re working with small data on your laptop or big data on clusters, Pandas and PySpark are the two engines driving modern data analysis.
+
+When I started out, I constantly asked myself:
+❓ “How do I do this Pandas operation in PySpark?”
+❓ “What’s the PySpark equivalent of this DataFrame task?”
+
+Switching between them wasn’t always easy—different syntax, different workflows.
+So I built this side-by-side cheat sheet to make it painless! 🚀
+
+✨ Here’s what’s inside:
+➡️ Select, filter, and sort rows easily
+➡️ Group, aggregate, and join like a pro
+➡️ Handle missing data smartly
+➡️ Translate logic smoothly between Pandas and PySpark
+
+💡 Pro Tip:
+Mastering both gives you the power to move seamlessly between small projects and massive data pipelines.
+
+🚨 Always remember:
+“Pandas is where you learn the art. PySpark is where you learn to scale.”
+
+Found it helpful?
+👉 Save & ♻️ Repost to help others!
+
+#Pandas #PySpark #BigData #DataEngineering #DataScience #DataAnalytics #DataScientist #Spark #DataPipeline #DataWrangling #ETL #MachineLearning #DataScienceCommunity #PythonForDataScience #BigDataAnalytics #LearnDataScience #DataEngineer #Analytics #PythonDataScience #DataCleaning #DataTransformation #CloudComputing #DataScienceTools #EDA #DataNerd #DataDriven #ProgrammingLife #PythonProgramming #DataIsBeautiful #DataScienceJourney
+
+=== 2025-09-21_Only-Seaborn-Cheat-Sheet-You-Will-Ever-Need_DO43_Q-AdKc  [9 slides]
+https://www.instagram.com/p/DO43_Q-AdKc/
+📊 Only Seaborn Cheat Sheet You Will Ever Need!
+
+Seaborn is an essential skill for anyone working with data—whether you’re a Data Analyst, Data Scientist, or Engineer.
+
+When I first started using Seaborn, I was overwhelmed by its advanced statistical visualizations, themes, and integration with Pandas. If that sounds like you, this cheat sheet is the perfect guide to simplify your Seaborn learning journey!
+
+✨ Here’s what you’ll find inside:
+✔️ Core Seaborn fundamentals for beginners
+✔️ Strategies to create stunning and informative visualizations
+✔️ Tips for customizing plots, themes, and color palettes
+✔️ Advanced topics like regression plots and pair plots
+
+💡 Pro Tip:
+Use sns.set_theme(style=‘whitegrid’) for clean, professional plots.
+Try sns.pairplot() to explore relationships in your dataset and sns.heatmap() for insightful correlation analysis.
+
+🚨 Remember: Great visualizations make complex data easy to understand and interpret.
+
+Found it helpful?
+👉 Save & ♻️ Repost to help others!
+
+#Seaborn #DataVisualization #PythonForDataScience #MachineLearning #DataScience #DataAnalytics #PythonVisualization #BigData #PythonLibraries #LearnPython #DataScientist #DataScienceCommunity #Statistics #DataScienceTools #Analytics #DataAnalysis #PythonDataScience #ML #AI #DeepLearning #DataScienceLife #Coding #ProgrammerLife #DataDriven #DataEngineer #EDA #DataNerd #PythonProgramming #DataIsBeautiful #DataScienceJourney
+
+=== 2025-09-21_Only-Pandas-Cheat-Sheet-You-Will-Ever-Need_DO7cr7tgXmu  [10 slides]
+https://www.instagram.com/p/DO7cr7tgXmu/
+🐼 Only Pandas Cheat Sheet You Will Ever Need!
+
+Pandas is a non-negotiable skill for anyone working with data—whether you’re a Data Analyst, Data Scientist, or Machine Learning Professional.
+
+When I first started learning Pandas, I often felt lost navigating its diverse functions and concepts. If that sounds like you, this cheat sheet is the perfect guide to simplify your Pandas learning journey!
+
+✨ Here’s what you’ll find inside:
+✔️ Revisiting the basics
+✔️ Prepping for data manipulation challenges
+✔️ Cleaning and transforming messy datasets
+✔️ Mastering advanced operations like groupby, merging, and time series
+
+💡 Pro Tip:
+Use df.info() and df.describe() to quickly assess your dataset.
+Apply groupby() + agg() for powerful summaries.
+Handle missing data with care using fillna() or dropna().
+
+🚨 Remember: Pandas is the engine behind effective data wrangling.
+
+Found it helpful?
+👉 Save & ♻️ Repost
+
+#Pandas #PythonPandas #DataWrangling #DataCleaning #DataTransformation #PythonForDataScience #DataAnalytics #DataVisualization #BigData #DataScienceCommunity #Statistics #DataScienceTools #Analytics #DataAnalysis #PythonDataScience #ML #AI #DeepLearning #DataScienceLife #Coding #ProgrammerLife #DataDriven #DataEngineer #EDA #DataNerd #PythonProgramming #DataIsBeautiful #DataScienceJourney
+
+=== 2025-09-21_Only-Matplotlib-Cheat-Sheet-You-Will-Ever-Need_DO3L_e_AV1x  [10 slides]
+https://www.instagram.com/p/DO3L_e_AV1x/
+📊 Only Matplotlib Cheat Sheet You Will Ever Need! 🎨
+
+Matplotlib is a must-have skill for every Data Analyst, Data Scientist, and Engineer.
+When I first started, I was lost in its endless options—colors, subplots, styles… 😵‍💫
+That’s why I created this cheat sheet to make your learning journey smooth and practical! 🚀
+
+✨ Inside you’ll find:
+✔️ Core Matplotlib fundamentals for beginners
+✔️ Easy strategies to create & customize plots
+✔️ Tricks for multiple subplots & figure adjustments
+✔️ Advanced tips: interactive visualizations & 3D plotting
+
+💡 Pro Tip:
+Use plt.tight_layout() to fix overlaps, ax.set_xticks() for tick control, and plt.savefig(‘figure.png’, dpi=300) to export high-quality plots.
+
+🚨 Remember: “A well-designed visualization makes data insights clear and compelling.”
+
+🙌 Found this helpful? Save 🔖 | Share ♻️ | Follow for more!
+
+#Matplotlib #DataScience #PythonForDataScience #DataVisualization #PythonCoding #LearnPython #MachineLearning #DataAnalyst #DataScienceTips #PythonDeveloper #AI #BigData #Analytics #DeepLearning #PythonVisualization #DataScienceCommunity #PythonProjects #DataEngineer #PythonLife #DataDriven #PythonLearning #DataAnalytics #PythonProgramming #ML #PythonTips #DataViz #PythonDataScience #CodingLife #ProgrammingTips #Pythonista
+
+=== 2025-09-18_Only-NumPy-Cheat-Sheet-You-ll-Ever-Need_DOxM9UZEuMz  [9 slides]
+https://www.instagram.com/p/DOxM9UZEuMz/
+📌 Only NumPy Cheat Sheet You’ll Ever Need!
+
+NumPy is the backbone of efficient data computation—essential for every Data Analyst, Data Scientist, and ML Professional.
+
+When I started learning NumPy, I was overwhelmed by its countless functions. That’s why I created this cheat sheet—to simplify your learning journey. 🚀
+
+🔑 Here’s what you’ll master inside:
+✔️ Revisiting the essentials
+✔️ Handling multidimensional arrays
+✔️ Accelerating computations with vectorization
+✔️ Indexing, slicing & broadcasting like a pro
+
+💡 Pro Tip:
+Use broadcasting for cleaner code, always prefer vectorized operations for speed, and explore np.linalg for linear algebra tasks.
+
+🚨 Remember: NumPy is the foundation of data computation.
+
+👉 Found this helpful? Save, Share & Repost!
+
+#NumPy #DataScience #MachineLearning #PythonForDataScience #DataAnalytics #DataAnalyst #DeepLearning #CodingTips #PythonProgramming #InterviewPrep
+
+=== 2025-09-07_Python-Cheat-Sheet-for-Data-Science_DOVJU0cAXO2  [10 slides]
+https://www.instagram.com/p/DOVJU0cAXO2/
+🚀 Python Cheat Sheet for Data Science
+
+Python is the 💎 backbone of data science—whether it’s analyzing trends, building ML models, or driving insights.
+
+When I started out, I felt overwhelmed by endless libraries & functions 🤯… That’s why I made this cheat sheet to keep it simple!
+
+Here’s what it covers:
+✅ Core Python essentials every analyst must know
+✅ Smart ways to prep & manipulate data
+✅ Effortless, impactful visualizations
+✅ ML workflows simplified with scikit-learn
+
+💡 Pro Tip: Write clean code, try different visualization styles, and explore ML to unlock next-level insights.
+
+⚡ Skipping Python in Data Science = like skipping practice before the big game—you’ll feel it when it matters most.
+
+Found this useful?
+🔁 Save it • Share it • Tag a friend who needs this!
+
+👉 Let’s connect ~ Link in comments
+
+#Python #DataScience #MachineLearning #DataAnalytics #DataAnalyst #DeepLearning #ArtificialIntelligence #BigData #PythonForDataScience #CodingLife #Analytics #TechCommunity #LearnPython #DataDriven #PythonProgramming
+
+=== 2025-09-06_The-Only-Generative-AI-Cheat-Sheet-You-ll-Ever-Need_DOQSv2gAfYE  [10 slides]
+https://www.instagram.com/p/DOQSv2gAfYE/
+🚀 The Only Generative AI Cheat Sheet You’ll Ever Need
+
+Generative AI is transforming industries — from text and images to code, video, and audio. Whether you’re a Data Scientist, AI Engineer, or just starting out, mastering Gen AI is now a must-have skill.
+
+When I began exploring Gen AI, I was overwhelmed by the number of models, tools, and evaluation metrics. That’s why I created this Gen AI Cheat Sheet — a simplified guide to help you navigate this space with clarity.
+
+Here’s what you’ll find inside:
+✔️ Types of Generative AI: Text, Image, Video, Code, Audio
+✔️ Leading Models & Architectures: Transformers, Diffusion Models, GANs, Multimodal LLMs
+✔️ Data Preprocessing & Prompt Engineering best practices
+✔️ Evaluation Metrics for text, images, and multimodal outputs
+✔️ Fine-tuning strategies, hyperparameter tuning, and feature engineering
+✔️ Top Generative AI Tools across chat, images, video, code, and audio
+
+💡 Pro Tip: Don’t just consume — experiment with LLMs, diffusion models, and multimodal frameworks. Hands-on practice is where the real learning happens.
+
+🚨 Remember: “Generative AI is not just the future — it’s the present skill shaping careers in AI and data.”
+
+Found this helpful?
+♻️ Repost to help others in your network
+
+#GenerativeAI #DeepLearning #MachineLearning #ArtificialIntelligence #AICommunity #DataScience #LLMs #AIModels #NeuralNetworks #DiffusionModels #GANs #Transformers #PromptEngineering #FineTuning #AIEngineer #AITools #FutureOfAI #AITrends #MultimodalAI #AICheatSheet #DataEngineering #AIInspiration #LearnAI #AIForEveryone #BigData #AIInnovation #CodingLife #AIContent #AIRevolution #NextGenAI
+
+=== 2025-08-07_Only-Machine-Learning-Cheat-Sheet-You-ll-Ever-Need_DNDzhWOBKTe  [10 slides]
+https://www.instagram.com/p/DNDzhWOBKTe/
+🧠 Only Machine Learning Cheat Sheet You’ll Ever Need!
+
+Just starting with Machine Learning? Feeling overwhelmed by all the algorithms, models, and metrics?
+
+This cheat sheet simplifies everything for you! ✅
+
+🔍 What’s inside:
+✔️ Core ML concepts for beginners
+✔️ Supervised, Unsupervised & Reinforcement Learning
+✔️ Model tuning & evaluation tips
+✔️ Advanced stuff: Neural Nets, Clustering, Hyperparameter Tuning & more
+
+💡 Pro Tip:
+Feature engineering + smart model validation = ML mastery.
+
+📥 Get the PDF here:
+https://www.linkedin.com/posts/tajamulkhann_machine-learning-cheat-sheet-activity-7347806579955482624-z2BP
+
+♻️ Found it useful? Save & Share to help others!
+
+=== 2025-08-05_Only-SQL-Cheat-Sheet-You-ll-Ever-Need_DM_4L_dhVLK  [10 slides]
+https://www.instagram.com/p/DM_4L_dhVLK/
+Only SQL Cheat Sheet You’ll Ever Need
+
+SQL is a must-have skill if you're working with data—whether you're a Data Analyst, Data Scientist, or Database Administrator.
+
+When I first started learning SQL, I was overwhelmed by the syntax, logic, and advanced concepts.
+If that sounds like you, this cheat sheet is designed to make your SQL learning journey easy and structured.
+
+Here’s what’s inside:
+✔️ Core SQL fundamentals for beginners
+✔️ Smart strategies to solve real SQL challenges
+✔️ Tips to write clean, efficient queries
+✔️ Advanced topics like joins, subqueries, window functions, and indexing
+
+Pro Tip:
+Practice queries with multiple joins, explore window functions for analytics, and always review performance using execution plans and indexing.
+
+🧠 SQL is your ticket to a data career.
+
+Found it helpful?
+↺ Save & Repost to help others.
+
+📥 Download the full cheat sheet here:
+LinkedIn: https://www.linkedin.com/posts/tajamulkhann_sql-cheat-sheet-activity-7345269851323551744-vxT-
+Telegram: https://t.me/tajamul_khan/25
+
+#SQL #SQLCheatSheet #DataScience #DataAnalytics #LearnSQL #SQLforBeginners 
+#DataScientist #DataAnalyst #AnalyticsLife #DataCareer #SQLTips #TechCareers 
+#CareerInData #DataSkills #StudyWithMe #CodeNewbie #100DaysOfSQL
+

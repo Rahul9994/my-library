@@ -1,0 +1,1129 @@
+﻿=== 2026-10-31_170-SQL-Queries_DfLxV5qgFgv  [10 slides]
+https://www.instagram.com/p/DfLxV5qgFgv/
+170+ SQL Queries
+
+Master SQL with 170+ practical queries, from basics to advanced concepts.
+
+Follow @tajamul.codes and comment “DATA” to get all the queries.
+
+#sql #sqlqueries #dataanalytics #datascience #sqlinterview
+
+=== 2026-10-27_60-Pro-SQL-Queries_DfBXSvDE1jW  [14 slides]
+https://www.instagram.com/p/DfBXSvDE1jW/
+60 Pro SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get all 60 queries in DMs
+
+#sql #advancedSQL #sqlqueries #dataanalytics #sqlinterview
+
+=== 2026-10-22_Most-Asked-SQL-JOIN-based-Queries_De0gt6FiN6h  [4 slides]
+https://www.instagram.com/p/De0gt6FiN6h/
+Most Asked SQL JOIN based Queries
+
+Follow @tajamul.codes and comment “DATA” to get all 25 queries
+
+#sql #sqljoins #sqlqueries #dataanalytics #interviewprep
+
+=== 2026-10-20_Complete-SQL-Notes_DeveFXWAXjI  [1 slides]
+https://www.instagram.com/p/DeveFXWAXjI/
+Complete SQL Notes
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #sqlnotes #dataanalytics #datascience #interviewprep
+
+=== 2026-10-19_SQL-for-AI-Engineers_Desyo7qgRdy  [2 slides]
+https://www.instagram.com/p/Desyo7qgRdy/
+SQL for AI Engineers
+
+Follow @tajamul.codes and comment “DATA” to get the notes
+
+#sql #aiengineer #artificialintelligence #dataengineering #datascience
+
+=== 2026-10-14_Complete-SQL-Notes_Def2sWwgbTH  [10 slides]
+https://www.instagram.com/p/Def2sWwgbTH/
+Complete SQL Notes
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #sqlnotes #dataanalytics #datascience #interviewprep
+
+=== 2026-09-27_100-Python-Interview-Questions_Dd2sRIxAXMK  [10 slides]
+https://www.instagram.com/p/Dd2sRIxAXMK/
+100+ Python Interview Questions
+
+Follow @tajamul.codes and comment “PYTHON” to get the questions
+
+#python #pythoninterview #coding #programming #interviewprep
+
+=== 2026-09-20_SQL-Interview-Questions_DdsXXpmEx1x  [10 slides]
+https://www.instagram.com/p/DdsXXpmEx1x/
+SQL Interview Questions
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #sqlinterview #dataanalytics #datascience #interviewprep
+
+=== 2026-09-20_Python-for-Beginners_DdpyekcE7sX  [10 slides]
+https://www.instagram.com/p/DdpyekcE7sX/
+Python for Beginners
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes
+
+#python #pythonbasics #coding #programming #datascience
+
+=== 2026-09-20_300-Real-World-SQL-Queries_DdnNw1kEwe4  [10 slides]
+https://www.instagram.com/p/DdnNw1kEwe4/
+300+ Real-World SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #sqlqueries #dataanalytics #datascience #interviewprep
+
+=== 2026-09-17_SQL-Scenario-Based-Queries_DdaUAPdE5ye  [10 slides]
+https://www.instagram.com/p/DdaUAPdE5ye/
+SQL Scenario-Based Queries
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #sqlqueries #dataanalytics #datascience #interviewprep
+
+=== 2026-09-12_Complete-Python-Notes_DdL3AfgAbw1  [9 slides]
+https://www.instagram.com/p/DdL3AfgAbw1/
+Complete Python Notes
+
+Follow @tajamul.codes and comment “Python” to get the notes
+
+#python #oops #programming #coding #pythonnotes
+
+=== 2026-09-02_50-Most-Asked-SQL-Queries_Dcz1wJBgaRi  [10 slides]
+https://www.instagram.com/p/Dcz1wJBgaRi/
+50 Most Asked SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get the full PDF in your DM.
+
+#sql #dataanalytics #dataanalyst #interviewprep #datascience
+
+=== 2026-08-31_Complete-Pandas-Notes_DculXPAAWO3  [10 slides]
+https://www.instagram.com/p/DculXPAAWO3/
+Complete Pandas Notes
+
+Pandas becomes much easier when loading, cleaning, filtering, transforming, grouping, merging and analyzing data are all connected in one workflow. Complete Pandas Notes.pdf
+
+Follow @tajamul.codes and comment “DATA” to get the notes in your DM.
+
+#pandas #python #datascience #dataanalytics #dataanalysis
+
+=== 2026-08-28_Top-30-SQL-Queries_Dcm7BBuEoO8  [6 slides]
+https://www.instagram.com/p/Dcm7BBuEoO8/
+Top 30 SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #interviewprep
+
+=== 2026-08-28_Complete-SQL-Notes_DclO0RcgeUI  [8 slides]
+https://www.instagram.com/p/DclO0RcgeUI/
+Complete SQL Notes
+
+SQL gets much easier when the basics, joins, filtering, functions, GROUP BY, subqueries and CTEs are all connected in one place.
+
+Follow @tajamul.codes and comment “SQL” to get the notes in your DM.
+
+#sql #dataanalytics #dataanalyst #datascience #interviewprep
+
+=== 2026-08-17_FastAPI-makes-building-APIs-in-Python-fast-clean-and-su_DcKtrhHgS_9  [7 slides]
+https://www.instagram.com/p/DcKtrhHgS_9/
+FastAPI makes building APIs in Python fast, clean, and surprisingly simple.
+
+From REST APIs to production-ready ML endpoints, it’s one framework every Python developer should know.
+
+Comment “API” to get the guide.
+
+#FastAPI #Python #API #DataScience #MachineLearning
+
+=== 2026-08-15_Complete-Python-Notes_DcDyZnqAXO8  [10 slides]
+https://www.instagram.com/p/DcDyZnqAXO8/
+Complete Python Notes
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes in DM
+
+#python #datascience #programming #coding #pythonnotes
+
+=== 2026-08-13_Python-Coding-Questions_DcAStdMgchp  [8 slides]
+https://www.instagram.com/p/DcAStdMgchp/
+Python Coding Questions
+
+Follow @tajamul.codes and comment “CODE” to get the pdf in DM
+
+#python #coding #datascience #pythoninterview #programming
+
+=== 2026-08-08_SQL-Mindmap_DbxwjZEBcju  [1 slides]
+https://www.instagram.com/p/DbxwjZEBcju/
+SQL Mindmap
+
+Follow @tajamul.codes for more resources on Data Science
+
+#sql #datascience #dataanalytics #sqlinterview #sqlqueries
+
+=== 2026-08-05_300-Real-SQL-Interview-Questions_Dbrpq6MASVk  [20 slides]
+https://www.instagram.com/p/Dbrpq6MASVk/
+300 Real SQL Interview Questions
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlinterview #sqlqueries
+
+=== 2026-07-21_LLM-APIs-in-Python_DbFA7WsAQ9i  [10 slides]
+https://www.instagram.com/p/DbFA7WsAQ9i/
+LLM APIs in Python
+
+Follow @tajamul.codes and comment “LLM” to get the notes
+
+#llm #python #generativeai #ai #datascience
+
+=== 2026-07-13_70-Advanced-SQL-Questions_DawkALjAag-  [17 slides]
+https://www.instagram.com/p/DawkALjAag-/
+70 Advanced SQL Questions
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #interviewprep
+
+=== 2026-07-12_SQL-Zero-to-Hero_Dat35P4AWgk  [9 slides]
+https://www.instagram.com/p/Dat35P4AWgk/
+SQL Zero to Hero
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqlqueries
+
+=== 2026-07-10_Top-50-SQL-Queries_Daov6k_gf2V  [10 slides]
+https://www.instagram.com/p/Daov6k_gf2V/
+Top 50 SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #interviewprep
+
+=== 2026-07-08_50-Most-Asked-SQL-Queries_DajtHzAAZvh  [10 slides]
+https://www.instagram.com/p/DajtHzAAZvh/
+50 Most Asked SQL Queries
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #interviewprep - 2,073 likes, 714 comments - @tajamul.codes on July 8, 2026
+
+=== 2026-07-04_SQL-Scenario-Based-Questions_DaZQMvCgVhI  [8 slides]
+https://www.instagram.com/p/DaZQMvCgVhI/
+SQL Scenario-Based Questions
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlinterview #sqlqueries
+
+=== 2026-07-03_LLM-APIs-in-Python_DaWstBfAbxt  [8 slides]
+https://www.instagram.com/p/DaWstBfAbxt/
+LLM APIs in Python
+
+Follow @tajamul.codes and comment “LLM” to get the notes
+
+#llm #python #generativeai #ai #datascience
+
+=== 2026-07-02_Top-Python-Pattern-Programs_DaURh9CgaTT  [10 slides]
+https://www.instagram.com/p/DaURh9CgaTT/
+Top Python Pattern Programs
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes
+
+#python #coding #programming #patterns #learning
+
+=== 2026-06-30_SQL-Guide-Notes_DaPRdC_RHqW  [1 slides]
+https://www.instagram.com/p/DaPRdC_RHqW/
+SQL Guide Notes
+
+Follow @tajamul.codes and comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql - @tajamul.codes on June 30, 2026
+
+=== 2026-06-25_Python-for-Data-Science_DaCOlsPgXrS  [10 slides]
+https://www.instagram.com/p/DaCOlsPgXrS/
+Python for Data Science
+
+Follow @tajamul.codes and comment “PYTHON” to get the notes
+
+#python #datascience #dataanalytics #machinelearning #programming
+
+=== 2026-06-06_SQL-Handwritten-Notes_DZTuYipAZt7  [9 slides]
+https://www.instagram.com/p/DZTuYipAZt7/
+SQL Handwritten Notes
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql
+
+=== 2026-06-06_Python-Notes-Guide_DZRJkXyE9lT  [10 slides]
+https://www.instagram.com/p/DZRJkXyE9lT/
+Python Notes Guide
+
+Follow and Comment “PYTHON” to get the notes
+
+#python #datascience #programming #coding #learning
+
+=== 2026-06-05_Must-Have-SQL-Notes_DZOluK4gbba  [10 slides]
+https://www.instagram.com/p/DZOluK4gbba/
+Must Have SQL Notes
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqlqueries
+
+=== 2026-06-03_Top-100-Advanced-SQL-Queries_DZNEq6AgVMY  [10 slides]
+https://www.instagram.com/p/DZNEq6AgVMY/
+Top 100 Advanced SQL Queries
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlinterview #advancedsql
+
+=== 2026-06-01_Python-for-Data-Science-Guide_DZESEodAeTW  [10 slides]
+https://www.instagram.com/p/DZESEodAeTW/
+Python for Data Science Guide
+
+Comment “PYTHON” to get the notes
+
+#python #datascience #machinelearning #dataanalytics #programming
+
+=== 2026-05-30_Most-Asked-SQL-Interview-Questions_DY9P0YNge9W  [10 slides]
+https://www.instagram.com/p/DY9P0YNge9W/
+Most Asked SQL Interview Questions
+
+Follow @tajamul.codes and Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlinterview #sqlqueries
+
+=== 2026-05-30_Best-SQL-Notes_DY_HvG0gWrM  [9 slides]
+https://www.instagram.com/p/DY_HvG0gWrM/
+Best SQL Notes
+
+Comment “SQL” to get the complete notes
+
+#sql #datascience #dataanalytics #learnsql #sqlqueries
+
+=== 2026-05-28_Best-Python-Notes_DY4ck7uAR0B  [9 slides]
+https://www.instagram.com/p/DY4ck7uAR0B/
+Best Python Notes
+
+Follow @tajamul.codes and Comment “PYTHON” to get the notes
+
+#python #datascience #programming #coding #learning
+
+=== 2026-05-25_Most-Asked-SQL-Queries_DYyaFTqATML  [10 slides]
+https://www.instagram.com/p/DYyaFTqATML/
+Most Asked SQL Queries
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlpractice #learnsql
+
+=== 2026-05-25_50-Most-Asked-SQL-Queries_DYwK1mvgPq6  [10 slides]
+https://www.instagram.com/p/DYwK1mvgPq6/
+50 Most Asked SQL Queries
+
+Follow @tajamul.codes and Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #interviewprep
+
+=== 2026-05-22_30-Most-Asked-SQL-Queries_DYqhtyvgeUD  [5 slides]
+https://www.instagram.com/p/DYqhtyvgeUD/
+30 Most Asked SQL Queries
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql
+
+=== 2026-05-21_SQL-Interview-Questions-Guide_DYoGS1qgRL3  [10 slides]
+https://www.instagram.com/p/DYoGS1qgRL3/
+SQL Interview Questions Guide
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #sqlinterview #learnsql
+
+=== 2026-05-06_25-SQL-Reusable-Patterns_DYBq3lAAbDF  [10 slides]
+https://www.instagram.com/p/DYBq3lAAbDF/
+25 SQL Reusable Patterns
+
+Comment “SQL” to get the notes ￼
+
+#sql #datascience #dataanalytics #sqlqueries #learnsql
+
+=== 2026-04-29_120-Python-Interview-Questions_DXvahbEAXCp  [10 slides]
+https://www.instagram.com/p/DXvahbEAXCp/
+120 Python Interview Questions
+
+Comment “PYTHON” to get the notes ￼
+
+#python #interviewprep #datascience #programming #coding
+
+=== 2026-04-26_Top-Python-Coding-Questions_DXnp8QLAdTR  [8 slides]
+https://www.instagram.com/p/DXnp8QLAdTR/
+Top Python Coding Questions
+
+Comment “Code” to get the notes ￼
+
+#python #coding #datascience #interviewprep #programming
+
+=== 2026-04-22_Complete-SQL-Notes-Guide_DXdcNqkgSvW  [10 slides]
+https://www.instagram.com/p/DXdcNqkgSvW/
+Complete SQL Notes Guide
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqltutorial
+
+=== 2026-04-21_50-Python-Pattern-Programs_DXa4BiAAQdp  [9 slides]
+https://www.instagram.com/p/DXa4BiAAQdp/
+50 Python Pattern Programs
+
+Comment “PATTERN” to get the notes
+
+#python #coding #programming #patterns #learning
+
+=== 2026-04-19_Handwritten-Python-Notes-Beginner-Advanced_DXVoiudgbqC  [10 slides]
+https://www.instagram.com/p/DXVoiudgbqC/
+Handwritten Python Notes (Beginner → Advanced)
+
+Comment “PYTHON” to get the notes
+
+#python #datascience #programming #coding #learning interviewprep - 328 likes, 73 comments - @tajamul.codes on April 19, 2026
+
+=== 2026-04-16_50-SQL-Interview-Queries_DXOJklogZYO  [10 slides]
+https://www.instagram.com/p/DXOJklogZYO/
+50 SQL Interview Queries
+
+Comment “50” to get the full notes in DM
+
+Follow @tajamul.codes for more on Data Science & AI
+
+#sql #datascience #interviewprep #dataanalytics sqlqueries
+
+=== 2026-04-14_Python-Interview-Questions-Guide_DXI14pOgflE  [10 slides]
+https://www.instagram.com/p/DXI14pOgflE/
+Python Interview Questions Guide
+
+Comment “PYTHON” to get the notes
+
+#python #datascience #interviewprep #coding #pythoninterview
+
+=== 2026-04-11_SQL-Handwritten-Notes-Guide_DXA9DxCAfS1  [9 slides]
+https://www.instagram.com/p/DXA9DxCAfS1/
+SQL Handwritten Notes Guide
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqlnotes
+
+=== 2026-04-09_SQL-Interview-Questions-Guide_DW8EKYmASeX  [6 slides]
+https://www.instagram.com/p/DW8EKYmASeX/
+SQL Interview Questions Guide
+
+Comment “SQL” to get the notes
+
+#sql #interviewprep #datascience #dataanalytics #sqlinterview
+
+=== 2026-04-07_Complete-SQL-Notes-Guide_DW2zl6qAcxx  [10 slides]
+https://www.instagram.com/p/DW2zl6qAcxx/
+Complete SQL Notes Guide
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqltutorial
+
+=== 2026-04-03_Crack-SQL-Interviews-with-300-Real-World-SQL-Queries_DWstl71AS1e  [7 slides]
+https://www.instagram.com/p/DWstl71AS1e/
+Crack SQL Interviews with 300+ Real World SQL Queries
+
+Follow & Comment “300” to get the notes
+
+#sql #datascience #dataanalytics #datacleaning #learnsql
+
+=== 2026-04-02_Clean-Data-Cleaning-with-SQL_DWns8WpAVSk  [1 slides]
+https://www.instagram.com/p/DWns8WpAVSk/
+Clean Data Cleaning with SQL
+
+Follow @tajamul.codes for more
+
+#sql #datascience #dataanalytics #datacleaning #learnsql
+
+=== 2026-03-29_Complete-SQL-Handbook-Notes_DWd4ByGDEfF  [10 slides]
+https://www.instagram.com/p/DWd4ByGDEfF/
+Complete SQL Handbook Notes
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #learnsql #sqlnotes
+
+=== 2026-03-29_Amazon-SQL-DSA-Interview-Questions_DWfu6l7Ad5M  [10 slides]
+https://www.instagram.com/p/DWfu6l7Ad5M/
+Amazon SQL + DSA Interview Questions
+
+Comment “AMAZON” to get the notes
+
+#sql #dsa #datascience #interviewprep #coding
+
+=== 2026-03-27_SQL-Scenario-Interview-Questions_DWaVBXBAW0K  [10 slides]
+https://www.instagram.com/p/DWaVBXBAW0K/
+SQL Scenario Interview Questions
+
+Comment “ZOMATO” to get the notes
+
+#sql #datascience #interviewprep #dataanalytics #sqlexams
+
+=== 2026-03-26_SQL-Scenario-Interview-Questions_DWX_9lIgQ0P  [9 slides]
+https://www.instagram.com/p/DWX_9lIgQ0P/
+SQL Scenario Interview Questions
+
+Comment “SQL” to get the notes
+
+#sql #datascience #interviewprep #dataanalytics #sqlexams
+
+=== 2026-03-22_100-SQL-Interview-Questions_DWNlF4JgQCL  [10 slides]
+https://www.instagram.com/p/DWNlF4JgQCL/
+100 SQL Interview Questions
+
+Comment “SQL” to get the notes
+
+#sql #datascience #dataanalytics #interviewprep #learnsql
+
+=== 2026-03-16_Most-people-learn-Pandas-randomly_DV99AT-AXft  [1 slides]
+https://www.instagram.com/p/DV99AT-AXft/
+Most people learn Pandas randomly.
+Top candidates know key methods.
+
+This is the Pandas power list.
+
+Import. Clean.
+Transform. Analyze.
+
+Groupby. Pivot.
+Merge. Apply.
+
+Exactly what projects need.
+Not scattered learning.
+
+#Pandas #DataScience #DataAnalysis #PythonForDataScience #LearnPandas
+
+=== 2026-03-12_Most-people-overcomplicate-SQL_DVxxskpgXXU  [1 slides]
+https://www.instagram.com/p/DVxxskpgXXU/
+Most people overcomplicate SQL.
+Top candidates master patterns.
+
+This is the one-page SQL system.
+
+Filtering. Joins.
+Aggregations. Windows.
+
+CTEs. Subqueries.
+Real interview coverage.
+
+Built for Analysts and DS roles.
+Not just beginners.
+
+Save this for revision.
+
+#SQL #DataAnalytics #SQLInterview #DataScience #LearnSQL
+
+=== 2026-02-27_Stop-writing-SQL-like-a-beginner_DVSVUT1gYYN  [10 slides]
+https://www.instagram.com/p/DVSVUT1gYYN/
+Stop writing SQL like a beginner.
+
+Most queries break in production.
+
+Not because of syntax.
+Because of discipline.
+
+This is production-grade SQL thinking.
+
+For analysts.
+For data scientists.
+For engineers shipping real data.
+
+Cleaner logic.
+Safer updates.
+Faster queries.
+
+Comment PDF and I’ll DM you the PDF ⚡
+
+#SQL
+#DataAnalytics
+#DataScience
+#AnalyticsEngineering
+#TechCareers
+
+=== 2026-02-25_Most-people-don-t-fail-SQL-interviews-because-they-don_DVODIEcAUKo  [10 slides]
+https://www.instagram.com/p/DVODIEcAUKo/
+Most people don’t fail SQL interviews because they don’t know SQL.
+
+They fail because they don’t know what to prepare.
+
+This guide fixes that.
+
+Inside it, you’ll get:
+
+• Complete SQL roadmap (from DDL to window functions)
+• Beginner → expert practice platforms
+• Real interview-style query questions with solutions
+• The exact topics companies test repeatedly
+
+No guesswork.
+No random YouTube hopping.
+Just structured prep.
+
+If you’re:
+
+– Preparing for Data Analyst roles
+– Targeting Data Science interviews
+– Switching into tech
+– Tired of feeling “almost ready”
+
+This will clean up your SQL foundation fast.
+
+Comment “SQL” and I’ll send you the full PDF.
+
+Save this. You’ll need it before your next interview. 📌
+
+#SQLInterview
+#DataAnalytics
+#DataScienceCareer
+#LearnSQL
+#TechJobs
+
+=== 2026-02-23_Python-isn-t-just-for-coders_DVH4pjuAU7i  [3 slides]
+https://www.instagram.com/p/DVH4pjuAU7i/
+Python isn’t just for coders.
+
+It’s for analysts. 
+It’s for problem solvers. 
+It’s for anyone who wants better opportunities.
+
+Start small. Stay consistent. Build real skills.
+
+Comment “PYTHON” if you want the learning roadmap.
+
+#PythonForAll #DataScienceJourney #LearnPython #CareerGrowth #CodingLife
+
+=== 2026-02-20_Stop-Struggling-with-SQL-Master-It-on-One-Page_DVATx5LgZV4  [1 slides]
+https://www.instagram.com/p/DVATx5LgZV4/
+Stop Struggling with SQL. Master It on One Page. 🔥
+
+Most people overcomplicate SQL.
+
+But 90% of interviews revolve around:
+• Joins
+• Group By & Aggregations
+• Subqueries & CTEs
+• Window Functions
+• Indexes & Constraints
+• Date Functions
+
+This guide organizes everything in one clean structure — from basics to advanced concepts.
+
+If you’re preparing for Data Analyst / Data Scientist roles, this is the sheet you revise before every interview.
+
+Save it. Use it. Win with it. 💪
+
+👇 Follow @tajamul.datascientist and Comment “SQL” and I’ll send you the PDF version
+
+#SQL #DataScience #InterviewPrep #DataAnalytics #TechCareers
+
+=== 2026-02-11_Most-Asked-SQL-Interview-Questions_DUngMSIAQH7  [10 slides]
+https://www.instagram.com/p/DUngMSIAQH7/
+🔥 Most Asked SQL Interview Questions 
+
+💬 Comment SQL to get this in your DMs. 
+📌 Follow @tajamul.datascientist for serious interview prep.
+
+=== 2026-02-04_SQL-made-SIMPLE_DUXAnccEjRH  [2 slides]
+https://www.instagram.com/p/DUXAnccEjRH/
+SQL made SIMPLE 🔥
+
+👉 Follow @tajamul.datascientist and comment “SQL” to get this resource in your DMs 📩
+
+#SQL #DataAnalytics #DataScience #LearnSQL #TechCareers
+
+=== 2026-02-04_Python-made-SIMPLE_DUZlcDKktuA  [3 slides]
+https://www.instagram.com/p/DUZlcDKktuA/
+Python made SIMPLE 🔥
+
+👉 Follow @tajamul.datascientist and comment “PYTHON” to get this resource in your DMs 📩
+
+#Python #DataAnalytics #DataScience #LearnPython #TechCareers
+
+=== 2026-02-01_SQL-Keys-finally-explained-the-right-way_DUj_gtXEjNI  [6 slides]
+https://www.instagram.com/p/DUj_gtXEjNI/
+SQL Keys — finally explained the right way 🔑
+
+👉 Follow @tajamul.datascientist and Comment “SQL” to get Complete SQL Ebook in DMs
+
+#sql #dbms #sqlkeys #datascience #datamodeling
+
+=== 2026-02-01_SQL-Database-basics-explained-simply_DUPZFo0kq9L  [10 slides]
+https://www.instagram.com/p/DUPZFo0kq9L/
+SQL Database basics — explained simply 🗄️
+
+Before writing queries,
+you must understand how data is stored & organized.
+
+This carousel covers:
+• Data vs Information
+• Database vs Excel
+• Data integrity & redundancy
+• Types of databases & DBMS
+
+💡 Strong SQL starts with strong fundamentals.
+
+Save this if you’re:
+• Learning SQL
+• Preparing for interviews
+• Building data foundations
+
+👉 Follow @tajamul.datascientist and Comment SQL to get complete eBook in DMs
+
+#sql #database #datascience #sqllearning #datacareer
+
+=== 2026-02-01_SQL-Core-Concepts-explained-clearly_DUZsTzLks4B  [10 slides]
+https://www.instagram.com/p/DUZsTzLks4B/
+SQL Core Concepts — explained clearly 🗄️
+
+If SQL feels hard,
+you’re probably memorizing commands instead of understanding concepts.
+
+This carousel covers:
+• What SQL really is & how it works
+• CRUD operations (Create, Read, Update, Delete)
+• ACID properties (interview favorite)
+• SQL command types: DDL, DML, DCL, TCL, DQL
+• How queries flow inside a DBMS
+
+💡 Interview truth:
+Strong SQL answers come from concept clarity, not syntax memory.
+
+Save this if you’re:
+• Learning SQL from scratch
+• Preparing for Data / Analytics interviews
+• Strengthening DBMS fundamentals
+
+👉 Follow @tajamul.datascientist and Comment “SQL” to get Complete SQL Ebook in DMs
+
+#sql #dbms #datascience #sqllearning #datacareer
+
+=== 2026-01-26_When-I-started-preparing-for-SQL-interviews-I-thought-i_DT-aUfAgSFx  [15 slides]
+https://www.instagram.com/p/DT-aUfAgSFx/
+When I started preparing for SQL interviews, I thought it was just SELECT, JOIN, and GROUP BY.
+
+Reality hit fast.
+
+Interviewers test real problem-solving:
+– second-highest salary (no LIMIT)
+– duplicates across columns
+– recursive CTEs
+– rolling averages
+– window functions
+– unsold products, rankings, comparisons
+
+👉 SQL isn’t about syntax.
+It’s about thinking, optimization, and handling real data problems.
+
+🚀 Tip: Practice on real datasets, test edge cases, and focus on performance.
+
+💬 If this PDF helped you, like, save, and repost to help others.
+
+#SQL #SQLInterview #DataEngineer #Analytics #ProblemSolving
+
+=== 2026-01-12_Most-people-think-SQL-is-just-for-querying-data_DTcAs52AcZM  [1 slides]
+https://www.instagram.com/p/DTcAs52AcZM/
+Most people think SQL is just for querying data.
+Pros know it’s for cleaning messy data too.
+
+Missing values
+Duplicates
+Wrong types
+Dirty columns
+
+You can fix all of that with a few SQL lines.
+
+If you’re serious about Data Analytics or Data Science,
+this is a skill you can’t skip.
+
+Save this.
+Revisit it.
+Use it in real projects.
+
+Follow @tajamul.datascientist for daily Data + AI content 🚀
+
+#SQL #DataCleaning #DataAnalytics #DataScience #LearnSQL
+
+=== 2026-01-01_Complete-Python-Programming-Notes_DS-BDTZAb8-  [9 slides]
+https://www.instagram.com/p/DS-BDTZAb8-/
+🚀 Complete Python Programming Notes 🐍
+
+From basics → logic → real-world concepts, all in one clean place ✨
+Perfect for students, beginners & future data scientists 💡
+
+📌 Save this
+📌 Revise faster
+📌 Code smarter
+
+Because good notes = half the learning done 🔥
+
+Follow @tajamul.datascientist and comment Python to get these notes in DM
+
+#Python #PythonProgramming #LearnPython #CodingNotes #Programming #DataScience #Beginners #Developers #Tech
+
+=== 2025-12-31_Slow-Python-code-You-re-probably-doing-THIS_DS66rLNgePS  [8 slides]
+https://www.instagram.com/p/DS66rLNgePS/
+Slow Python code? You’re probably doing THIS 👇
+
+🚀 Optimize Python like a pro:
+• Use **list comprehensions** over loops
+• Prefer **built-in functions** (they’re faster in C)
+• Switch to **generators** for large data
+• Reduce unnecessary variables
+• Use **multiprocessing** for CPU-heavy tasks
+
+Small changes = BIG performance gains ⚡
+Save this 📌 and code smarter, not harder.
+
+#Python #PythonTips #CodeOptimization #DataScience #MachineLearning #ProgrammingTips #CleanCode #DeveloperLife #LearnPython #AI #TechSkills
+
+=== 2025-12-27_Still-opening-Google-for-basic-SQL_DSwmkNlAX8_  [10 slides]
+https://www.instagram.com/p/DSwmkNlAX8_/
+Still opening Google for basic SQL? 
+These handwritten SQL notes can save you hours 📒 
+
+✔️ Interview-focused 
+✔️ Zero fluff 
+✔️ Everything from SELECT → JOINS → CASE → SUBQUERIES 
+
+If SQL scares you, this fixes it. 
+Follow @tajamul.datascientist and Comment SQL & I will share the Notes. 🚀 
+
+#SQL #DataAnalytics #DataScience #SQLInterview #HandwrittenNotes #LearnSQL #analyticscareer
+
+=== 2025-12-24_Python-Coding-Questions-Beginner-Expert_DSrHph7gWLU  [7 slides]
+https://www.instagram.com/p/DSrHph7gWLU/
+Python Coding Questions: Beginner ➝ Expert 🐍
+If you can solve these, interviews won’t scare you anymore.
+
+From
+✔️ Palindrome & Fibonacci
+to
+✔️ Two Sum & Pattern Logic
+
+This is how real problem-solving skills are built — step by step, level by level.
+
+💡 Save this
+💡 Practice daily
+💡 Crack interviews confidently
+
+Comment “PYTHON” and I’ll share resource link in DM 🔥
+Follow @tajamul.datascientist for daily coding & data science content 📈
+
+#python #codingquestions #datascience #programming #interviewprep learnpython developer codinglife
+
+=== 2025-12-22_Python-feels-powerful-when-you-know-where-to-look_DSj0LVRAfVt  [8 slides]
+https://www.instagram.com/p/DSj0LVRAfVt/
+Python feels powerful when you know where to look 🐍✨
+
+Modules are Python’s superpower — they keep your code clean, reusable, and production-ready.
+
+In this carousel, you’ll quickly grasp:
+• How modules & packages are structured
+• Everyday essentials like os, math, random, datetime, time
+• When and why to use each one
+• Interview-friendly functions you must remember
+
+If you’re learning Python for data science, analytics, or interviews — this is core knowledge.
+
+Save it. Revisit it. Master it. 🚀
+Because clean code starts with the right modules.
+
+=== 2025-12-21_Python-OOP-made-simple_DShoGh3AYCF  [6 slides]
+https://www.instagram.com/p/DShoGh3AYCF/
+Python OOP made simple 🐍
+
+This compact guide breaks down every core concept —
+from classes & objects to inheritance & polymorphism.
+
+Perfect for:
+• Interview preparation 🎯
+• Strengthening Python foundations 🧠
+• Writing clean, scalable code
+
+#python #pythonoop #datascience #codinginterview #learning
+
+=== 2025-12-19_If-Python-basics-feel-overwhelming-this-post-will-simpl_DScD5x2gcTv  [9 slides]
+https://www.instagram.com/p/DScD5x2gcTv/
+If Python basics feel overwhelming, this post will simplify everything. 🐍
+
+Most beginners don’t fail because Python is hard —
+they fail because they skip the foundations.
+
+Here’s a clear mental model of Python Basics 👇
+
+📌 What you’ll learn in this carousel:
+	•	Variables & data types (what Python actually stores)
+	•	Why indentation matters (not just formatting!)
+	•	Basic operators & expressions
+	•	Input → processing → output flow
+	•	Writing your first clean Python logic
+
+💡 Interview tip:
+Strong Python basics = faster problem solving in
+SQL, ML, data analysis, and system design.
+
+Save this post — you’ll need it while:
+	•	Learning Python from scratch 🧠
+	•	Preparing for data science interviews 🎯
+	•	Debugging beginner mistakes 🛠️
+
+👉 Comment “Python” to get the entire ebook
+
+#python
+#pythonbasics
+#datascience
+#pythonlearning
+#codinginterview
+datacareer
+machinelearning
+
+=== 2025-12-16_If-Python-control-flow-is-confusing-this-post-will-fix_DSUlAyNAZNL  [8 slides]
+https://www.instagram.com/p/DSUlAyNAZNL/
+If Python control flow is confusing, this post will fix it. 🐍
+
+Most beginners struggle not because of syntax,
+but because they don’t visualize how code runs.
+
+Here’s a clean mental model of Python Control Flow 👇
+
+📌 What you’ll learn in this carousel:
+	•	How if / elif / else actually decide execution
+	•	Why loops don’t run forever (unless you let them 😄)
+	•	When to use for vs while
+	•	How nested loops work (interview favorite)
+
+💡 Interview tip:
+If you can explain control flow visually, you can explain any algorithm.
+
+Save this post — you’ll need it while:
+	•	Revising Python 🧠
+	•	Preparing for interviews 🎯
+	•	Teaching others 👨‍🏫
+
+👉 Comment “PYTHON” if you want more beginner → interview-ready Python posts.
+
+#python
+#datascience
+#pythonlearning
+#codinginterview
+#datacareer
+#machinelearning
+
+=== 2025-12-13_Don-t-Walk-Into-Any-Interview-Without-Knowing-These-SQL_DSOQX4sEoDX  [10 slides]
+https://www.instagram.com/p/DSOQX4sEoDX/
+Don’t Walk Into Any Interview Without Knowing These SQL Queries!
+
+SQL interview questions are essential for landing roles that require data handling, whether you're interviewing for a Data Analyst, Data Scientist, Data Engineer or Database Administrator position. When I first started preparing for interviews, I was overwhelmed by the sheer number of SQL-related questions and their real-world applications. If that sounds like you, this complete Q&A guide for SQL is the perfect tool to simplify your learning journey and help you ace your interviews!
+
+Here’s what you’ll find inside: 
+✔️ Most asked SQL questions in MAANG interviews 
+✔️ How to explain and apply SQL concepts in real-world scenarios 
+✔️ Tips to connect your answers with business impact 
+✔️ Advanced insights into SQL queries, joins, optimization, indexing, and more
+
+💡 Pro Tip: Interviewers often ask how you approach problem-solving in SQL, rather than just testing your memorization. Be prepared to discuss your thought process, explain your reasoning, and show how you can derive insights from database queries.
+
+🚨 Remember: “It’s not just about writing queries—it’s about showcasing your analytical thinking and problem-solving skills through SQL!”
+
+Need These Notes in DM 
+Comment Notes
+
+=== 2025-12-09_Learning-Python-doesn-t-have-to-feel-overwhelming-you-j_DSCnpJ5AdcJ  [10 slides]
+https://www.instagram.com/p/DSCnpJ5AdcJ/
+Learning Python doesn’t have to feel overwhelming — you just need the right guidance and the right structure.
+That’s exactly why I designed these Python POP Notes: to give beginners a clear, simple, and practical roadmap to understand the foundations of programming without confusion.
+
+From data types to loops, functions, indexing, slicing, OOP basics, and real examples, everything is organized the way a learner actually needs it — crisp, visual, and beginner-friendly.
+Whether you're starting your data journey, preparing for interviews, or brushing up concepts, this will make Python feel easy and enjoyable.
+
+Follow and Comment Notes to get this in your DMs
+
+=== 2025-12-08_Master-SQL-the-Right-Way_DR_3bZYAdvC  [10 slides]
+https://www.instagram.com/p/DR_3bZYAdvC/
+✨ Master SQL the Right Way!
+
+If you’re learning Data Science, Analytics, or AI, SQL is non-negotiable.
+To make your journey easier, I’ve simplified the complete SQL basics from W3Schools into clean, visual notes—perfect for beginners and interview prep.
+
+Inside this guide, you’ll learn:
+✔️ What SQL really is
+✔️ How databases work
+✔️ SELECT, DISTINCT & core commands
+✔️ Real examples using the Customers table
+✔️ Interview-ready SQL foundations
+
+I created this because most learners struggle to start SQL the right way—and these pages will give you the clarity you’ve been missing.
+Save it, revise it, and apply it in your next project or interview.
+
+Follow @tajamul.datascientist Comment Notes to Get this PDF in your DMs
+
+=== 2025-11-24_Python-OOP-made-super-easy_DRcR7OigVxR  [11 slides]
+https://www.instagram.com/p/DRcR7OigVxR/
+Python OOP made super easy! 🐍✨
+
+Here’s a compact booklet that breaks down every core concept — from classes & objects to inheritance and polymorphism.
+If you’re preparing for interviews or brushing up your basics, this is for you!
+
+#pythondeveloper #datascience #learning
+
+=== 2025-11-19_Master-SQL-From-the-Ground-Up-100-Must-Know-Theory-Ques_DRTQv9WjEJy  [10 slides]
+https://www.instagram.com/p/DRTQv9WjEJy/
+Master SQL From the Ground Up — 100 Must-Know Theory Questions 📘🔥
+
+If you’re preparing for Data Analyst, Data Scientist, ML Engineer, or BI roles… SQL is non-negotiable.
+But most learners get stuck because they memorize queries without understanding the underlying concepts.
+
+That’s why I created “100 SQL Theory Questions” — a compact, value-packed guide covering all the fundamentals you’ll ever be asked in interviews:
+
+🔹 Keys (Primary, Foreign, Composite)
+🔹 Joins (Inner, Outer, Self, Natural, Equi)
+🔹 Indexing
+🔹 Normalization
+🔹 Subqueries & Correlated Subqueries
+🔹 OLTP vs OLAP
+🔹 ACID Properties
+🔹 Window Functions
+🔹 Constraints, Views, Triggers, Stored Procedures
+… and much more.
+
+Whether you’re just starting out or brushing up for interviews, this PDF will sharpen your concepts and make you interview-ready.
+
+If you want more SQL sheets like this, drop a 🔥 in the comments.
+
+Save it ⚡ Share it 💡 Follow for more practical data content.
+
+#sql #sqlqueries #datascience #dataanalysis #analytics #dataengineering #machinelearning #interviewprep #techcareer #datacommunity #mysql #postgresql #bigdata #databasemanagement #programminglife #dataislife #upskill #careerprep #businessanalytics #learnsql #sqlforbeginners #datajobs #datascientist #sqlinterview #datajourney #techskills #python
+
+=== 2025-11-03_50-SQL-INTERVIEW-QUESTIONS_DQl-oX3DDGI  [13 slides]
+https://www.instagram.com/p/DQl-oX3DDGI/
+🔂 50 SQL INTERVIEW QUESTIONS ❤️
+.
+Follow , Save before it disappear 🫠 !!
+.
+.
+Follow @tajamul.datascientist 🫡 & @dataelevate_engineer For more regular Data & Career Content !!
+.
+.
+.
+Credits: Kedak Dwi
+
+Know someone who needs this? Tag them below! 👇
+.
+.
+[ Software Developer , Computer Science , Engineering Students , College Students , DSA , Web Development , Placements , Job , Certifications , Data Analyst , Data Analysis, Data Engineer,Dhurandhar, Ranveer Singh, Data Scientist , College Students , Leetcode , Sql , Career ]
+
+/Ignore Keywords
+SQL
+Window Functions
+Analytics Functions
+SQL Tutorial
+Data Analytics
+Data Science
+Data Engineering
+PostgreSQL / MySQL / SQL Server (depending on your audience)
+Leetcode
+Ranking Functions
+SQL Tricks
+SQL for Beginners
+Over Clause
+Partition By
+Order By
+ROW_NUMBER
+RANK
+LEAD / LAG
+Data Analysis
+
+/Ignore Hashtags
+
+#SQL #WindowFunctions #DataAnalytics #LearnSQL #DataScience #SQLTutorial #TechTips #DataEngineer #CodingTips #100DaysOfCode #ROWNUMBER #RANK #LAG #LEAD #OverClause #PartitionBy #OrderBy #PostgreSQL #MySQL #SQLServer #CodeNewbie #WomenWhoCode #TechInstagram #CodeLife #DataCommunity #AnalyticsFunctions #SQLTricks #CodingLife #dhurandhar #ranveer 
+
+Weekend
+United States of america
+USA
+Canada
+Australia 
+Data Analyst 
+Data Analysis 
+Data Analysts 
+Data Engineer 
+Data Engineering 
+Engineering 
+Software Engineer 
+SQL
+Python
+Statistics 
+Power BI
+
+=== 2025-10-17_Don-t-Walk-Into-Any-Interview-Without-Knowing-These-Pyt_DP76b4xAdHF  [7 slides]
+https://www.instagram.com/p/DP76b4xAdHF/
+🚀 Don’t Walk Into Any Interview Without Knowing These Python Concepts!
+
+Python interview questions are a game-changer for anyone aiming for roles in Data Analysis, Machine Learning, Software Development, or Automation.
+
+When I started preparing, I was overwhelmed — from list comprehensions to OOP and Pandas, there was so much to cover! 😅
+
+If you’re in the same boat, this complete Python Q&A guide is your go-to resource to simplify your prep and help you crack interviews with confidence.
+
+Here’s what you’ll find inside 👇
+✔️ Most asked Python questions in MAANG and top-tier interviews
+✔️ Real-world coding scenarios involving lists, dictionaries, file I/O
+✔️ Tips to explain your logic & write clean, efficient code
+✔️ Advanced topics like decorators, generators, error handling, and OOP
+
+💡 Pro Tip:
+Interviewers love to see how you think in Python — not just what you code.
+Be ready to explain your approach, handle edge cases, and justify design choices confidently.
+
+🚨 Remember:
+
+It’s not just about writing Python code — it’s about showing logic, clarity, and real-world problem-solving skills!
+
+♻️ Repost if you’re preparing for interviews or know someone who is!
+
+#Python #PythonInterview #DataScience #MachineLearning #DataAnalytics #SoftwareDevelopment #CodingInterview #InterviewPreparation #PythonTips #DataAnalyst #DataScientist #DeveloperCommunity #LearnPython #CareerGrowth #TechCareers #TajamulKhan
+
+=== 2025-09-20_Don-t-Go-for-Any-Python-Interview-Without-These-Questio_DO0RcRvgW8T  [7 slides]
+https://www.instagram.com/p/DO0RcRvgW8T/
+📌 Don’t Go for Any Python Interview Without These Questions!
+
+Whether you’re a fresher or an experienced data professional—Python coding rounds are unavoidable. 🚀
+That’s why I curated a power-packed PDF (not just another 100+ dump) with the must-know coding questions interviewers actually ask!
+
+🔥 What’s Inside?
+✔️ Python basics → range, list comprehension, reversal
+✔️ Logic problems → Palindrome, Armstrong, Fibonacci
+✔️ Essentials → String ↔ Integer, unique lists, factorial
+✔️ Functions → lambda, map, filter
+✔️ Quick checks → Leap year, even/odd, vowel/consonant
+
+💡 Pro Tip:
+Interviewers value clarity of thought, efficiency & reasoning over just correct answers. Always explain how you solved it!
+
+⚡ Master these → and you’re already ahead in your next interview.
+
+👉 Found this helpful? Save + Share!
+♻️ Repost to help others in their prep journey.
+
+#Python #DataScience #PythonCoding #InterviewPrep #DataAnalyst #DataScientist #PythonDeveloper #JobPreparation #CareerGrowth
+

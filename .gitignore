@@ -1,0 +1,11 @@
+﻿# reference screen recording used while designing the site (not part of the library)
+Recording *.mp4
+*.mp4
+
+# editor / tool / OS leftovers
+.claude/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
+.DS_Store
