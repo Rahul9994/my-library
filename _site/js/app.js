@@ -23,10 +23,12 @@ const enc = p => p.split('/').map(encodeURIComponent).join('/');
 const hash = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 const dur = d => REDUCE ? 0.01 : d;
 
-const TYPE_LABEL = { cheatsheet: 'Cheat sheet', code: 'Code & notes', project: 'Project & guide' };
-const TOPIC_LABEL = { sql: 'SQL', python: 'Python', ml: 'Machine learning', ai: 'AI & RAG', bi: 'Power BI & Excel', data: 'Data', career: 'Career' };
-const TOPIC_CHIP = { sql: 'SQL', python: 'Python', ml: 'ML', data: 'Data', ai: 'AI', bi: 'BI' };
-const TOPIC_DOT = { sql: '#1c3ad2', python: '#1d5c43', ml: '#18181b', ai: '#a9291f', bi: '#d29b2d', data: '#2b6773', career: '#c4663c' };
+// types + topics come from the catalogue (built by tools/build_library.py), so new collections need no code changes
+const TYPES = LIB.types || [], TOPICS = LIB.topics || [];
+const typeInfo = k => TYPES.find(t => t.key === k) || { key: k, chip: k, label: k };
+const topicInfo = k => TOPICS.find(t => t.key === k) || { key: k, chip: k, label: k, dot: '#999' };
+const TYPE_LABEL = new Proxy({}, { get: (_, k) => typeInfo(k).label });
+const TOPIC_LABEL = new Proxy({}, { get: (_, k) => topicInfo(k).label });
 
 /* ── elements ───────────────────────────────────────────── */
 const root = document.documentElement, body = document.body;
@@ -35,7 +37,7 @@ const E = {
   nowWrap: $('#nowWrap'), nowTitle: $('#nowTitle'), nowKicker: $('#nowKicker'), nowDate: $('#nowDate'),
   prev: $('#prevBtn'), next: $('#nextBtn'), round: $('#roundBtn'), metaCount: $('#metaCount'), top: $('.top'), foot: $('.foot'),
   detail: $('#detail'), dSheet: $('#dSheet'), dText: $('#dText'), dNo: $('#dNo'), dTopic: $('#dTopic'), dTitle: $('#dTitle'),
-  dMeta: $('#dMeta'), dDesc: $('#dDesc'), dRead: $('#dRead'), dIg: $('#dIg'), dInside: $('#dInside'), dArt: $('#dArt'),
+  dMeta: $('#dMeta'), dDesc: $('#dDesc'), dRead: $('#dRead'), dIg: $('#dIg'), dIgLabel: $('#dIgLabel'), dBy: $('#dBy'), footSearch: $('#footSearch'), dInside: $('#dInside'), dArt: $('#dArt'),
   dCover: $('#dCover'), dCoverImg: $('#dCover img'), dPrev: $('#dPrev'), dNext: $('#dNext'),
   reader: $('#reader'), rTitle: $('#rTitle'), rCur: $('#rCur'), rTot: $('#rTot'), rClose: $('#rClose'), rStage: $('#rStage'),
   rPage: $('#rPage'), rA: $('#rImgA'), rB: $('#rImgB'), rPrev: $('#rPrev'), rNext: $('#rNext'), rThumbs: $('#rThumbs'),
@@ -240,10 +242,10 @@ function goTo(idx, instant) {
 /* ── filters ────────────────────────────────────────────── */
 function buildFilters() {
   const typeCount = t => t === 'all' ? ALL.length : ALL.filter(b => b.type === t).length;
-  const types = [['all', 'All'], ['cheatsheet', 'Cheatsheets'], ['code', 'Code'], ['project', 'Projects']];
+  const types = [['all', 'All']].concat(TYPES.map(t => [t.key, t.chip]));
   E.segType.innerHTML = types.map(([k, l]) => `<button data-k="${k}" data-cursor="btn"${k === 'all' ? ' class="on"' : ''}>${l}<sup>${typeCount(k)}</sup></button>`).join('');
-  const topics = Object.keys(TOPIC_CHIP);
-  E.segTopic.innerHTML = [['all', 'Every topic', '#8f8c84']].concat(topics.map(k => [k, TOPIC_CHIP[k], TOPIC_DOT[k]]))
+  const topics = TOPICS.filter(t => t.count >= (t.key === 'career' || t.key === 'other' ? 8 : 4));
+  E.segTopic.innerHTML = [['all', 'Every topic', '#8f8c84']].concat(topics.map(t => [t.key, t.chip, t.dot]))
     .map(([k, l, c]) => `<button data-k="${k}" data-cursor="btn" style="--dot:${c}"${k === 'all' ? ' class="on"' : ''}><i></i>${l}</button>`).join('');
   E.segType.addEventListener('click', e => { const b = e.target.closest('button'); if (b) applyFilter({ type: b.dataset.k }); });
   E.segTopic.addEventListener('click', e => { const b = e.target.closest('button'); if (b) applyFilter({ topic: b.dataset.k }); });
@@ -436,9 +438,11 @@ function fillDetail(b) {
   E.dNo.textContent = '№ ' + pad(b.n);
   E.dTopic.textContent = TOPIC_LABEL[b.topic] + '  /  ' + TYPE_LABEL[b.type];
   E.dTitle.innerHTML = splitTitle(b.title);
-  E.dMeta.textContent = `${fmtDate(b.date)}  /  ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}  /  ${b.type === 'cheatsheet' ? 'Cheatsheet' : b.type === 'code' ? 'Code' : 'Project'}`;
+  E.dMeta.textContent = `${fmtDate(b.date)}  /  ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}  /  ${typeInfo(b.type).label}`;
   E.dDesc.textContent = b.desc;
-  E.dIg.href = b.ig;
+  E.dBy.innerHTML = b.author ? `Written &amp; designed by <em>${esc(b.author)}</em>${b.handle ? ' &nbsp;/&nbsp; ' + esc(b.handle) : ''}` : '';
+  E.dIg.style.display = b.source ? '' : 'none';
+  if (b.source) { E.dIg.href = b.source; E.dIgLabel.textContent = 'View on ' + (b.sourceLabel || 'source'); }
   const show = Math.min(b.slides, 7);
   let h = `<label>Inside — ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}</label>`;
   for (let i = 0; i < show; i++) h += `<button data-i="${i}" data-cursor="btn" aria-label="Open slide ${i + 1}"><img alt="" loading="lazy" decoding="async"></button>`;
@@ -667,7 +671,7 @@ E.round.addEventListener('click', () => {
 });
 
 /* ── search ─────────────────────────────────────────────── */
-const SIDX = ALL.map(b => ({ b, hay: [b.title, b.short, TOPIC_LABEL[b.topic], TYPE_LABEL[b.type], b.tags.join(' '), b.date.slice(0, 4), 'no ' + b.n].join(' ').toLowerCase() }));
+const SIDX = ALL.map(b => ({ b, hay: [b.title, b.short, TOPIC_LABEL[b.topic], TYPE_LABEL[b.type], b.author, b.handle, b.tags.join(' '), b.date.slice(0, 4), 'no ' + b.n].join(' ').toLowerCase() }));
 let sRes = [], sSel = 0;
 function renderSearch(q) {
   q = q.trim().toLowerCase();
@@ -724,6 +728,7 @@ E.sInput.addEventListener('keydown', e => {
 E.sList.addEventListener('click', e => { const li = e.target.closest('li[data-i]'); if (li) pickBook(sRes[+li.dataset.i]); });
 E.sList.addEventListener('pointermove', e => { const li = e.target.closest('li[data-i]'); if (li && +li.dataset.i !== sSel) { sSel = +li.dataset.i; markSel(); } });
 E.sVeil.addEventListener('click', closeSearch);
+E.footSearch.addEventListener('click', () => S.view === 'shelf' && openSearch());
 
 /* ── resize ─────────────────────────────────────────────── */
 let rzT = 0;

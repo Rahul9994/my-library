@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Library — Tajamul's collected sheets</title>
-<meta name="description" content="A browsable shelf of 215 cheat sheets, code notes and guides collected from tajamul.codes.">
+<title>The Library</title>
+<meta name="description" content="A browsable shelf of cheat sheets, code notes, guides and books.">
 <meta name="theme-color" content="#ecebe5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3bd1'/%3E%3Crect x='7' y='6' width='5' height='20' rx='1' fill='%23f1ecdf'/%3E%3Crect x='14' y='6' width='5' height='20' rx='1' fill='%23f1ecdf' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='18' rx='1' fill='%23f1ecdf' transform='rotate(12 23 17)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="_site/css/style.css">
@@ -21,7 +21,7 @@
   </button>
   <div class="brand">
     <div class="brand-name">The Library</div>
-    <div class="brand-sub">Tajamul · Collected sheets</div>
+    <div class="brand-sub">A personal collection</div>
   </div>
   <div class="top-meta"><span id="metaCount">215</span> books <i>/</i> <span class="yrs">2025—2026</span></div>
 </header>
@@ -58,10 +58,10 @@
       <h1 class="d-title" id="dTitle"></h1>
       <p class="d-meta rv" id="dMeta"></p>
       <p class="d-desc rv" id="dDesc"></p>
-      <p class="d-by rv">Written &amp; designed by <em>Tajamul Khan</em> &nbsp;/&nbsp; @tajamul.codes</p>
+      <p class="d-by rv" id="dBy"></p>
       <div class="d-actions rv">
         <button class="btn" id="dRead" data-cursor="btn"><span>Read the book</span><svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h26.5M22 1l5 5-5 5"/></svg></button>
-        <a class="btn ghost" id="dIg" target="_blank" rel="noopener" data-cursor="btn"><span>View on Instagram</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6"/></svg></a>
+        <a class="btn ghost" id="dIg" target="_blank" rel="noopener" data-cursor="btn"><span id="dIgLabel">View source</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6"/></svg></a>
       </div>
       <div class="d-inside rv" id="dInside"></div>
     </div>
@@ -105,8 +105,8 @@
 </div>
 
 <footer class="foot">
-  <div class="foot-l">All sheets © Tajamul Khan · @tajamul.codes — a personal reading library</div>
-  <a class="foot-r" href="https://www.instagram.com/tajamul.codes/" target="_blank" rel="noopener" data-cursor="btn">IG <i>/</i> ↗</a>
+  <div class="foot-l">A personal reading library — each book credited to its author</div>
+  <button class="foot-r" id="footSearch" data-cursor="btn">Search <i>/</i></button>
 </footer>
 
 <div class="cursor" id="cursor" aria-hidden="true"><i class="c-ring"></i><i class="c-dot"></i><span class="c-label">Open</span></div>

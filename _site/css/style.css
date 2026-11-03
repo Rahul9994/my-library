@@ -144,6 +144,8 @@ body.is-inside .round .ico-back{transform:none;opacity:1}
 .sp-data-1{--sbg:#e9e1cd;--sink:#2b6773;--sacc:#2b6773;--sline:rgba(0,0,0,.15)}
 .sp-career-0{--sbg:#c4663c;--sink:#f7ecdb;--sacc:#f7ecdb;--sline:rgba(255,255,255,.2)}
 .sp-career-1{--sbg:#eee3cf;--sink:#5a2d18;--sacc:#c4663c;--sline:rgba(0,0,0,.15)}
+.sp-other-0{--sbg:#5b5f73;--sink:#f1ecdd;--sacc:#d9c58a;--sline:rgba(255,255,255,.18)}
+.sp-other-1{--sbg:#ebe5d6;--sink:#3d4057;--sacc:#5b5f73;--sline:rgba(0,0,0,.15)}
 
 /* title under the shelf */
 .now-wrap{position:absolute;left:0;right:0;top:calc(var(--railTop) + var(--H) + 40px);z-index:4;text-align:center;pointer-events:none}
@@ -159,7 +161,8 @@ body.is-inside .round .ico-back{transform:none;opacity:1}
 
 /* footer */
 .foot{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:space-between;align-items:flex-end;padding:0 22px 16px;pointer-events:none;font:600 8px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase}
-.foot-r{pointer-events:auto}
+.foot-r{pointer-events:auto;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;padding:6px 0 0}
+.foot-r:hover{color:var(--blue)}
 .foot i{font-style:normal;opacity:.45;margin:0 .3em}
 body.is-inside .foot{mix-blend-mode:normal}
 
@@ -194,6 +197,7 @@ body.is-inside .foot{mix-blend-mode:normal}
 .d-desc{margin-top:22px;max-width:40ch;font:400 clamp(15px,1.25vw,19px)/1.55 var(--serif);color:rgba(19,19,19,.82)}
 .d-by{margin-top:14px;font:italic 400 14px/1.4 var(--serif);color:var(--mute)}
 .d-by em{font-style:italic;color:var(--ink)}
+.d-by:empty{display:none}
 .d-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
 .btn{position:relative;display:inline-flex;align-items:center;gap:16px;padding:15px 20px 14px;border:1px solid var(--blue);color:var(--blue);font:700 9px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;overflow:hidden;isolation:isolate;transition:color .45s var(--ease)}
 .btn::before{content:'';position:absolute;inset:0;background:var(--blue);transform:scaleY(0);transform-origin:50% 100%;transition:transform .55s var(--ease);z-index:-1}
