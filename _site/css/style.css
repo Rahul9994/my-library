@@ -163,6 +163,8 @@ body.is-inside .round .ico-back{transform:none;opacity:1}
 .foot{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:space-between;align-items:flex-end;padding:0 22px 16px;pointer-events:none;font:600 8px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase}
 .foot-r{pointer-events:auto;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;padding:6px 0 0}
 .foot-r:hover{color:var(--blue)}
+.foot-credit{pointer-events:auto;color:var(--blue);border-bottom:1px solid rgba(28,58,210,.35);padding-bottom:1px;transition:border-color .3s}
+.foot-credit:hover{border-color:var(--blue)}
 .foot i{font-style:normal;opacity:.45;margin:0 .3em}
 body.is-inside .foot{mix-blend-mode:normal}
 
