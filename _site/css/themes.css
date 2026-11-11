@@ -16,6 +16,11 @@
 .t-data{--tc:var(--tc-data);--ti:var(--ti-data)}
 .t-career{--tc:var(--tc-career);--ti:var(--ti-career)}
 .t-other{--tc:var(--tc-other);--ti:var(--ti-other)}
+.t-dsa{--tc:var(--tc-dsa);--ti:var(--ti-dsa)}
+.t-code{--tc:var(--tc-code);--ti:var(--ti-code)}
+.t-devops{--tc:var(--tc-devops);--ti:var(--ti-devops)}
+.t-linux{--tc:var(--tc-linux);--ti:var(--ti-linux)}
+.t-security{--tc:var(--tc-security);--ti:var(--ti-security)}
 
 /* ═══════════════════════ LIGHT · ivory gallery ═══════════════════════ */
 [data-theme="light"],:root:not([data-theme]){
@@ -48,6 +53,7 @@
   /* spine kit (light uses the original hand-picked palette below) */
   --tc-sql:#1c3ad2;--tc-python:#1d5c43;--tc-ml:#18181b;--tc-ai:#a9291f;--tc-bi:#d29b2d;--tc-data:#2b6773;--tc-career:#c4663c;--tc-other:#5b5f73;
   --ti-sql:#1c3ad2;--ti-python:#1d5c43;--ti-ml:#18181b;--ti-ai:#a9291f;--ti-bi:#86590a;--ti-data:#2b6773;--ti-career:#5a2d18;--ti-other:#3d4057;
+  /* new shelves */ --tc-dsa:#5b3a8c;--tc-code:#7b2d4f;--tc-devops:#4a6b1f;--tc-linux:#6d4c41;--tc-security:#b0123c;--ti-dsa:#5b3a8c;--ti-code:#7b2d4f;--ti-devops:#3f5c18;--ti-linux:#4e342e;--ti-security:#8c0f30;
   /* theme-picker miniature */
   --pv1:#1c3ad2;--pv2:#ece2c9;--pv3:#1d5c43;--pv4:#a9291f;--pv-edge:rgba(0,0,0,.18);
 }
@@ -67,6 +73,16 @@
 [data-theme="light"] .sp-career-1{--sbg:#eee3cf;--sink:#5a2d18;--sacc:#c4663c;--sline:rgba(0,0,0,.15)}
 [data-theme="light"] .sp-other-0{--sbg:#5b5f73;--sink:#f1ecdd;--sacc:#d9c58a;--sline:rgba(255,255,255,.18)}
 [data-theme="light"] .sp-other-1{--sbg:#ebe5d6;--sink:#3d4057;--sacc:#5b5f73;--sline:rgba(0,0,0,.15)}
+[data-theme="light"] .sp-dsa-0,:root:not([data-theme]) .sp-dsa-0{--sbg:#5b3a8c;--sink:#f1e9dc;--sacc:#e7c46a;--sline:rgba(255,255,255,.18)}
+[data-theme="light"] .sp-dsa-1,:root:not([data-theme]) .sp-dsa-1{--sbg:#e8e0cf;--sink:#5b3a8c;--sacc:#5b3a8c;--sline:rgba(0,0,0,.15)}
+[data-theme="light"] .sp-code-0,:root:not([data-theme]) .sp-code-0{--sbg:#7b2d4f;--sink:#f4eadb;--sacc:#f4eadb;--sline:rgba(255,255,255,.2)}
+[data-theme="light"] .sp-code-1,:root:not([data-theme]) .sp-code-1{--sbg:#efe5d1;--sink:#7b2d4f;--sacc:#7b2d4f;--sline:rgba(0,0,0,.15)}
+[data-theme="light"] .sp-devops-0,:root:not([data-theme]) .sp-devops-0{--sbg:#4a6b1f;--sink:#f0ead6;--sacc:#e8d48a;--sline:rgba(255,255,255,.18)}
+[data-theme="light"] .sp-devops-1,:root:not([data-theme]) .sp-devops-1{--sbg:#e6dfc9;--sink:#3f5c18;--sacc:#4a6b1f;--sline:rgba(0,0,0,.15)}
+[data-theme="light"] .sp-linux-0,:root:not([data-theme]) .sp-linux-0{--sbg:#6d4c41;--sink:#f3e9d8;--sacc:#e9b949;--sline:rgba(255,255,255,.18)}
+[data-theme="light"] .sp-linux-1,:root:not([data-theme]) .sp-linux-1{--sbg:#18181b;--sink:#f0e2c0;--sacc:#e9b949;--sline:rgba(255,255,255,.16)}
+[data-theme="light"] .sp-security-0,:root:not([data-theme]) .sp-security-0{--sbg:#b0123c;--sink:#f6ead8;--sacc:#f6ead8;--sline:rgba(255,255,255,.2)}
+[data-theme="light"] .sp-security-1,:root:not([data-theme]) .sp-security-1{--sbg:#18181b;--sink:#f2dfd3;--sacc:#e0314f;--sline:rgba(255,255,255,.16)}
 
 /* ═══════════════════════ DARK · midnight library ═══════════════════════ */
 [data-theme="dark"]{
@@ -96,6 +112,7 @@
   --bookend:linear-gradient(90deg,#6f5726,#d5b765 45%,#7d6230);
   --tc-sql:#2b44c9;--tc-python:#1b6a50;--tc-ml:#2a2a31;--tc-ai:#a8312b;--tc-bi:#cf9f3d;--tc-data:#217684;--tc-career:#b8663c;--tc-other:#5e647f;
   --ti-sql:#8da2ff;--ti-python:#6fd0a4;--ti-ml:#e0dccf;--ti-ai:#ff8f84;--ti-bi:#e8c06a;--ti-data:#6fd0de;--ti-career:#f0a577;--ti-other:#a9b0d6;
+  /* new shelves */ --tc-dsa:#5a3f99;--tc-code:#8a3358;--tc-devops:#4d6b22;--tc-linux:#6b4b3d;--tc-security:#a3203f;--ti-dsa:#c7b0ff;--ti-code:#ff9cc6;--ti-devops:#b8dd7a;--ti-linux:#e8c39e;--ti-security:#ff8aa3;
   --fill-ink:#efe3c4;--fill-acc:#e0bd6e;--alt-bg:#18181d;--bi-fill-ink:#1b1507;
   --sp-glow:0 0 1px rgba(255,224,160,.35);
   --pv1:#2b44c9;--pv2:#18181d;--pv3:#1b6a50;--pv4:#a8312b;--pv-edge:rgba(255,255,255,.14);
@@ -129,6 +146,7 @@
   --bookend:linear-gradient(90deg,#8a5d1d,#f0c673 45%,#98692a);
   --tc-sql:#2b3f87;--tc-python:#2f5a3c;--tc-ml:#2b2018;--tc-ai:#7e2a21;--tc-bi:#c28a2b;--tc-data:#2d5f5c;--tc-career:#a14d28;--tc-other:#4d4961;
   --ti-sql:#9bb0ff;--ti-python:#8fd2a0;--ti-ml:#e9d9b8;--ti-ai:#ff9b8c;--ti-bi:#f1c15c;--ti-data:#86d6cf;--ti-career:#f0a06a;--ti-other:#b9b3d9;
+  /* new shelves */ --tc-dsa:#4a3570;--tc-code:#6f2a44;--tc-devops:#445a22;--tc-linux:#5a3c2a;--tc-security:#8a1e33;--ti-dsa:#c9b3ff;--ti-code:#ffa3c4;--ti-devops:#c3dc8a;--ti-linux:#f0c9a0;--ti-security:#ff9aae;
   --fill-ink:#f3dba2;--fill-acc:#e8bd6a;--alt-bg:#2a1a0e;--bi-fill-ink:#2a1606;
   --sp-glow:0 0 1px rgba(255,214,140,.4);
   --pv1:#2b3f87;--pv2:#7e2a21;--pv3:#2f5a3c;--pv4:#c28a2b;--pv-edge:rgba(255,220,160,.18);
@@ -166,6 +184,7 @@
   --bookend:linear-gradient(90deg,#0b4a22,#2dff7a);
   --tc-sql:#2dff7a;--tc-python:#b6ff3c;--tc-ml:#35f0ff;--tc-ai:#ffc53a;--tc-bi:#ffe14a;--tc-data:#7dffe0;--tc-career:#ff7a4a;--tc-other:#8fb7a0;
   --ti-sql:#2dff7a;--ti-python:#b6ff3c;--ti-ml:#35f0ff;--ti-ai:#ffc53a;--ti-bi:#ffe14a;--ti-data:#7dffe0;--ti-career:#ff7a4a;--ti-other:#8fb7a0;
+  /* new shelves */ --tc-dsa:#c99bff;--tc-code:#6ea8ff;--tc-devops:#ff8fd0;--tc-linux:#f0ead2;--tc-security:#ff4d6d;--ti-dsa:#c99bff;--ti-code:#6ea8ff;--ti-devops:#ff8fd0;--ti-linux:#f0ead2;--ti-security:#ff4d6d;
   --neon-bg-0:#03110a;--neon-bg-1:#06190d;--n-ink0:#a6ffc4;--n-acc0:var(--tc);--n-ink1:var(--tc);--n-acc1:#a6ffc4;
   --bands:0;--sp-wt:600;--sp-ls:.02em;--sp-k:.7;--sp-glow:0 0 8px color-mix(in srgb,var(--tc) 60%,transparent);
   --pv1:#2dff7a;--pv2:#35f0ff;--pv3:#b6ff3c;--pv4:#ffc53a;--pv-edge:rgba(45,255,122,.55);
@@ -203,6 +222,7 @@
   --bookend:linear-gradient(90deg,#ff2fd1,#19e3ff);
   --tc-sql:#19e3ff;--tc-python:#a6ff4d;--tc-ml:#b48cff;--tc-ai:#ff2fd1;--tc-bi:#ffd426;--tc-data:#2affc3;--tc-career:#ff8a3d;--tc-other:#8ea6ff;
   --ti-sql:#19e3ff;--ti-python:#a6ff4d;--ti-ml:#b48cff;--ti-ai:#ff2fd1;--ti-bi:#ffd426;--ti-data:#2affc3;--ti-career:#ff8a3d;--ti-other:#8ea6ff;
+  /* new shelves */ --tc-dsa:#8f7bff;--tc-code:#4d8dff;--tc-devops:#ff9df3;--tc-linux:#f4f1e6;--tc-security:#ff3b5c;--ti-dsa:#8f7bff;--ti-code:#4d8dff;--ti-devops:#ff9df3;--ti-linux:#f4f1e6;--ti-security:#ff3b5c;
   --neon-bg-0:linear-gradient(180deg,#1f0e44 0%,#0e0724 100%);--neon-bg-1:linear-gradient(180deg,#130a32 0%,#0a0522 100%);
   --bands:0;--sp-wt:700;--sp-ls:.03em;--sp-k:.76;--sp-glow:0 0 10px color-mix(in srgb,var(--tc) 65%,transparent);
   --pv1:#19e3ff;--pv2:#ff2fd1;--pv3:#a6ff4d;--pv4:#b48cff;--pv-edge:rgba(25,227,255,.6);

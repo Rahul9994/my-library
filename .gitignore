@@ -9,3 +9,7 @@ __pycache__/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# full-length books (1.3 GB of PDF/EPUB): kept local - too big for GitHub Pages and several licences
+# forbid public re-hosting. Their covers, previews and catalogue entries in _site/ are published instead.
+Books/

@@ -84,11 +84,16 @@ TOPICS = [
     ('python', r'python|\boop\b|fastapi|rest api|\bdsa\b|leetcode|javascript|\bgit\b'),
     ('data',   r'pyspark|spark|databricks|fabric|\bdbt\b|data engineering|pandas|numpy|matplotlib|seaborn|data cleaning|data analy|data science|azure|aws|\br cheat'),
 ]
-TOPIC_LABEL = {'ai': 'AI', 'bi': 'BI', 'ml': 'ML', 'sql': 'SQL', 'data': 'Data', 'python': 'Python', 'career': 'Career', 'other': 'General'}
-TOPIC_CODE = {'ai': 'AI', 'bi': 'BI', 'ml': 'ML', 'sql': 'SQL', 'data': 'DA', 'python': 'PY', 'career': 'CR', 'other': 'BK'}
-TOPIC_NAME = {'sql': 'SQL', 'python': 'Python', 'ml': 'Machine learning', 'ai': 'AI & RAG', 'bi': 'Power BI & Excel', 'data': 'Data', 'career': 'Career', 'other': 'Other'}
-TOPIC_CHIP = {'sql': 'SQL', 'python': 'Python', 'ml': 'ML', 'ai': 'AI', 'bi': 'BI', 'data': 'Data', 'career': 'Career', 'other': 'Other'}
-TOPIC_DOT = {'sql': '#1c3ad2', 'python': '#1d5c43', 'ml': '#18181b', 'ai': '#a9291f', 'bi': '#d29b2d', 'data': '#2b6773', 'career': '#c4663c', 'other': '#8f8c84'}
+TOPIC_LABEL = {'ai': 'AI', 'bi': 'BI', 'ml': 'ML', 'sql': 'SQL', 'data': 'Data', 'python': 'Python', 'career': 'Career', 'other': 'General',
+               'dsa': 'DSA', 'code': 'Programming', 'devops': 'DevOps', 'linux': 'Linux', 'security': 'Security'}
+TOPIC_CODE = {'ai': 'AI', 'bi': 'BI', 'ml': 'ML', 'sql': 'SQL', 'data': 'DA', 'python': 'PY', 'career': 'CR', 'other': 'BK',
+              'dsa': 'DS', 'code': 'PL', 'devops': 'DO', 'linux': 'LX', 'security': 'SC'}
+TOPIC_NAME = {'sql': 'SQL', 'python': 'Python', 'ml': 'Machine learning', 'ai': 'AI & RAG', 'bi': 'Power BI & Excel', 'data': 'Data', 'career': 'Career & interviews', 'other': 'Other',
+              'dsa': 'Algorithms & DSA', 'code': 'Programming languages', 'devops': 'DevOps & Docker', 'linux': 'Linux', 'security': 'Security & hacking'}
+TOPIC_CHIP = {'sql': 'SQL', 'python': 'Python', 'ml': 'ML', 'ai': 'AI', 'bi': 'BI', 'data': 'Data', 'career': 'Career', 'other': 'Other',
+              'dsa': 'DSA', 'code': 'Languages', 'devops': 'DevOps', 'linux': 'Linux', 'security': 'Security'}
+TOPIC_DOT = {'sql': '#1c3ad2', 'python': '#1d5c43', 'ml': '#18181b', 'ai': '#a9291f', 'bi': '#d29b2d', 'data': '#2b6773', 'career': '#c4663c', 'other': '#8f8c84',
+             'dsa': '#5b3a8c', 'code': '#7b2d4f', 'devops': '#4a6b1f', 'linux': '#6d4c41', 'security': '#b0123c'}
 
 
 def topic_of(title, tags, cap):
@@ -293,21 +298,118 @@ for folder, typ, cdef in collections:
             source=str(bj.get('source') or source),
         ))
 
-books.sort(key=lambda b: (b['date'], b['id']), reverse=True)      # newest first
+# ------------------------------------------- document books (PDF / EPUB)
+# _site/tools/books_catalog.json lists full-length books kept as PDF/EPUB files under Books/.
+# Each one gets a cover, a few preview pages (_site/pages/<id>/NN.webp) and a catalogue entry;
+# the site opens the file itself in the reader. The files are git-ignored (size + licences), so
+# a rebuild without them keeps the covers/previews already rendered.
+DOC_CAT = os.path.join(SITE, 'tools', 'books_catalog.json')
+DOC_ADDED = '2026-11-12'                   # the day these books joined the library
+PV_W, PV_H = 360, 450                      # preview-page size (4:5)
+
+
+def doc_short(t):
+    t = re.sub(r'\s*\([^)]*\)', '', t)                       # "(2nd Edition)", "(eBook)", "(OpenStax)"
+    t = re.sub(r'\s+-\s+.*$', '', t).strip()                  # "Title - subtitle" -> "Title"
+    t = re.sub(r'^How to Think Like a Computer Scientist$', 'Think Like a CS', t)
+    if len(t) > 30:
+        cut = t[:30].rsplit(' ', 1)[0]
+        t = (cut if len(cut) > 12 else t[:30]).rstrip(' ,-&:') + '…'
+    return t
+
+
+def render_page(doc, i, max_px):
+    import pymupdf
+    pg = doc.load_page(i)
+    z = max_px / max(pg.rect.width, pg.rect.height)
+    pix = pg.get_pixmap(matrix=pymupdf.Matrix(z, z), alpha=False)
+    return Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+
+
+def blankish(im):
+    return ImageStat.Stat(im.convert('L').resize((48, 60))).stddev[0] < 7
+
+
+def pick_pages(n):
+    if n <= 6:
+        return list(range(n))
+    return sorted({0} | {min(n - 1, max(1, round(n * f))) for f in (.03, .08, .16, .3, .5)})
+
+
+docs = json.load(open(DOC_CAT, encoding='utf-8')) if os.path.exists(DOC_CAT) else []
+TYPE_COUNT_DOCS = 0
+for k, d in enumerate(docs):
+    did = 'p' + hashlib.sha1(d['path'].encode('utf-8')).hexdigest()[:9]
+    fpath = os.path.join(ROOT, *d['path'].split('/'))
+    pdir = os.path.join(SITE, 'pages', did)
+    th_path = os.path.join(SITE, 'thumbs', did + '.webp')
+    cv_path = os.path.join(SITE, 'covers', did + '.webp')
+    meta_path = os.path.join(pdir, 'pages.json')
+    have = os.path.exists(th_path) and os.path.exists(cv_path) and os.path.exists(meta_path)
+    if os.path.exists(fpath) and (FORCE or not have):
+        import pymupdf
+        os.makedirs(pdir, exist_ok=True)
+        with pymupdf.open(fpath) as doc:
+            n = doc.page_count
+            ci = next((i for i in range(min(3, n)) if not blankish(render_page(doc, i, 300))), 0)
+            cover = render_page(doc, ci, 1700)
+            frame(cover, TH_W, TH_H).save(th_path, 'WEBP', quality=86, method=6)
+            frame(cover, CV_W, CV_H).save(cv_path, 'WEBP', quality=88, method=6)
+            used, files = [], []
+            for p in pick_pages(n):
+                if p == 0:
+                    p = ci
+                q = p
+                while q < n - 1 and q - p < 4 and q != ci and blankish(render_page(doc, q, 200)):
+                    q += 1                                   # skip blank/near-blank pages
+                if q in used:
+                    continue
+                used.append(q)
+                name = f'{len(files) + 1:02d}.webp'
+                frame(render_page(doc, q, 900), PV_W, PV_H).save(os.path.join(pdir, name), 'WEBP', quality=72, method=6)
+                files.append(name)
+            json.dump(dict(pages=n, pg=[u + 1 for u in used], files=files, ratio=round(cover.width / cover.height, 3)),
+                      open(meta_path, 'w', encoding='utf-8'))
+    elif not have:
+        print('!! missing file and no rendered cover, skipped:', d['path']); continue
+    pm = json.load(open(meta_path, encoding='utf-8'))
+    tags = [t for t in re.split(r'[\s/,()+]+', f"{d.get('tech', '')} {d.get('language', '')}".lower()) if len(t) > 1][:6]
+    subject = d.get('subject') or ''
+    desc = f"{subject}{' - ' + d['tech'] if d.get('tech') and d['tech'].lower() not in subject.lower() else ''}."
+    if d.get('partial'):
+        desc += ' This is the official free sample, not the full book.'
+    books.append(dict(
+        id=did, type='book', topic=d['topic'] if d['topic'] in TOPIC_LABEL else 'other', title=d['title'],
+        date=DOC_ADDED, year=int(DOC_ADDED[:4]), rank=len(docs) - k,
+        dir=f'_site/pages/{did}', files=pm['files'], slides=d.get('pages') or pm['pages'], tags=tags, body='',
+        description=desc, author=d['author'], handle='', source=d['url'],
+        doc=dict(path=d['path'], fmt=d['format'], pages=d.get('pages') or pm['pages'], mb=d['mb'], pg=pm['pg'],
+                 license=d['license'], edition=d.get('edition', ''), site=d.get('source_site', ''), shelf=d.get('shelf', '')),
+        ratio=pm.get('ratio', .77),
+    ))
+    TYPE_COUNT_DOCS += 1
+    if TYPE_COUNT_DOCS % 25 == 0:
+        print('... books', TYPE_COUNT_DOCS)
+
+books.sort(key=lambda b: (b['date'], b.get('rank', 0), b['id']), reverse=True)      # newest first
 
 out = []
 for n, b in enumerate(books, 1):
-    src = Image.open(os.path.join(ROOT, b['dir'], b['files'][0]))
-    src = src.convert('RGB')
     th_path = os.path.join(SITE, 'thumbs', b['id'] + '.webp')
     cv_path = os.path.join(SITE, 'covers', b['id'] + '.webp')
-    if FORCE or not os.path.exists(th_path):
-        frame(src, TH_W, TH_H).save(th_path, 'WEBP', quality=86, method=6)
-    if FORCE or not os.path.exists(cv_path):
-        frame(src, CV_W, CV_H).save(cv_path, 'WEBP', quality=88, method=6)
+    if b.get('doc'):                                     # cover/thumb already rendered from the PDF above
+        ratio = b['ratio']
+    else:
+        src = Image.open(os.path.join(ROOT, b['dir'], b['files'][0]))
+        src = src.convert('RGB')
+        ratio = src.width / src.height
+        if FORCE or not os.path.exists(th_path):
+            frame(src, TH_W, TH_H).save(th_path, 'WEBP', quality=86, method=6)
+        if FORCE or not os.path.exists(cv_path):
+            frame(src, CV_W, CV_H).save(cv_path, 'WEBP', quality=88, method=6)
     th = Image.open(th_path).convert('RGB')
-    short = short_title(b['title'], b['topic'], b['type'])
-    out.append(dict(
+    short = doc_short(b['title']) if b.get('doc') else short_title(b['title'], b['topic'], b['type'])
+    rec = dict(
         id=b['id'], n=n, type=b['type'], topic=b['topic'], code=TOPIC_CODE[b['topic']],
         title=b['title'], short=short, date=b['date'], year=b['year'],
         slides=b['slides'], dir=b['dir'], files=b['files'],
@@ -315,9 +417,12 @@ for n, b in enumerate(books, 1):
         tags=b['tags'], author=b['author'], handle=b['handle'],
         source=b['source'], sourceLabel=source_label(b['source']),
         thumb=f"_site/thumbs/{b['id']}.webp", cover=f"_site/covers/{b['id']}.webp",
-        lq=lqip(th), src_ratio=round(src.width / src.height, 3),
-        framed='crop' if 0.74 <= src.width / src.height <= 0.87 else 'fit',
-    ))
+        lq=lqip(th), src_ratio=round(ratio, 3),
+        framed='crop' if 0.74 <= ratio <= 0.87 else 'fit',
+    )
+    if b.get('doc'):
+        rec['doc'] = b['doc']
+    out.append(rec)
     if n % 40 == 0:
         print('...', n)
 

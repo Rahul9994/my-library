@@ -1,6 +1,6 @@
 # The Library
 
-A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **bookcase**, of **215 cheat sheets, code notes and guides** (1,737 slides) with a book page, a slide reader, search and **five themes**.
+A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **bookcase**, of **432 volumes**: **217 full-length programming books** (88,084 pages, PDF/EPUB) and **215 cheat sheets, code notes and guides** (1,737 slides), with a book page, a reader, search and **five themes**.
 
 **Live site:** https://rahul9994.github.io/my-library/
 
@@ -28,10 +28,12 @@ A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **
 
 ## Credits and takedowns
 
-**Every book on this site, including all slides, titles and descriptions, is the work of [Tajamul Khan](https://www.instagram.com/tajamul.codes/) ([@tajamul.codes](https://www.instagram.com/tajamul.codes/)).**
-They were collected from his public Instagram posts as a personal reading library. Each book's page on the site shows his name and links back to the original post.
+**Every cheat sheet, code post and guide (the slide collections), including all slides, titles and descriptions, is the work of [Tajamul Khan](https://www.instagram.com/tajamul.codes/) ([@tajamul.codes](https://www.instagram.com/tajamul.codes/)).**
+They were collected from his public Instagram posts as a personal reading library. Each one's page on the site shows his name and links back to the original post.
 
-- I do not claim ownership of any of the slides. They are **not licensed** for reuse or redistribution - all rights remain with the author.
+**The 217 full-length books** (the *Books* filter) are free, legally distributed works by many authors and publishers: open-licence textbooks (Creative Commons, GNU FDL), official documentation, U.S. Government publications and books their authors give away. Each book page names the author, the licence and the official source. **The PDF/EPUB files are not published here** (`Books/` is git-ignored: 1.3 GB is over the GitHub Pages limit and several licences forbid re-hosting), so on the live site *Read the book* points to the official free download instead.
+
+- I do not claim ownership of any of the slides or books. They are **not licensed** for reuse or redistribution - all rights remain with the author.
 - Please follow [@tajamul.codes](https://www.instagram.com/tajamul.codes/) for the originals and for the extra notes and resources he shares.
 - **If you are the author or a rights holder** and want something credited differently, changed or removed, please [open an issue](https://github.com/Rahul9994/my-library/issues) and it will be taken down promptly.
 
@@ -39,7 +41,7 @@ They were collected from his public Instagram posts as a personal reading librar
 
 - [GSAP](https://gsap.com/) for animation (GreenSock standard licence)
 - [Newsreader](https://fonts.google.com/specimen/Newsreader) (Production Type) and [Inter](https://rsms.me/inter/) (Rasmus Andersson), both under the SIL Open Font License
-- Python + [Pillow](https://python-pillow.org/) to build the aligned 4:5 thumbnails and the catalogue
+- Python + [Pillow](https://python-pillow.org/) to build the aligned 4:5 thumbnails and the catalogue, and [PyMuPDF](https://pymupdf.readthedocs.io/) to render book covers and preview pages from PDFs
 - Site design and code by [Rahul9994](https://github.com/Rahul9994), built with help from Claude (Anthropic)
 
 No framework, no bundler and no other dependencies: plain HTML, CSS and JavaScript.
@@ -66,6 +68,7 @@ In the bookcase the arrow keys move between books and shelves, and `Enter` opens
 | `tajamul.codes_cheatsheets/` | 104 cheat sheets (one folder per book, slides inside) |
 | `tajamul.codes_code_posts/` | 91 SQL / Python code posts and notes |
 | `tajamul.codes_projects_RAG_PowerBI/` | 20 projects, RAG and Power BI posts |
+| `Books/` | 217 full-length books as PDF/EPUB, one folder per subject (DSA, languages, Python, Docker/DevOps, Linux, security, interviews). **Local only** (git-ignored) |
 | `_site/` | the website itself (see below) |
 
 Inside `_site/`:
@@ -98,6 +101,17 @@ The picker and its live miniature are generated from the same tokens, so they fo
 - Spine typography is sized in `em` from a single custom property, which keeps style recalculation cheap with hundreds of spines.
 - Heavy first paints happen at the click rather than in the middle of an animation, and theme changes inside the bookcase hide the repaint behind a curtain.
 
+## Full-length books (PDF / EPUB)
+
+The *Books* filter holds 217 free programming books, catalogued in `_site/tools/books_catalog.json` (title, author, topic, licence, official URL and the file's path under `Books/`). `build_library.py` renders each book's cover and six preview pages (`_site/pages/<id>/`) with PyMuPDF and adds it to the catalogue. On the book page the meta line shows the edition, page count, format and size, followed by the licence and source.
+
+- **Read the book** opens the PDF in the browser's own viewer inside the reader, at the page you clicked. *Open PDF* opens it in a new tab.
+- **EPUB** books can't be shown by browsers, so the reader offers the file to open in an e-reader app.
+- **When `Books/` is not there**, as on GitHub Pages, the reader links to the book's official free download instead.
+- New shelves: *Algorithms & DSA*, *Programming languages*, *DevOps & Docker*, *Linux* and *Security & hacking*, with their own colours in all five themes. Python, ML, SQL, data and interview books join the existing shelves.
+
+To add another PDF book: put the file under `Books/`, add an entry to `books_catalog.json` (copy an existing one; `topic` is one of the shelf keys), then run `python _site/tools/build_library.py` (needs `pip install pymupdf pillow`).
+
 ## Adding more books (any author, any subject)
 
 1. Make a new folder next to `index.html`, e.g. `My Books`, with one folder per book and the pages as `01.jpg`, `02.jpg`, ... (`.png` / `.webp` also work):
@@ -125,7 +139,7 @@ Optional details (plain JSON, every field optional):
 }
 ```
 
-`topic` is one of `sql`, `python`, `ml`, `ai`, `bi`, `data`, `career`, `other`.
+`topic` is one of `sql`, `python`, `ml`, `ai`, `bi`, `data`, `career`, `dsa`, `code`, `devops`, `linux`, `security`, `other`.
 
 `My Books/collection.json` (applies to every book in the folder)
 

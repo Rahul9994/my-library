@@ -32,6 +32,11 @@ const topicInfo = k => TOPICS.find(t => t.key === k) || { key: k, chip: k, label
 const TYPE_LABEL = new Proxy({}, { get: (_, k) => typeInfo(k).label });
 const TOPIC_LABEL = new Proxy({}, { get: (_, k) => topicInfo(k).label });
 const BOOK = new Map(ALL.map(b => [b.id, b]));
+// full-length books (PDF / EPUB) carry a `doc` record; slide posts do not
+const isDoc = b => !!(b && b.doc);
+const unit = (b, n = b.slides) => isDoc(b) ? (n === 1 ? 'page' : 'pages') : (n === 1 ? 'slide' : 'slides');
+const amount = b => `${b.slides.toLocaleString('en')} ${unit(b)}`;
+const when = b => isDoc(b) ? (b.doc.edition || 'Added ' + fmtDate(b.date)) : fmtDate(b.date);
 
 /* ── elements ───────────────────────────────────────────── */
 const root = document.documentElement, body = document.body;
@@ -75,7 +80,7 @@ function setView(v) {
 let filterBusy = false, modeBusy = false;
 
 /* ── metrics & ring ─────────────────────────────────────── */
-const thick = (b, H) => H * clamp(.118 + .0042 * b.slides, .12, .19) * (.95 + (hash(b.id) % 100) / 1000);
+const thick = (b, H) => H * (isDoc(b) ? clamp(.13 + .00006 * b.slides, .13, .19) : clamp(.118 + .0042 * b.slides, .12, .19)) * (.95 + (hash(b.id) % 100) / 1000);
 
 function measure() {
   S.vw = innerWidth; S.vh = innerHeight;
@@ -244,7 +249,7 @@ let nowTimer = 0;
 function fillNow(b) {
   E.nowTitle.textContent = b.title;
   E.nowKicker.textContent = `${NO()} ${pad(b.n)}  ·  ${TOPIC_LABEL[b.topic]}  ·  ${TYPE_LABEL[b.type]}`;
-  E.nowDate.textContent = `${fmtDate(b.date)}  ·  ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}`;
+  E.nowDate.textContent = `${when(b)}  ·  ${amount(b)}`;
 }
 function onActiveChange() {
   if (S.view !== 'shelf' && S.view !== 'boot') return;
@@ -541,15 +546,20 @@ function fillDetail(b) {
   E.dNo.textContent = NO() + ' ' + pad(b.n);
   E.dTopic.textContent = TOPIC_LABEL[b.topic] + '  /  ' + TYPE_LABEL[b.type];
   E.dTitle.innerHTML = splitTitle(b.title);
-  E.dMeta.textContent = `${fmtDate(b.date)}  /  ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}  /  ${typeInfo(b.type).label}`;
+  const doc = b.doc;
+  E.dMeta.textContent = doc ? `${when(b)}  /  ${amount(b)}  /  ${doc.fmt} · ${doc.mb} MB`
+    : `${fmtDate(b.date)}  /  ${amount(b)}  /  ${typeInfo(b.type).label}`;
   E.dDesc.textContent = b.desc;
-  E.dBy.innerHTML = b.author ? `Written &amp; designed by <em>${esc(b.author)}</em>${b.handle ? ' &nbsp;/&nbsp; ' + esc(b.handle) : ''}` : '';
+  E.dBy.innerHTML = !b.author ? '' : doc
+    ? `By <em>${esc(b.author)}</em><span class="d-lic">${esc(doc.license)}${doc.site ? ' &nbsp;/&nbsp; from ' + esc(doc.site) : ''}</span>`
+    : `Written &amp; designed by <em>${esc(b.author)}</em>${b.handle ? ' &nbsp;/&nbsp; ' + esc(b.handle) : ''}`;
   E.dIg.style.display = b.source ? '' : 'none';
-  if (b.source) { E.dIg.href = b.source; E.dIgLabel.textContent = 'View on ' + (b.sourceLabel || 'source'); }
-  const show = Math.min(b.slides, 7);
-  let h = `<label>Inside — ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}</label>`;
-  for (let i = 0; i < show; i++) h += `<button data-i="${i}" data-cursor="btn" aria-label="Open slide ${i + 1}"><img alt="" loading="lazy" decoding="async"></button>`;
-  if (b.slides > show) h += `<span class="more">+${b.slides - show}</span>`;
+  if (b.source) { E.dIg.href = b.source; E.dIgLabel.textContent = doc ? 'Official download' : 'View on ' + (b.sourceLabel || 'source'); }
+  E.dRead.firstChild.textContent = doc && doc.fmt === 'EPUB' ? 'Open the EPUB' : 'Read the book';
+  const show = Math.min(b.files.length, 7);
+  let h = `<label>Inside — ${amount(b)}</label>`;
+  for (let i = 0; i < show; i++) h += `<button data-i="${i}" data-cursor="btn" aria-label="Open ${doc ? 'page ' + doc.pg[i] : 'slide ' + (i + 1)}"><img alt="" loading="lazy" decoding="async"></button>`;
+  if (b.slides > show) h += `<span class="more">+${(b.slides - show).toLocaleString('en')}</span>`;
   E.dInside.innerHTML = h;
   $$('button', E.dInside).forEach((btn, i) => {
     const im = btn.firstChild; im.onload = () => im.classList.add('on'); im.src = enc(b.dir + '/' + b.files[i]);
@@ -773,12 +783,54 @@ E.dPrev.addEventListener('click', () => stepDetail(-1));
 E.dNext.addEventListener('click', () => stepDetail(1));
 E.dRead.addEventListener('click', () => S.view === 'detail' && openReader(S.book, 0));
 E.dCover.addEventListener('click', () => S.view === 'detail' && openReader(S.book, 0));
-E.dInside.addEventListener('click', e => { const b = e.target.closest('button'); if (b && S.view === 'detail') openReader(S.book, +b.dataset.i); });
+E.dInside.addEventListener('click', e => { const b = e.target.closest('button'); if (b && S.view === 'detail') openReader(S.book, isDoc(S.book) ? S.book.doc.pg[+b.dataset.i] - 1 : +b.dataset.i); });
 
 /* ── reader ─────────────────────────────────────────────── */
 const chromeEls = () => [$('.brand'), $('.top-r'), E.foot];
 const RD = { i: 0, front: null, back: null, busy: false, zoom: false, swiped: false, suppress: false };
-function slideURL(b, i) { return enc(b.dir + '/' + b.files[clamp(i, 0, b.slides - 1)]); }
+function slideURL(b, i) { return enc(b.dir + '/' + b.files[clamp(i, 0, b.files.length - 1)]); }
+
+/* Full-length books open in the browser's own PDF viewer inside the reader. The files live in Books/
+   next to index.html and are not published with the site, so when they are not reachable (e.g. on the
+   hosted copy) the reader offers the book's official free download instead. */
+const LOCAL_FILES = location.protocol === 'file:';
+const docOK = new Map();
+function docAvailable(b) {
+  if (LOCAL_FILES) return Promise.resolve(true);
+  if (!docOK.has(b.id)) docOK.set(b.id, fetch(enc(b.doc.path), { method: 'HEAD' }).then(r => r.ok).catch(() => false));
+  return docOK.get(b.id);
+}
+const rDoc = document.createElement('div');
+rDoc.className = 'r-doc';
+rDoc.innerHTML = '<iframe title="Book"></iframe><div class="r-docmsg"><p class="r-dm-t"></p><p class="r-dm-s"></p><div class="r-dm-a"></div></div>';
+E.rStage.appendChild(rDoc);
+const rFrame = rDoc.firstChild, rMsg = rDoc.lastChild;
+const rOpen = document.createElement('a');                    // escape hatch: the PDF in its own tab
+rOpen.className = 'r-open'; rOpen.target = '_blank'; rOpen.rel = 'noopener'; rOpen.dataset.cursor = 'btn';
+rOpen.innerHTML = '<span>Open PDF</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6"/></svg>';
+E.rClose.parentNode.insertBefore(rOpen, E.rClose);
+function docMessage(b, local) {
+  const d = b.doc, epub = d.fmt === 'EPUB' && local;
+  const link = (href, label, ghost, dl) => `<a class="btn${ghost ? ' ghost' : ''}" href="${esc(href)}" target="_blank" rel="noopener"${dl ? ' download' : ''} data-cursor="btn"><span>${label}</span></a>`;
+  rMsg.querySelector('.r-dm-t').textContent = epub ? 'This book is an EPUB' : 'This book is not stored on this copy of the site';
+  rMsg.querySelector('.r-dm-s').textContent = epub
+    ? 'Browsers cannot display EPUB files. Open it in an e-reader app such as Calibre, Thorium or Apple Books.'
+    : `Read it free from its official source (${d.site || b.sourceLabel}). Licence: ${d.license}.`;
+  rMsg.querySelector('.r-dm-a').innerHTML = (epub ? link(enc(d.path), 'Open the EPUB', false, true) : '') +
+    (b.source ? link(b.source, 'Official download ↗', epub) : '');
+  rDoc.classList.add('msg');
+}
+function openDoc(b, page) {
+  rDoc.classList.remove('msg', 'on'); rOpen.classList.remove('on');
+  rFrame.removeAttribute('src');
+  docAvailable(b).then(ok => {
+    if (S.book !== b || S.view !== 'reader') return;
+    if (!ok || b.doc.fmt !== 'PDF') { docMessage(b, ok); return; }
+    rFrame.onload = () => rDoc.classList.add('on');
+    rFrame.src = enc(b.doc.path) + '#page=' + page;
+    rOpen.href = enc(b.doc.path) + '#page=' + page; rOpen.classList.add('on');
+  });
+}
 
 function doOpenReader(book, start, instant) {
   if (S.view !== 'detail') return;
@@ -789,16 +841,20 @@ function doOpenReader(book, start, instant) {
   RD.front = E.rA; RD.back = E.rB;
   E.rStage.classList.remove('zoomed');
   E.rTitle.textContent = book.title; E.rTot.textContent = pad(book.slides, 2);
-  E.rThumbs.innerHTML = book.files.map((f, i) => `<button data-i="${i}" data-cursor="btn" aria-label="Slide ${i + 1}"><img alt="" loading="lazy" decoding="async" src="${enc(book.dir + '/' + f)}"></button>`).join('');
-  RD.front.src = slideURL(book, RD.i);
+  E.reader.classList.toggle('is-doc', isDoc(book));
+  if (isDoc(book)) { E.rThumbs.innerHTML = ''; openDoc(book, RD.i + 1); }
+  else {
+    E.rThumbs.innerHTML = book.files.map((f, i) => `<button data-i="${i}" data-cursor="btn" aria-label="Slide ${i + 1}"><img alt="" loading="lazy" decoding="async" src="${enc(book.dir + '/' + f)}"></button>`).join('');
+    RD.front.src = slideURL(book, RD.i);
+  }
   gsap.set([E.rA, E.rB], { x: 0, y: 0, scale: 1, opacity: 0 });
   syncReader(true);
   E.reader.classList.add('is-open'); E.reader.setAttribute('aria-hidden', 'false');
   const tl = gsap.timeline();
   tl.fromTo(E.reader, { yPercent: 100 }, { yPercent: 0, duration: dur(instant ? .01 : 1.0), ease: 'expo.inOut' }, 0)
-    .fromTo(RD.front, { opacity: 0, y: 60, scale: .96 }, { opacity: 1, y: 0, scale: 1, duration: dur(1.1), ease: 'expo.out' }, instant ? 0 : .45)
+    .fromTo(isDoc(book) ? rDoc : RD.front, { opacity: 0, y: 60, scale: .96 }, { opacity: 1, y: 0, scale: 1, duration: dur(1.1), ease: 'expo.out', clearProps: isDoc(book) ? 'transform' : '' }, instant ? 0 : .45)
     .fromTo([$('.r-bar'), E.rThumbs, E.rPrev, E.rNext], { opacity: 0 }, { opacity: 1, duration: dur(.8), ease: 'power2.out', stagger: .05, clearProps: 'opacity' }, instant ? 0 : .6);
-  preloadAround(book, RD.i);
+  if (!isDoc(book)) preloadAround(book, RD.i);
 }
 function syncReader(instantThumb) {
   const b = S.book;
@@ -815,7 +871,8 @@ function syncReader(instantThumb) {
 function preloadAround(b, i) { [i - 1, i + 1, i + 2].forEach(j => { if (j >= 0 && j < b.slides) { const im = new Image(); im.src = slideURL(b, j); } }); }
 function readerStep(d) { readerGo(RD.i + d, d); }
 function readerGo(i, dir) {
-  const b = S.book; i = clamp(i, 0, b.slides - 1);
+  const b = S.book; if (isDoc(b)) return;
+  i = clamp(i, 0, b.slides - 1);
   if (i === RD.i || RD.busy) return;
   dir = dir || (i > RD.i ? 1 : -1);
   RD.busy = true;
@@ -834,7 +891,7 @@ function setZoom(on, fast) {
   gsap.to(RD.front, { scale: on ? 2.1 : 1, x: 0, y: 0, duration: dur(fast ? .25 : .75), ease: 'expo.out', overwrite: 'auto' });
 }
 E.rStage.addEventListener('click', e => {
-  if (S.view !== 'reader') return;
+  if (S.view !== 'reader' || isDoc(S.book)) return;
   if (RD.swiped || RD.suppress) { RD.swiped = RD.suppress = false; return; }
   if (e.target.closest('.r-nav')) return;
   setZoom(!RD.zoom);
@@ -869,7 +926,7 @@ E.rStage.addEventListener('pointerup', e => {
 });
 E.rStage.addEventListener('pointercancel', () => { sw = null; pan = null; });
 E.rStage.addEventListener('wheel', e => {
-  if (S.view !== 'reader' || RD.zoom) return;
+  if (S.view !== 'reader' || RD.zoom || isDoc(S.book)) return;
   e.preventDefault();
   const now = performance.now(); if (now - (RD.wheelT || 0) < 520) return;
   const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
@@ -885,7 +942,7 @@ function doCloseReader(keepChrome) {
   if (!keepChrome) gsap.to(chromeEls(), { opacity: 1, duration: dur(.7), ease: 'power2.out', overwrite: true, delay: .25, clearProps: 'opacity' });
   else gsap.set(chromeEls(), { clearProps: 'opacity' });
   if (RD.zoom) setZoom(false, true);
-  gsap.timeline({ onComplete() { if (S.view !== 'reader') { E.reader.classList.remove('is-open'); E.reader.setAttribute('aria-hidden', 'true'); } } })
+  gsap.timeline({ onComplete() { if (S.view !== 'reader') { E.reader.classList.remove('is-open', 'is-doc'); E.reader.setAttribute('aria-hidden', 'true'); rFrame.removeAttribute('src'); rDoc.classList.remove('on', 'msg'); } } })
     .to(E.reader, { yPercent: 100, duration: dur(.9), ease: 'expo.inOut' });
 }
 
@@ -897,7 +954,7 @@ E.round.addEventListener('click', () => {
 });
 
 /* ── search ─────────────────────────────────────────────── */
-const SIDX = ALL.map(b => ({ b, hay: [b.title, b.short, TOPIC_LABEL[b.topic], TYPE_LABEL[b.type], b.author, b.handle, b.tags.join(' '), b.date.slice(0, 4), 'no ' + b.n].join(' ').toLowerCase() }));
+const SIDX = ALL.map(b => ({ b, hay: [b.title, b.short, TOPIC_LABEL[b.topic], TYPE_LABEL[b.type], b.author, b.handle, b.tags.join(' '), b.date.slice(0, 4), 'no ' + b.n, b.doc ? [b.desc, b.doc.fmt, b.doc.license, b.doc.edition, b.doc.shelf].join(' ') : ''].join(' ').toLowerCase() }));
 let sRes = [], sSel = 0;
 function renderSearch(q) {
   q = q.trim().toLowerCase();
@@ -914,7 +971,7 @@ function renderSearch(q) {
   sRes = res; sSel = 0;
   E.sCount.textContent = q ? `${res.length} found` : 'Latest additions';
   E.sList.innerHTML = res.length ? res.map((b, i) =>
-    `<li data-i="${i}" class="${i === 0 ? 'on' : ''}"><span class="th" style="background-image:url(${enc(b.thumb)})"></span><span><div class="tt">${esc(b.title)}</div><div class="mm">${TOPIC_LABEL[b.topic]} · ${TYPE_LABEL[b.type]} · ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'} · ${fmtDate(b.date)}</div></span><span class="no">${NO()} ${pad(b.n)}</span></li>`).join('')
+    `<li data-i="${i}" class="${i === 0 ? 'on' : ''}"><span class="th" style="background-image:url(${enc(b.thumb)})"></span><span><div class="tt">${esc(b.title)}</div><div class="mm">${TOPIC_LABEL[b.topic]} · ${TYPE_LABEL[b.type]} · ${amount(b)} · ${esc(when(b))}</div></span><span class="no">${NO()} ${pad(b.n)}</span></li>`).join('')
     : `<li class="none">Nothing on the shelf matches “${esc(q)}”.</li>`;
 }
 function markSel() {
@@ -986,7 +1043,7 @@ function packRows(list, d) {
 }
 function bkHTML({ b, h, w }) {
   const p = palette(b);
-  return `<button class="bk sp ${p.cls}" data-id="${b.id}" data-e="${p.emb}" tabindex="-1" style="--T:${w.toFixed(2)}px;--H:${h.toFixed(1)}px;--chars:${Math.max(7, b.short.length)}" aria-label="${esc(b.title)} — ${esc(TOPIC_LABEL[b.topic])}, ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'}">${spineInner(b)}</button>`;
+  return `<button class="bk sp ${p.cls}" data-id="${b.id}" data-e="${p.emb}" tabindex="-1" style="--T:${w.toFixed(2)}px;--H:${h.toFixed(1)}px;--chars:${Math.max(7, b.short.length)}" aria-label="${esc(b.title)} — ${esc(TOPIC_LABEL[b.topic])}, ${amount(b)}">${spineInner(b)}</button>`;
 }
 function rowHTML(r) {
   const tag = r.part === 1 ? r.total : (ROMAN[r.part] || r.part);
@@ -1001,8 +1058,8 @@ function buildCase(force) {
   BC.rows = packRows(S.list, d);
   E.bcBody.innerHTML = BC.rows.map(rowHTML).join('');
   BC.els = new Map($$('.bk', E.bcBody).map(el => [el.dataset.id, el]));
-  const slides = S.list.reduce((n, b) => n + b.slides, 0);
-  E.bcCount.textContent = `${S.list.length} ${S.list.length === 1 ? 'volume' : 'volumes'}  ·  ${slides.toLocaleString('en')} slides`;
+  const slides = S.list.reduce((n, b) => n + (isDoc(b) ? 0 : b.slides), 0), pages = S.list.reduce((n, b) => n + (isDoc(b) ? b.slides : 0), 0);
+  E.bcCount.textContent = `${S.list.length} ${S.list.length === 1 ? 'volume' : 'volumes'}` + (slides ? `  ·  ${slides.toLocaleString('en')} slides` : '') + (pages ? `  ·  ${pages.toLocaleString('en')} pages` : '');
   const keep = (BC.focus && BC.els.get(BC.focus)) || BC.els.values().next().value;
   if (keep) { keep.tabIndex = 0; BC.focus = keep.dataset.id; }
   return true;
@@ -1079,7 +1136,7 @@ function showTip(el) {
   BC.tipT = setTimeout(() => {
     if (BC.tipId !== b.id) {
       E.tipTh.style.backgroundImage = `url(${enc(b.thumb)})`; E.tipTt.textContent = b.title;
-      E.tipMm.textContent = `${TOPIC_LABEL[b.topic]} · ${b.slides} ${b.slides === 1 ? 'slide' : 'slides'} · ${fmtDate(b.date)}`; BC.tipId = b.id;
+      E.tipMm.textContent = `${TOPIC_LABEL[b.topic]} · ${amount(b)} · ${when(b)}`; BC.tipId = b.id;
     }
     const r = el.getBoundingClientRect(), tw = 244, th = E.tip.offsetHeight || 86;
     const x = clamp(r.left + r.width / 2 - tw / 2, 10, innerWidth - tw - 10);
