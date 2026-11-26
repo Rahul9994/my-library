@@ -1,6 +1,8 @@
 /* ───────────────────────────────────────────────────────────
    The Library · engine
    shelf (infinite 3D ring) · bookcase · detail (shared-element flight) · reader · search
+   The "Dynamic View" theme has its own screens (dynamic.js); this file hands over to it
+   and keeps serving it history, search and the slide reader.
    ─────────────────────────────────────────────────────────── */
 (function () {
 'use strict';
@@ -74,9 +76,10 @@ const activeItem = () => { const a = activeIdx(), it = slotOf(a); return it && i
 const settled = () => Math.abs(S.pos - Math.round(S.pos)) < 0.02 && Math.abs(S.target - S.pos) < 0.02;
 function setView(v) {
   S.view = v;
-  const sh = $('#shelf'); if (sh) sh.inert = !(v === 'shelf' || v === 'boot');       // nothing behind the book page can take focus
+  const sh = $('#shelf'); if (sh) sh.inert = DV() || !(v === 'shelf' || v === 'boot');   // nothing behind the book page (or the Dynamic View) can take focus
   document.dispatchEvent(new CustomEvent('libview', { detail: v }));
 }
+const DV = () => !!window.LibraryDynamic && document.documentElement.getAttribute('data-theme') === 'dynamic';
 let filterBusy = false, modeBusy = false;
 
 /* ── metrics & ring ─────────────────────────────────────── */
@@ -217,7 +220,8 @@ const drag = { on: false, id: null, x0: 0, t0: 0, tgt0: 0, moved: 0, lx: 0, lt: 
 
 function tick(now) {
   const dt = clamp((now - lastT) / 1000, 0.001, 0.05); lastT = now;
-  if ((S.mode === 'flow' && (S.view === 'shelf' || S.view === 'boot')) || S.force) {
+  const dyn = DV();                                     // the Dynamic View draws itself; the shelf rests
+  if (!dyn && ((S.mode === 'flow' && (S.view === 'shelf' || S.view === 'boot')) || S.force)) {
     S.idle += dt;
     if (!drag.on && S.idle > .13 && S.view === 'shelf') {
       const r = Math.round(S.target);
@@ -240,7 +244,7 @@ function tick(now) {
       const a = activeIdx(); if (a !== S.lastAct) { S.lastAct = a; onActiveChange(); }
     }
   }
-  cursorTick(dt);
+  if (!dyn) cursorTick(dt);
   requestAnimationFrame(tick);
 }
 
@@ -396,6 +400,7 @@ addEventListener('keydown', e => {
   const k = e.key;
   const onCtl = !!(e.target.closest && e.target.closest('button, a, input, textarea, select, [role="radio"]'));   // let real controls keep Enter / Space
   if (S.view === 'shelf') {
+    if (DV()) { if (k === '/') { e.preventDefault(); openSearch(); } return; }      // dynamic.js handles its own keys
     if ((k === 'b' || k === 'B') && !e.target.closest('input, textarea')) { e.preventDefault(); setMode(S.mode === 'flow' ? 'case' : 'flow'); return; }
     if (k === '/') { e.preventDefault(); openSearch(); return; }
     if (S.mode === 'flow') {
@@ -476,7 +481,7 @@ if (FINE) {
    #/<id>/read/n reader, slide n  (depth 2)
    We push one entry per level, so Back / Esc / the round button all
    unwind the same way; paging inside a level only replaces the entry. */
-const NAV = { busy: false, t: 0, pending: undefined };
+const NAV = { busy: false, t: 0, pending: undefined, skip: false };
 const hashOf = (b, read, slide) => '#/' + (b ? b.id + (read ? '/read' + (slide ? '/' + slide : '') : '') : '');
 const hdepth = () => (history.state && history.state.lib ? history.state.d | 0 : -1);
 function hpush(h, d) { try { history.pushState({ lib: 1, d }, '', h); } catch (_) {} }
@@ -505,16 +510,31 @@ function histBack(fallback) {     // go up one level through history; run `fallb
 }
 addEventListener('popstate', () => {
   NAV.busy = false; clearTimeout(NAV.t);
+  if (NAV.skip) { NAV.skip = false; if (DV()) window.LibraryDynamic.sync(); return; }   // unwinding the classic book page for the Dynamic View
   const t = parseHash(), want = t ? (t.read ? 2 : 1) : 0;
+  if (DV()) { routeDynamic(t); return; }
   if (hdepth() !== want) rebuildStack(t);
   applyRoute(t);
 });
 function flushRoute() { if (NAV.pending !== undefined && S.view === 'shelf' && !modeBusy && !filterBusy) { const t = NAV.pending; NAV.pending = undefined; applyRoute(t); } }
 
+/* routes while the Dynamic View is on: #/<id> is that book's "inside" screen, /read/n the slide reader */
+function routeDynamic(t) {
+  if (S.view === 'reader') {
+    if (t && t.read && t.b === S.book) { readerGo(t.slide); return; }
+    doCloseReader();
+    if (t) routeDynamic(t);
+  } else if (S.view === 'shelf' && t) {
+    window.LibraryDynamic.show(t.b, { inside: true });
+    if (t.read) doOpenReader(t.b, t.slide, false);
+  }
+}
+
 /* make the UI match a route (never touches history) */
 function applyRoute(t, initial) {
   const v = S.view;
   if (v === 'closing' || v === 'boot' || modeBusy || filterBusy) { NAV.pending = t || null; return; }
+  if (DV()) { routeDynamic(t); return; }
   if (!t) {
     if (v === 'reader') doCloseReader();
     if (S.view === 'detail') doCloseDetail();
@@ -532,7 +552,7 @@ function applyRoute(t, initial) {
   } else if (v === 'reader') {
     if (t.b !== S.book) { doCloseReader(true); swapDetail(t.b); if (t.read) setTimeout(() => doOpenReader(t.b, t.slide, false), 60); }
     else if (t.read) readerGo(t.slide);
-    else doCloseReader();
+    else { doCloseReader(); if (S.view === 'shelf') applyRoute(t); }     // the reader was opened from the Dynamic View: show the book page
   }
 }
 
@@ -582,9 +602,10 @@ function openDetail(book, opts = {}) {
   doOpenDetail(book, opts);
 }
 function closeDetail() { if (S.view === 'detail') histBack(doCloseDetail); }
+const canRead = () => S.view === 'detail' || (S.view === 'shelf' && DV());      // from the book page, or straight from the Dynamic View
 function openReader(book, start) {
-  if (S.view !== 'detail') return;
-  hpush(hashOf(book, true, start), 2);
+  if (!canRead()) return;
+  hpush(hashOf(book, true, start), S.view === 'detail' ? 2 : 1);
   doOpenReader(book, start, false);
 }
 function closeReader() { if (S.view === 'reader') histBack(doCloseReader); }
@@ -833,7 +854,8 @@ function openDoc(b, page) {
 }
 
 function doOpenReader(book, start, instant) {
-  if (S.view !== 'detail') return;
+  if (!canRead()) return;
+  S.readerFrom = S.view; S.book = book;
   setView('reader'); body.classList.add('in-reader');
   gsap.killTweensOf(E.reader);
   gsap.to(chromeEls(), { opacity: 0, duration: dur(.5), ease: 'power2.out', overwrite: true });
@@ -866,7 +888,7 @@ function syncReader(instantThumb) {
     const c = E.rThumbs, target = on.offsetLeft - c.clientWidth / 2 + on.clientWidth / 2;
     if (instantThumb) c.scrollLeft = target; else c.scrollTo({ left: target, behavior: 'smooth' });
   }
-  if (S.view === 'reader') hrepl(hashOf(b, true, RD.i), 2);
+  if (S.view === 'reader') hrepl(hashOf(b, true, RD.i), hdepth() > 0 ? hdepth() : 2);
 }
 function preloadAround(b, i) { [i - 1, i + 1, i + 2].forEach(j => { if (j >= 0 && j < b.slides) { const im = new Image(); im.src = slideURL(b, j); } }); }
 function readerStep(d) { readerGo(RD.i + d, d); }
@@ -938,7 +960,7 @@ E.rThumbs.addEventListener('click', e => { const b = e.target.closest('button');
 E.rClose.addEventListener('click', () => closeReader());
 function doCloseReader(keepChrome) {
   if (S.view !== 'reader') return;
-  setView('detail'); body.classList.remove('in-reader');
+  setView(S.readerFrom || 'detail'); body.classList.remove('in-reader');
   if (!keepChrome) gsap.to(chromeEls(), { opacity: 1, duration: dur(.7), ease: 'power2.out', overwrite: true, delay: .25, clearProps: 'opacity' });
   else gsap.set(chromeEls(), { clearProps: 'opacity' });
   if (RD.zoom) setZoom(false, true);
@@ -949,6 +971,7 @@ function doCloseReader(keepChrome) {
 /* ── round button (search ⇄ back) ───────────────────────── */
 E.round.addEventListener('click', () => {
   if (S.view === 'reader') closeReader();
+  else if (S.view === 'shelf' && DV()) window.LibraryDynamic.back();
   else if (S.view === 'detail') closeDetail();
   else if (S.view === 'shelf') toggleSearch();
 });
@@ -997,6 +1020,7 @@ function closeSearch() {
 function toggleSearch() { S.searchOpen ? closeSearch() : openSearch(); }
 function pickBook(b) {
   closeSearch();
+  if (DV()) { window.LibraryDynamic.show(b); return; }
   if (S.list.indexOf(b) < 0) { applyFilter({ type: 'all', topic: 'all' }, b); return; }
   if (S.mode === 'case') { caseLocate(b); return; }
   goTo(S.list.indexOf(b));
@@ -1098,11 +1122,60 @@ function warmCase() {
 }
 const later = (fn, ms) => setTimeout(() => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 2500 }) : fn()), ms);
 function refreshCase() { if (S.mode === 'flow') { buildCase(); warmCase(); } }
-document.addEventListener('themechange', () => {
+document.addEventListener('themechange', e => {
+  const on = e.detail.theme === 'dynamic', was = e.detail.prev === 'dynamic';
+  if (on !== was && S.view !== 'boot' && window.LibraryDynamic) {      // during the loader, intro() takes care of it
+    if (on) enterDynamic(e.detail.prev); else leaveDynamic();
+  }
   later(warmCase, 1600);
   if (S.book && (S.view === 'detail' || S.view === 'reader')) E.dNo.textContent = NO() + ' ' + pad(S.book.n);
   if (S.view === 'shelf' && S.mode === 'flow' && S.items.length) fillNow(activeBook());
 });
+
+/* ═══════════════════════ Dynamic View hand-over ═══════════════════════ */
+function dropPage() {                       // the classic book page leaves without animation (the new view covers it)
+  if (S.tl) S.tl.kill();
+  if (S.fly) S.fly.destroy();
+  releaseOut();
+  gsap.killTweensOf([E.dCover, E.dSheet, S]);
+  gsap.set(E.dCover, { clearProps: 'transform,opacity' });
+  E.detail.classList.remove('is-open'); E.detail.setAttribute('aria-hidden', 'true');
+  body.classList.remove('is-inside');
+  $$('.item.lifted', E.rail).forEach(el => el.classList.remove('lifted'));
+}
+function enterDynamic(from) {
+  hideTip(); clearTimeout(nowTimer); closeSearch();
+  const reading = S.view === 'reader', paged = reading || S.view === 'detail' || S.view === 'closing';
+  const book = paged && S.book ? S.book : (S.mode === 'case' && BC.last && BOOK.get(BC.last)) || activeBook();
+  const depth = hdepth();
+  if (paged) dropPage();
+  if (reading) { S.readerFrom = 'shelf'; setView('reader'); }             // keep reading; closing lands in the new view
+  else { setView('shelf'); if (paged && depth > 0) { NAV.skip = true; history.go(-depth); } }
+  window.LibraryDynamic.activate({ book, from, inside: paged && !reading, intro: !paged });
+}
+function leaveDynamic() {
+  const b = window.LibraryDynamic.current();
+  window.LibraryDynamic.deactivate();
+  const reading = S.view === 'reader';
+  if (reading) S.readerFrom = 'shelf';
+  if (b) {                                                                 // you keep your place: the shelf turns to the same book
+    ensureInList(b);
+    const i = S.list.indexOf(b); if (i >= 0) goTo(i, true);
+    fillNow(b); S.nowId = b.id; if (S.mode === 'case') BC.last = b.id;
+  }
+  S.ent = S.mode === 'case' ? 0 : 1; S.lastAct = -1; dirty();               // behind the bookcase the ring stays folded
+  gsap.set([E.filters, E.foot, ...(S.mode === 'case' ? [] : [E.nowWrap, ...E.deco])], { opacity: 1 });
+  setView(S.view);
+  moveInd();
+  if (S.mode === 'case') { buildCase(); caseIn(true); unlockRows(); }
+  if (!reading) hrepl(hashOf(null), 0);
+}
+function bootDynamic(at) {                  // first visit with the Dynamic View already chosen (or ?theme=dynamic)
+  const t = parseHash();
+  hrepl(hashOf(t ? t.b : null), 0);
+  window.LibraryDynamic.activate({ book: t ? t.b : activeBook(), inside: !!t, intro: true, delay: at });
+  if (t && t.read) { hpush(hashOf(t.b, true, t.slide), 1); setTimeout(() => doOpenReader(t.b, t.slide, true), 80); }
+}
 function releaseOut() { if (BC.out) { BC.out.classList.remove('out'); BC.out = null; } }
 function pulse(el) { el.classList.remove('pulse'); void el.offsetWidth; el.classList.add('pulse'); setTimeout(() => el.classList.remove('pulse'), 1900); }
 
@@ -1288,8 +1361,9 @@ function intro() {
     .to('.ld-in', { y: -16, opacity: 0, duration: dur(.5), ease: 'power2.in' }, .1)
     .to(E.loader, { yPercent: -100, duration: dur(1.05), ease: 'expo.inOut' }, .42);
   const at = REDUCE ? 0 : .5;
-  tl.fromTo('.top-l, .brand, .top-r', { y: -16, opacity: 0 }, { y: 0, opacity: 1, duration: dur(1.1), stagger: .09, ease: 'expo.out', clearProps: 'opacity,transform' }, at)
-    .from(E.filters, { y: -10, opacity: 0, duration: dur(1.1), ease: 'expo.out' }, at + .15)
+  tl.fromTo('.top-l, .brand, .top-r', { y: -16, opacity: 0 }, { y: 0, opacity: 1, duration: dur(1.1), stagger: .09, ease: 'expo.out', clearProps: 'opacity,transform' }, at);
+  if (DV()) { bootDynamic(at); return; }
+  tl.from(E.filters, { y: -10, opacity: 0, duration: dur(1.1), ease: 'expo.out' }, at + .15)
     .fromTo(E.foot, { opacity: 0 }, { opacity: 1, duration: dur(1.1), ease: 'power2.out', clearProps: 'opacity' }, at + .9);
   if (S.mode === 'case') {
     gsap.set([E.nowWrap, ...E.deco], { opacity: 0 });
@@ -1307,6 +1381,10 @@ function intro() {
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 
+// what the Dynamic View borrows: the reader, search, and the address bar
+function readNow(b, slide) { if (b && S.view === 'shelf' && DV()) openReader(b, slide || 0); }
+function mirror(b) { if (S.view === 'shelf' && DV()) { const h = hashOf(b); if (location.hash !== h && !(h === '#/' && !location.hash)) hrepl(h, 0); } }
+
 // tiny debug handle
-window.__lib = { S, BC, goTo, step, openDetail, closeDetail, openReader, closeReader, applyFilter, setMode };
+window.__lib = { S, BC, goTo, step, openDetail, closeDetail, openReader, closeReader, applyFilter, setMode, readNow, openSearch, mirror };
 })();

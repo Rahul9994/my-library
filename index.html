@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Library</title>
-<meta name="description" content="A browsable 3D bookshelf of programming books, cheat sheets, code notes and guides, with a bookcase view, a reader, search and five themes.">
+<meta name="description" content="A browsable 3D bookshelf of programming books, cheat sheets, code notes and guides, with a bookcase view, a Dynamic View showcase, a reader, search and six themes.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ecebe5">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Library">
-<meta property="og:description" content="A browsable 3D bookshelf of programming books, cheat sheets, code notes and guides. Five themes, a bookcase view and a reader.">
+<meta property="og:description" content="A browsable 3D bookshelf of programming books, cheat sheets, code notes and guides. Six themes, a bookcase view, a Dynamic View and a reader.">
 <meta property="og:image" content="https://rahul9994.github.io/my-library/_site/preview/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3bd1'/%3E%3Crect x='7' y='6' width='5' height='20' rx='1' fill='%23f1ecdf'/%3E%3Crect x='14' y='6' width='5' height='20' rx='1' fill='%23f1ecdf' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='18' rx='1' fill='%23f1ecdf' transform='rotate(12 23 17)'/%3E%3C/svg%3E">
@@ -18,7 +18,7 @@
 <script>
 (function () {
   try {
-    var ok = { light: 1, dark: 1, amber: 1, hacker: 1, cyber: 1 }, root = document.documentElement, t = null, v = null;
+    var ok = { light: 1, dark: 1, amber: 1, hacker: 1, cyber: 1, dynamic: 1 }, root = document.documentElement, t = null, v = null;
     var q = location.search.match(/[?&]theme=(\w+)/), w = location.search.match(/[?&]view=(\w+)/);
     try { t = localStorage.getItem('library.theme'); v = localStorage.getItem('library.view'); } catch (e) {}
     if (q && ok[q[1]]) t = q[1];
@@ -26,7 +26,7 @@
     if (!t || !ok[t]) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     root.setAttribute('data-theme', t);
     root.setAttribute('data-view', v === 'case' ? 'case' : 'flow');
-    var m = { light: '#ecebe5', dark: '#0d0d10', amber: '#1a0f07', hacker: '#020503', cyber: '#0a0518' }[t];
+    var m = { light: '#ecebe5', dark: '#0d0d10', amber: '#1a0f07', hacker: '#020503', cyber: '#0a0518', dynamic: '#b3a2cf' }[t];
     document.querySelector('meta[name=theme-color]').setAttribute('content', m);
   } catch (e) {}
 })();
@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="_site/css/style.css?v=3">
 <link rel="stylesheet" href="_site/css/shelf.css?v=3">
 <link rel="stylesheet" href="_site/css/themes.css?v=3">
+<link rel="stylesheet" href="_site/css/dynamic.css?v=4">
 <noscript><style>.loader{display:none!important}html.is-loading .top,html.is-loading .filters,html.is-loading .foot,html.is-loading .now-wrap{opacity:1!important}</style></noscript>
 </head>
 <body>
@@ -201,8 +202,10 @@
 
 <script src="_site/vendor/gsap.min.js"></script>
 <script src="_site/js/data.js"></script>
-<script src="_site/js/theme.js?v=3"></script>
+<script src="_site/js/tones.js?v=4"></script>
+<script src="_site/js/theme.js?v=4"></script>
 <script src="_site/js/fx.js?v=3"></script>
-<script src="_site/js/app.js?v=3"></script>
+<script src="_site/js/app.js?v=4"></script>
+<script src="_site/js/dynamic.js?v=4"></script>
 </body>
 </html>

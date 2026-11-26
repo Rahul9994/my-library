@@ -20,6 +20,7 @@ Writes
   _site/thumbs/<id>.webp   640x800   (shelf covers)
   _site/covers/<id>.webp   1200x1500 (detail-page + hi-dpi shelf covers)
   _site/js/data.js         catalogue consumed by the site
+  _site/js/tones.js        each cover's accent colour (see tones.py), used by the Dynamic View
 
 Every cover is framed to the same 4:5 box:
   * near-4:5 slides are centre-cropped (never more than ~8%)
@@ -436,6 +437,10 @@ data = dict(
 )
 with open(os.path.join(SITE, 'js', 'data.js'), 'w', encoding='utf-8') as f:
     f.write('window.LIBRARY = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import tones                                    # cover colours for the Dynamic View theme (_site/js/tones.js)
+tones.write(out)
 
 print('books', len(out))
 print('types ', dict(type_count))

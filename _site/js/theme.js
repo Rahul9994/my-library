@@ -1,10 +1,10 @@
 /* ───────────────────────────────────────────────────────────
    The Library · theme manager
-   light · dark · amber · hacker · cyber
+   light · dark · amber · hacker · cyber · dynamic ("Dynamic View", see dynamic.js)
    - saved in localStorage ("library.theme"), follows the OS until you choose
    - ?theme=cyber in the URL previews a theme without saving it
    - View Transitions reveal (circle / scan-line / neon sweep), with a fade fallback
-   - T / Shift+T cycle, 1-5 pick while the picker is open
+   - T / Shift+T cycle, 1-6 pick while the picker is open
    ─────────────────────────────────────────────────────────── */
 (function () {
 'use strict';
@@ -20,6 +20,7 @@ const THEMES = [
   { key: 'amber',  name: 'Amber',  note: 'Lamp-lit study',    meta: '#1a0f07', fav: ['#2a1606', '#ffb347'] },
   { key: 'hacker', name: 'Hacker', note: 'Phosphor terminal', meta: '#020503', fav: ['#021208', '#2dff7a'] },
   { key: 'cyber',  name: 'Cyber',  note: 'Neon after-hours',  meta: '#0a0518', fav: ['#0e0722', '#19e3ff'] },
+  { key: 'dynamic', name: 'Dynamic View', note: 'Living showcase', meta: '#b3a2cf', fav: ['#b3a2cf', '#120e14'] },
 ];
 const byKey = k => THEMES.find(t => t.key === k);
 
@@ -160,7 +161,7 @@ addEventListener('keydown', e => {
   if (tag === 'INPUT' || tag === 'TEXTAREA' || (t && t.isContentEditable)) return;
   if (open) {
     if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); closePanel(true); return; }
-    if (/^[1-5]$/.test(e.key)) { e.preventDefault(); set(THEMES[+e.key - 1].key, { from: panel.children[+e.key - 1] }); return; }
+    if (/^[1-6]$/.test(e.key)) { e.preventDefault(); set(THEMES[+e.key - 1].key, { from: panel.children[+e.key - 1] }); return; }
   }
   if (e.key === 't' || e.key === 'T') { e.preventDefault(); set(next(e.shiftKey ? -1 : 1), { from: btn }); btn.parentNode.classList.add('spin'); setTimeout(() => btn.parentNode.classList.remove('spin'), 900); }
 }, true);

@@ -1,15 +1,16 @@
 # The Library
 
-A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **bookcase**, of **432 volumes**: **217 full-length programming books** (88,084 pages, PDF/EPUB) and **215 cheat sheets, code notes and guides** (1,737 slides), with a book page, a reader, search and **five themes**.
+A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **bookcase**, of **432 volumes**: **217 full-length programming books** (88,084 pages, PDF/EPUB) and **215 cheat sheets, code notes and guides** (1,737 slides), with a book page, a reader, search and **six themes**, one of them a scroll-driven **Dynamic View**.
 
-**Live site:** https://rahul9994.github.io/my-library/
+**Live site:** https://rahul9994.github.io/my-library/ &nbsp;·&nbsp; **Dynamic View:** https://rahul9994.github.io/my-library/?theme=dynamic
 
 ![The shelf in the Dark theme](_site/preview/shelf-dark.jpg)
 
 ## What is in it
 
 - **Two ways to browse.** The *carousel* is an endless 3D shelf: spines turn into covers as you move along it. The *bookcase* (press `B`) shows every book standing neatly on wooden shelves, grouped by topic, with brass shelf plates, bookends and a hover card that reveals the cover. Open a book and it is pulled off its shelf, turns from spine to cover and lands on its page; close it and it slides back into the gap it left.
-- **Five themes** (press `T`): Light, Dark, Amber, Hacker and Cyber. A theme re-skins the wall, the shelf material, every spine, the lighting, the type and the details. The picker shows live miniatures, and switching plays a reveal (a circle, a scan line or a neon sweep). Your choice is remembered; until you choose, the site follows your system's light or dark setting.
+- **Six themes** (press `T`): Light, Dark, Amber, Hacker, Cyber and Dynamic View. The first five re-skin the wall, the shelf material, every spine, the lighting, the type and the details. The picker shows live miniatures, and switching plays a reveal (a circle, a scan line or a neon sweep). Your choice is remembered; until you choose, the site follows your system's light or dark setting.
+- **Dynamic View** (described below) turns the library into a product-style showcase with four screens.
 - **A book page**, a **slide reader** (swipe, tap to zoom, drag to pan, thumbnails) and instant **search** (`/` or `Ctrl`+`K`).
 - **Proper history.** The address bar always matches the view, so links to a book (`#/<id>`) or a slide (`#/<id>/read/3`) work, and Back, Forward, `Esc` and the round button all unwind one level at a time.
 - **Built for everyone.** Keyboard-first, `prefers-reduced-motion` respected, UI text meets WCAG AA contrast in every theme, works on phones and tablets, and works offline straight from `index.html`.
@@ -26,6 +27,23 @@ A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **
 | --- | --- | --- |
 | <img src="_site/preview/bookcase-amber.jpg" width="320"> | <img src="_site/preview/bookcase-cyber.jpg" width="320"> | <img src="_site/preview/book-page.jpg" width="320"> |
 
+## Dynamic View
+
+![Dynamic View: books on a curved carousel](_site/preview/dynamic-books.jpg)
+
+| Screen | What happens |
+| --- | --- |
+| **Books** | Books ride a curved, endless carousel. The room takes the colour of the book in front, the title swaps letter by letter, and a few of its pages float around. Drag, flick, click a neighbour, use the arrow keys or switch on *Autoplay*. |
+| **Inside** | Scroll once and that book leaves the row and turns in space: the cover, then *book facts* on the back, then its pages in orbit, then a *Read* button. |
+| **Picks** | The book lands in a row of five. Open one, add it to your stack, or ask for *five more*. |
+| **Stack** | Choose three and send them to your **reading list** (kept in your browser; open it from the bookmark button, or press `L`). |
+
+| Inside | Picks | Stack |
+| --- | --- | --- |
+| <img src="_site/preview/dynamic-inside.jpg" width="320"> | <img src="_site/preview/dynamic-picks.jpg" width="320"> | <img src="_site/preview/dynamic-stack.jpg" width="320"> |
+
+Search, the topic filter, the slide reader, deep links and the Back button work here too. The round button goes up one level and, from the first screen, returns you to the shelf theme you came from, on the same book. With `prefers-reduced-motion` the screens change without animation.
+
 ## Credits and takedowns
 
 **Every cheat sheet, code post and guide (the slide collections), including all slides, titles and descriptions, is the work of [Tajamul Khan](https://www.instagram.com/tajamul.codes/) ([@tajamul.codes](https://www.instagram.com/tajamul.codes/)).**
@@ -41,7 +59,8 @@ They were collected from his public Instagram posts as a personal reading librar
 
 - [GSAP](https://gsap.com/) for animation (GreenSock standard licence)
 - [Newsreader](https://fonts.google.com/specimen/Newsreader) (Production Type) and [Inter](https://rsms.me/inter/) (Rasmus Andersson), both under the SIL Open Font License
-- Python + [Pillow](https://python-pillow.org/) to build the aligned 4:5 thumbnails and the catalogue, and [PyMuPDF](https://pymupdf.readthedocs.io/) to render book covers and preview pages from PDFs
+- *Library Display*, the wide headline face of the Dynamic View: Inter at weight 900, stretched by `tools/make_display_font.py` and shared under the same licence
+- Python + [Pillow](https://python-pillow.org/) to build the aligned 4:5 thumbnails, the catalogue and the cover colours, and [PyMuPDF](https://pymupdf.readthedocs.io/) to render book covers and preview pages from PDFs
 - Site design and code by [Rahul9994](https://github.com/Rahul9994), built with help from Claude (Anthropic)
 
 No framework, no bundler and no other dependencies: plain HTML, CSS and JavaScript.
@@ -55,11 +74,11 @@ Open `index.html` (works offline, no server needed) or visit the live site.
 | `←` `→`, drag, wheel | move along the shelf |
 | `Enter` / click the lifted cover | open a book |
 | `B` | switch between the carousel and the bookcase |
-| `T` / `Shift`+`T` | next / previous theme (`1`-`5` while the picker is open) |
+| `T` / `Shift`+`T` | next / previous theme (`1`-`6` while the picker is open) |
 | `/` or `Ctrl`+`K` | search |
 | `Esc` or the browser's Back button | go back one level |
 
-In the bookcase the arrow keys move between books and shelves, and `Enter` opens the focused book. Add `?theme=cyber` (or `dark`, `amber`, `hacker`, `light`) and `?view=case` to a link to open it in a particular theme or view.
+In the bookcase the arrow keys move between books and shelves, and `Enter` opens the focused book. In the Dynamic View `←` `→` change the book, `↑` `↓` / `Page Up` `Page Down` / `Space` move between screens, `Enter` goes inside and then reads, and `L` opens the reading list. Add `?theme=cyber` (or `dark`, `amber`, `hacker`, `light`, `dynamic`) and `?view=case` to a link to open it in a particular theme or view.
 
 ## Folders
 
@@ -77,14 +96,17 @@ Inside `_site/`:
 | --- | --- |
 | `css/style.css` | header, filters, book page, reader, search - everything colour or font related comes from tokens |
 | `css/shelf.css` | the wall, the plank, the spines, the 3D shelf and the bookcase |
-| `css/themes.css` | the five themes as design tokens, plus a few character rules (scan lines, neon, terminal prompt) |
+| `css/themes.css` | the five shelf themes as design tokens, plus a few character rules (scan lines, neon, terminal prompt) |
+| `css/dynamic.css` | the Dynamic View: its tokens, layout and motion, all scoped to that theme |
 | `js/app.js` | the engine: endless shelf, bookcase, page, reader, search, history |
+| `js/dynamic.js` | the Dynamic View: carousel, inside, picks, stack and reading list |
 | `js/theme.js` | theme manager and picker |
 | `js/fx.js` | ambient atmosphere (dust, embers, glyph rain, sparks) |
 | `js/data.js` | the catalogue, generated by `tools/build_library.py` |
-| `thumbs/`, `covers/`, `fonts/`, `vendor/`, `preview/`, `tools/` | thumbnails, covers, fonts, GSAP, screenshots and the build script |
+| `js/tones.js` | each cover's accent colour, generated by `tools/tones.py` (the build runs it) |
+| `thumbs/`, `covers/`, `fonts/`, `vendor/`, `preview/`, `tools/` | thumbnails, covers, fonts, GSAP, screenshots and the build scripts |
 
-### Adding a theme
+### Adding a shelf theme
 
 A theme is a block of CSS custom properties in `css/themes.css` (wall, plank, ink, accent, the eight topic colours and a few more). Three small things wire it in:
 
@@ -121,7 +143,7 @@ To add another PDF book: put the file under `Books/`, add an entry to `books_cat
    My Books/The Art of Calm/02.jpg
    ```
 
-2. Run `python _site/tools/build_library.py`. It rebuilds the thumbnails and the catalogue; the filter chips appear on their own.
+2. Run `python _site/tools/build_library.py`. It rebuilds the thumbnails, the catalogue and the cover colours; the filter chips appear on their own.
 
 Optional details (plain JSON, every field optional):
 
