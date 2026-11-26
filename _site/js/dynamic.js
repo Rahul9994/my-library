@@ -38,18 +38,28 @@ const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 const fmtDate = iso => { const [y, m] = iso.split('-'); return MONTHS[+m - 1] + ' ' + y; };
 const store = { get(k) { try { return localStorage.getItem(k); } catch (_) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (_) {} } };
 const app = () => window.__lib;
-const slidesText = n => n + (n === 1 ? ' slide' : ' slides');
+// full-length books (PDF / EPUB) carry a `doc` record and count pages; the posts count slides
+const count = (n, word) => `${n.toLocaleString('en')} ${word}${n === 1 ? '' : 's'}`;
+const amount = b => count(b.slides, b.doc ? 'page' : 'slide');
+function total(ids) {                                // "472 pages · 24 slides"
+  let pages = 0, slides = 0;
+  ids.forEach(id => { const b = BOOK.get(id); if (b.doc) pages += b.slides; else slides += b.slides; });
+  return [pages && count(pages, 'page'), (slides || !pages) && count(slides, 'slide')].filter(Boolean).join(' · ');
+}
+const tagsOf = b => Array.from(new Set(b.tags));
 const topicInfo = k => (LIB.topics || []).find(t => t.key === k) || { key: k, label: k, chip: k };
 const typeInfo = k => (LIB.types || []).find(t => t.key === k) || { key: k, label: k };
 const coverSrc = b => enc(HIDPI ? b.cover : b.thumb);
 const GENERIC = /^(SQL|AI|BI|ML|Data|Python|Career|General) (Notes|Cheat Sheet|Guide|Book)$/;
-const headline = b => GENERIC.test(b.short) && b.title.length <= 34 ? b.title : b.short;   // big type: the short title, unless it says too little
+// big type: the short title, unless it says too little (a post's generic label, or one edition among several)
+const headline = b => (b.doc ? b.title.length <= 40 : GENERIC.test(b.short) && b.title.length <= 34) ? b.title : b.short;
 const slideSrc = (b, i) => enc(b.dir + '/' + b.files[i]);
 
 /* ── colour: every book gets a room colour, taken from its cover where it has one ── */
 const PALETTE = { lav: '#b3a2cf', gold: '#deb76a', cocoa: '#c7a582', mint: '#9dcbb9', rose: '#e39caf', sky: '#9dbfe2', coral: '#eba58a', sage: '#b7c78e', peri: '#a8b0e1', aqua: '#90c8cc' };
 const CYCLE = ['lav', 'gold', 'mint', 'rose', 'sky', 'cocoa', 'sage', 'coral', 'peri', 'aqua'];
-const BY_TOPIC = { sql: ['sky', 'lav'], python: ['mint', 'gold'], ml: ['lav', 'sage'], ai: ['coral', 'peri'], bi: ['gold', 'cocoa'], data: ['aqua', 'sage'], career: ['sage', 'cocoa'], other: ['cocoa', 'peri'] };
+const BY_TOPIC = { sql: ['sky', 'lav'], python: ['mint', 'gold'], ml: ['lav', 'sage'], ai: ['coral', 'peri'], bi: ['gold', 'cocoa'], data: ['aqua', 'sage'], career: ['sage', 'cocoa'],
+  code: ['rose', 'peri'], dsa: ['peri', 'lav'], devops: ['sage', 'aqua'], linux: ['cocoa', 'gold'], security: ['coral', 'rose'], other: ['cocoa', 'peri'] };
 const family = h => h < 0 ? null : h < 10 || h >= 322 ? 'rose' : h < 30 ? 'coral' : h < 66 ? 'gold' : h < 100 ? 'sage' : h < 172 ? 'mint' : h < 196 ? 'aqua' : h < 218 ? 'sky' : h < 250 ? 'peri' : 'lav';
 function candidates(b) {
   const h = HUES[b.id] || [-1, -1], start = hash(b.id) % CYCLE.length;
@@ -146,7 +156,7 @@ const TEMPLATE = `
   <section class="dv-sec dv-shop" aria-label="Pick up a book">
     <div class="dv-shop-in">
       <h2 class="dv-h2"><span class="ln" style="--i:0"><span>Pick up</span></span><span class="ln" style="--i:1"><span>a book</span></span></h2>
-      <div class="dv-aside"><p>Five books, same sharp notes. Pick your favourite, or stack a few for later.</p><button class="dv-more" type="button">${I.again}Five more</button></div>
+      <div class="dv-aside"><p>Five picks from the shelf. Open your favourite, or stack a few for later.</p><button class="dv-more" type="button">${I.again}Five more</button></div>
       <div class="dv-cards"></div>
     </div>
   </section>
@@ -248,11 +258,8 @@ function measure() {
   const from = head + H * .02 + Math.min(W * .08, H * .042) * 2.32 + 6, to = H - H * .028 - 92;
   const sh = Math.round(narrow ? Math.min(H * .41, W * .62 / .8, (to - from) / 1.15) : Math.min(H * (short ? .64 : .665), W * .35 / .8)), sw = Math.round(sh * .8);
   const sx = Math.round(narrow ? W * .5 : W * .565), sy = Math.round(narrow ? (from + to) / 2 : short ? head + (H - head) * .49 : H * .525);
-  // ...and on the last step it moves up to make room for the title and the Read button
-  const ctaH = 2.24 * clamp(W * .05, 17, 26) + 3.4 * clamp(H * .016, 11, 18) + clamp(H * .066, 48, 70) + 30;
-  const lift = narrow ? Math.max(0, sy + sh * .61 - (H - H * .035 - ctaH)) : 0;
   const k = clamp(window.devicePixelRatio || 1, 1, 2);                    // 3D books are built k times larger (see dynamic.css)
-  Object.assign(M, { W, H, narrow, short, tall, head, cw, ch, carY, goY, base, nameY, sw, sh, sx, sy, lift, k, P: ch * 3.8, spread: narrow ? SPREAD_N : SPREAD_W });
+  Object.assign(M, { W, H, narrow, short, tall, head, cw, ch, carY, goY, base, nameY, sw, sh, sx, sy, k, P: ch * 3.8, spread: narrow ? SPREAD_N : SPREAD_W });
   const st = E.dv.style;
   for (const [name, v] of Object.entries({ dvh: H, head, cw, ch, sw, sh, sx, sy, 'car-y': carY, 'go-y': goY, 'name-y': nameY })) st.setProperty('--' + name, v + 'px');
   st.setProperty('--k', k);
@@ -264,6 +271,15 @@ function measure() {
     for (const [k, v] of Object.entries({ x: x + '%', y: y + '%', s, d: d + 'px', blur: blur + 'px', r: r + 'deg', t: t + 's' })) el.setProperty('--' + k, v);
   });
   tops();
+  fitRead();
+}
+/* narrow screens, last step: the book moves up (and shrinks if it must) to clear the title, credits and Read button */
+function fitRead() {
+  M.lift = 0; M.fit = 1;
+  if (!M.narrow) return;
+  const floor = M.H * .965 - E.readwrap.offsetHeight - 8;                 // laid out even while hidden
+  M.fit = clamp((floor - M.head) / (M.sh * 1.22), .5, 1);                 // 1.22: the tilted book is taller than the book
+  M.lift = Math.max(0, M.sy + M.sh * .61 * M.fit - floor);
 }
 function tops() { M.shopTop = E.shop.offsetTop; M.stackTop = E.stack.offsetTop; M.max = Math.max(0, E.scroll.scrollHeight - E.scroll.clientHeight); }
 
@@ -369,7 +385,7 @@ function setTitle(b, instant) {
   if (live && live.dataset.id === b.id && !instant) return;
   const el = document.createElement('span'); el.className = 'dv-name-l'; el.dataset.id = b.id; el.innerHTML = splitChars(headline(b));
   box.appendChild(el); fitTitle(el);
-  E.sr.textContent = `${b.title}. ${topicInfo(b.topic).label}, ${slidesText(b.slides)}.`;
+  E.sr.textContent = `${b.title}. ${topicInfo(b.topic).label}, ${amount(b)}.`;
   const olds = $$('.dv-name-l', box).filter(x => x !== el);
   olds.forEach(o => o.classList.add('out'));
   if (instant || REDUCE) { olds.forEach(o => o.remove()); return; }
@@ -402,7 +418,7 @@ const CLOSEUPS = ['12% 8%', '88% 38%', '24% 72%', '76% 92%', '50% 52%'];
 function pieces(b, n) {
   const pages = []; for (let i = 1; i < b.files.length && pages.length < 8; i++) pages.push(i);
   if (!pages.length) pages.push(0);
-  const labels = [...b.tags.slice(0, 6).map(t => '#' + t), topicInfo(b.topic).label, slidesText(b.slides), typeInfo(b.type).label];
+  const labels = Array.from(new Set([...tagsOf(b).slice(0, 6).map(t => '#' + t), topicInfo(b.topic).label, amount(b), b.doc ? b.doc.license : typeInfo(b.type).label]));
   const out = []; let p = 0, l = 0, c = 0;
   for (let k = 0; k < n; k++) {
     if (k % 3 === 2 && l < labels.length) out.push({ label: labels[l++] });
@@ -441,11 +457,14 @@ function barcode(seed) {
   return `<svg viewBox="0 0 100 30" preserveAspectRatio="none" fill="currentColor">${r}</svg>`;
 }
 function factsHTML(b) {
-  const rows = [['Slides', b.slides], ['Topic', topicInfo(b.topic).label], ['Format', typeInfo(b.type).label], ['Added', fmtDate(b.date)], ['Shelf no.', pad(b.n, 3)], ['Author', b.author || 'Unknown'], ['Filler', '0 g']];
-  const digits = (String(hash(b.id)) + String(hash(b.title))).slice(0, 12);
+  const d = b.doc, topic = topicInfo(b.topic).label, n = b.slides.toLocaleString('en');
+  const rows = d
+    ? [['Pages', n], ['Topic', topic], ['Format', `${d.fmt} · ${d.mb} MB`], d.edition ? ['Edition', d.edition] : ['Added', fmtDate(b.date)], ['Licence', d.license], ['Author', b.author || 'Unknown'], ['Shelf no.', pad(b.n, 3)]]
+    : [['Slides', n], ['Topic', topic], ['Format', typeInfo(b.type).label], ['Added', fmtDate(b.date)], ['Shelf no.', pad(b.n, 3)], ['Author', b.author || 'Unknown'], ['Filler', '0 g']];
+  const digits = (String(hash(b.id)) + String(hash(b.title))).slice(0, 12), tags = tagsOf(b);
   return `<div class="dv-facts"><p class="f-brand">The Library</p><p class="f-sub">${esc(b.short)}</p>` +
     `<div class="f-label"><b>Book facts</b><small>Serving size: 1 book${b.handle ? ' · ' + esc(b.handle) : ''}</small><dl>${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div>` +
-    (b.tags.length ? `<p class="f-tags">Tags: ${esc(b.tags.join(', '))}</p>` : '') +
+    (tags.length ? `<p class="f-tags">Tags: ${esc(tags.join(', '))}</p>` : '') +
     `<div class="f-code">${barcode(b.id)}<span>${digits}</span></div><p class="f-foot">Packed, not padded</p></div>`;
 }
 function paintFlyer() {
@@ -458,15 +477,16 @@ function paintFlyer() {
 function setInside(b) {
   if (D.keys.inside === b.id) return;
   D.keys.inside = b.id;
-  const tags = b.tags.slice(0, 3).map(t => '#' + t).join(' ') || topicInfo(b.topic).label;
-  E.claims[0].textContent = b.slides === 1 ? 'One page,\nall signal' : 'Real notes,\nfirst';
-  E.claims[1].textContent = 'Packed,\nnot padded';
-  D.caps = [`${tags}\nNothing you can’t learn.`, `${slidesText(b.slides)}, no filler.\nJust the good part.`, '', ''];
+  const d = b.doc, tags = tagsOf(b).slice(0, 3).map(t => '#' + t).join(' ') || topicInfo(b.topic).label;
+  E.claims[0].textContent = d ? 'The whole\nbook, free' : b.slides === 1 ? 'One page,\nall signal' : 'Real notes,\nfirst';
+  E.claims[1].textContent = d ? 'Cover to\ncover' : 'Packed,\nnot padded';     // two short lines: they sit beside the book
+  D.caps = [`${tags}\nNothing you can’t learn.`, d ? `${amount(b)}.\n${d.fmt}, ${d.mb} MB.` : `${amount(b)}, no filler.\nJust the good part.`, '', ''];
   E.cap.textContent = D.caps[Math.max(0, D.step)] || '';
   E.readTitle.textContent = b.title;
-  E.readBy.innerHTML = (b.author ? `By ${esc(b.author)}${b.handle ? ' · ' + esc(b.handle) : ''}` : '') +
-    (b.source ? `<br><a href="${esc(b.source)}" target="_blank" rel="noopener">View on ${esc(b.sourceLabel || 'source')} ↗</a>` : '');
-  E.readBtn.firstElementChild.textContent = b.slides === 1 ? 'Read this page' : `Read all ${b.slides} slides`;
+  E.readBy.innerHTML = (b.author ? `By ${esc(b.author)}${b.handle ? ' · ' + esc(b.handle) : ''}` : '') + (d ? `<br>${esc(d.license)}` : '') +
+    (b.source ? `<br><a href="${esc(b.source)}" target="_blank" rel="noopener">${d ? 'Official download' : 'View on ' + esc(b.sourceLabel || 'source')} ↗</a>` : '');
+  E.readBtn.firstElementChild.textContent = d ? (d.fmt === 'EPUB' ? 'Open the EPUB' : 'Read the book') : b.slides === 1 ? 'Read this page' : `Read all ${b.slides} slides`;
+  fitRead();                                        // long credits take more room under the book
 }
 
 /* ── the pages that orbit the book ─────────────────────── */
@@ -514,8 +534,9 @@ function stage(now) {
   const orb = passing ? 0 : clamp(1 - Math.abs(q - 2) / .8, 0, 1);
   if (flying) {
     const e1 = inOut(t1), e2 = inOut(t2), live = REDUCE ? 0 : e1 * (1 - e2);
-    const rest = M.sy - M.lift * smooth(clamp((q - 2.3) / .6, 0, 1));
-    let x = lerp(M.W / 2, M.sx, e1), y = lerp(M.carY, rest, e1), s = lerp(M.ch / M.sh, 1, e1);
+    const last = smooth(clamp((q - 2.3) / .6, 0, 1));                      // easing into the last step
+    const rest = M.sy - M.lift * last;
+    let x = lerp(M.W / 2, M.sx, e1), y = lerp(M.carY, rest, e1), s = lerp(M.ch / M.sh, lerp(1, M.fit, last), e1);
     let ry = lerp(0, turnAt(q), e1), rz = lerp(0, TILT, e1), rx = 0;
     ry += live * (Math.sin(t * .85) * 5 + Math.sin(t * 1.05) * 30 * orb);       // it never sits perfectly still
     rz += live * Math.sin(t * .67) * 1.2; rx = live * Math.sin(t * .53) * 2.4; y += live * Math.sin(t * 1.25) * H * .007;
@@ -584,7 +605,15 @@ function setShop(force) {
       `<button class="dv-add" type="button" data-pick="${b.id}" aria-pressed="false" aria-label="Add ${esc(b.title)} to your stack">${I.plus}${I.check}</button></article>`;
   }).join('');
   D.hidCard = null;
-  syncPicks(); centreCards();
+  syncPicks(); fitNames('.dv-card h3', 11); centreCards();
+}
+/* a title set in capitals never splits inside a word: shrink its type to fit (CSS ellipsis past the minimum) */
+function fitNames(sel, min) {
+  const els = $$(sel, E.dv);
+  els.forEach(el => { el.style.fontSize = ''; });
+  els.map(el => [el, el.clientWidth, el.scrollWidth]).forEach(([el, room, need]) => {
+    if (room && need > room) el.style.fontSize = Math.max(min, parseFloat(getComputedStyle(el).fontSize) * room / need * .97).toFixed(2) + 'px';
+  });
 }
 function centreCards() {
   const c = E.cards, mid = c.children[c.children.length >> 1];
@@ -600,7 +629,7 @@ function setStack(force) {
     return `<button class="dv-sw" type="button" data-pick="${b.id}" aria-pressed="false" style="--tone:${PALETTE[D.tones[i]]};--i:${k}" title="${esc(b.title)}" aria-label="${esc(b.title)}">` +
       `<span class="dv-sw-t"><img src="${enc(b.thumb)}" alt="" decoding="async" draggable="false"></span><span class="dv-sw-n">${esc(b.short)}</span><span class="dv-sw-r">${I.check}</span></button>`;
   }).join('');
-  syncPicks();
+  syncPicks(); fitNames('.dv-sw-n', 7);
 }
 const need = () => Math.min(3, Math.max(D.list.length, D.picks.filter(Boolean).length));
 function syncPicks() {
@@ -613,7 +642,6 @@ function syncPicks() {
     x.setAttribute('aria-label', b ? `Remove ${b.title}` : 'Empty place');
   });
   $$('[data-pick]', E.dv).forEach(el => el.setAttribute('aria-pressed', D.picks.includes(el.dataset.pick) ? 'true' : 'false'));
-  const slides = chosen.reduce((s, id) => s + BOOK.get(id).slides, 0);
   const label = E.add3.firstElementChild, small = E.add3.lastElementChild;
   E.add3.classList.toggle('done', D.adding);
   if (D.adding) { E.add3.disabled = true; label.textContent = 'Added to your list'; }
@@ -621,7 +649,7 @@ function syncPicks() {
     const ready = n >= want && n > 0;
     E.add3.disabled = !ready;
     label.textContent = ready ? 'Add to reading list' : `Pick ${want - n} more`;
-    small.textContent = slidesText(slides);
+    small.textContent = total(chosen);
   }
   const last = D.lastPick >= 0 && D.picks[D.lastPick] ? D.picks[D.lastPick] : chosen[chosen.length - 1];
   if (!D.adding) E.glow.style.setProperty('--dv-glow', last ? PALETTE[toneOf(last)] : '#6f918a');
@@ -704,7 +732,7 @@ function renderList() {
   E.empty.hidden = D.saved.length > 0;
   E.ul.innerHTML = D.saved.map(id => {
     const b = BOOK.get(id);
-    return `<li><img src="${enc(b.thumb)}" alt="" loading="lazy" decoding="async"><div><b>${esc(b.title)}</b><small>${slidesText(b.slides)} · ${esc(b.author || topicInfo(b.topic).label)}</small></div>` +
+    return `<li><img src="${enc(b.thumb)}" alt="" loading="lazy" decoding="async"><div><b>${esc(b.title)}</b><small>${amount(b)} · ${esc(b.author || topicInfo(b.topic).label)}</small></div>` +
       `<span class="acts"><button type="button" data-read="${id}">Read</button><button type="button" data-remove="${id}" aria-label="Remove ${esc(b.title)}">${I.close}</button></span></li>`;
   }).join('');
 }
@@ -1037,7 +1065,10 @@ function bind() {
     else if (D.on) { D.force = true; D.lastT = performance.now(); }
   });
 }
-function refit() { const el = E.name.querySelector('.dv-name-l:not(.out)'); if (el) fitTitle(el); }
+function refit() {                                    // after a resize, or once the display face has arrived
+  const el = E.name.querySelector('.dv-name-l:not(.out)'); if (el) fitTitle(el);
+  fitNames('.dv-card h3', 11); fitNames('.dv-sw-n', 7);
+}
 
 /* ── on and off ────────────────────────────────────────── */
 function activate(opts = {}) {

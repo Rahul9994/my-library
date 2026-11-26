@@ -13,7 +13,7 @@ A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **
 - **Dynamic View** (described below) turns the library into a product-style showcase with four screens.
 - **A book page**, a **slide reader** (swipe, tap to zoom, drag to pan, thumbnails) and instant **search** (`/` or `Ctrl`+`K`).
 - **Proper history.** The address bar always matches the view, so links to a book (`#/<id>`) or a slide (`#/<id>/read/3`) work, and Back, Forward, `Esc` and the round button all unwind one level at a time.
-- **Built for everyone.** Keyboard-first, `prefers-reduced-motion` respected, UI text meets WCAG AA contrast in every theme, works on phones and tablets, and works offline straight from `index.html`.
+- **Built for everyone.** Keyboard-first, `prefers-reduced-motion` respected, UI text meets WCAG AA contrast in the five shelf themes, works on phones and tablets, and works offline straight from `index.html`.
 
 | Light | Dark | Amber |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ A personal reading library: a motion-rich **3D bookshelf**, and a full wooden **
 | Screen | What happens |
 | --- | --- |
 | **Books** | Books ride a curved, endless carousel. The room takes the colour of the book in front, the title swaps letter by letter, and a few of its pages float around. Drag, flick, click a neighbour, use the arrow keys or switch on *Autoplay*. |
-| **Inside** | Scroll once and that book leaves the row and turns in space: the cover, then *book facts* on the back, then its pages in orbit, then a *Read* button. |
+| **Inside** | Scroll once and that book leaves the row and turns in space: the cover, then *book facts* on the back (slides or pages, format, licence), then its pages in orbit, then a *Read* button that opens the reader. |
 | **Picks** | The book lands in a row of five. Open one, add it to your stack, or ask for *five more*. |
 | **Stack** | Choose three and send them to your **reading list** (kept in your browser; open it from the bookmark button, or press `L`). |
 
@@ -59,7 +59,7 @@ They were collected from his public Instagram posts as a personal reading librar
 
 - [GSAP](https://gsap.com/) for animation (GreenSock standard licence)
 - [Newsreader](https://fonts.google.com/specimen/Newsreader) (Production Type) and [Inter](https://rsms.me/inter/) (Rasmus Andersson), both under the SIL Open Font License
-- *Library Display*, the wide headline face of the Dynamic View: Inter at weight 900, stretched by `tools/make_display_font.py` and shared under the same licence
+- *Library Display*, the wide headline face of the Dynamic View: Inter at weight 900, stretched by `_site/tools/make_display_font.py` and shared under the same licence
 - Python + [Pillow](https://python-pillow.org/) to build the aligned 4:5 thumbnails, the catalogue and the cover colours, and [PyMuPDF](https://pymupdf.readthedocs.io/) to render book covers and preview pages from PDFs
 - Site design and code by [Rahul9994](https://github.com/Rahul9994), built with help from Claude (Anthropic)
 
@@ -130,7 +130,7 @@ The *Books* filter holds 217 free programming books, catalogued in `_site/tools/
 - **Read the book** opens the PDF in the browser's own viewer inside the reader, at the page you clicked. *Open PDF* opens it in a new tab.
 - **EPUB** books can't be shown by browsers, so the reader offers the file to open in an e-reader app.
 - **When `Books/` is not there**, as on GitHub Pages, the reader links to the book's official free download instead.
-- New shelves: *Algorithms & DSA*, *Programming languages*, *DevOps & Docker*, *Linux* and *Security & hacking*, with their own colours in all five themes. Python, ML, SQL, data and interview books join the existing shelves.
+- New shelves: *Algorithms & DSA*, *Programming languages*, *DevOps & Docker*, *Linux* and *Security & hacking*, with their own colours in all five shelf themes. Python, ML, SQL, data and interview books join the existing shelves.
 
 To add another PDF book: put the file under `Books/`, add an entry to `books_catalog.json` (copy an existing one; `topic` is one of the shelf keys), then run `python _site/tools/build_library.py` (needs `pip install pymupdf pillow`).
 

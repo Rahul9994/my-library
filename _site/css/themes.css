@@ -239,6 +239,7 @@
 /* ═══════════════════ theme picker (header) ═══════════════════ */
 .theme{position:relative}
 .tpanel{position:absolute;top:calc(100% + 12px);right:0;z-index:70;width:304px;padding:8px;border-radius:calc(var(--r) + 10px);
+  max-height:calc(100vh - 80px);max-height:calc(100dvh - 80px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;   /* six themes: scroll on short screens */
   background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(24px) saturate(1.3);backdrop-filter:blur(24px) saturate(1.3);
   box-shadow:0 34px 70px -22px rgba(var(--shadow),.65),0 0 0 1px rgba(var(--shadow),.04);
   opacity:0;visibility:hidden;transform:translateY(-8px) scale(.97);transform-origin:100% 0;
